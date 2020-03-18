@@ -43,6 +43,145 @@
         "@id": "pot:lifeCycle/status",
         "@type": "owl:DatatypeProperty",
         "subPropertyOf": "pot:lifeCycle",
+        "rdfs:nested_comments": [
+            {
+                "comments": [
+                    {
+                        "en-us": "Process state"
+                    }
+                ],
+                "domains": [
+                    "pot:Process"
+                ]
+            },
+            {
+                "comments": [
+                    {
+                        "en-us": "project state"
+                    }
+                ],
+                "domains": [
+                    "pot:Project"
+                ]
+            },
+            {
+                "comments": [
+                    {
+                        "en-us": "Case state"
+                    }
+                ],
+                "domains": [
+                    "pot:Case"
+                ]
+            },
+            {
+                "comments": [
+                    {
+                        "en-us": "Life cycle status"
+                    }
+                ],
+                "domains": [
+                    "pot:Link",
+                    "pot:Product",
+                    "pot:Space",
+                    "pot:BuildingElement",
+                    "pot:Device",
+                    "pot:System",
+                    "pot:Organization",
+                    "pot:Person",
+                    "pot:RealEstate",
+                    "pot:Room",
+                    "pot:Storey"
+                ]
+            },
+            {
+                "comments": [
+                    {
+                        "en-us": "Life cycle status of the building"
+                    }
+                ],
+                "domains": [
+                    "pot:Building"
+                ]
+            }
+        ],
+        "rdfs:nested_labes": [
+            {
+                "labels": [
+                    {
+                        "en-us": "Process status"
+                    },
+                    {
+                        "fi-fi": "Prosessin tila"
+                    }
+                ],
+                "domains": [
+                    "pot:Process"
+                ]
+            },
+            {
+                "labels": [
+                    {
+                        "en-us": "Case status"
+                    },
+                    {
+                        "fi-fi": "Palvelupyynnön tila"
+                    }
+                ],
+                "domains": [
+                    "pot:Case"
+                ]
+            },
+            {
+                "labels": [
+                    {
+                        "fi-fi": "Elinkaari - Status"
+                    },
+                    {
+                        "en-us": "Life cycle status"
+                    }
+                ],
+                "domains": [
+                    "pot:Link",
+                    "pot:Product",
+                    "pot:Space",
+                    "pot:BuildingElement",
+                    "pot:Device",
+                    "pot:System",
+                    "pot:Organization",
+                    "pot:Person",
+                    "pot:RealEstate",
+                    "pot:Room",
+                    "pot:Storey"
+                ]
+            },
+            {
+                "labels": [
+                    {
+                        "fi-fi": "Elinkaari - Status"
+                    },
+                    {
+                        "en-us": "Life cycle status"
+                    }
+                ],
+                "domains": [
+                    "pot:Building"
+                ]
+            },
+            {
+                "labels": [
+                    {
+                        "en-us": "Project status"
+                    },
+                    {
+                        "fi-fi": "Projektin tila"
+                    }
+                ],
+                "domains": [
+                    "pot:Project"
+                ]
+            }
+        ],
         "pot:valueType": [
             "xsd:string"
         ],
