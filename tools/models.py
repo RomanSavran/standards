@@ -5,6 +5,8 @@ from owlready2 import label, comment, Thing
 from class_helpers import subClassOf
 from utils import owl_property_to_python_for_vocabulary
 
+PREFIX = 'pot'
+
 
 class AbstractRDFEntity:
     SKIP_BASES = 1
@@ -35,7 +37,7 @@ class AbstractRDFEntity:
             directories = [rdf_entity.name, ]
         return directories
 
-    def get_files(self) -> list:
+    def get_files(self) -> dict:
         result_directories = []
         for result_directory in self.build_directories(self.rdf_entity):
             entities = result_directory.split(os.path.sep)
@@ -81,13 +83,13 @@ class RDFClass(AbstractRDFEntity):
 
     def to_python(self, context: dict) -> dict:
         result = {
-            '@id': f'pot:{context.get("id")}',
+            '@id': f'{PREFIX}:{context.get("id")}',
             '@type': 'owl:Class'
         }
         subclasses = list(
             subClassOf._get_indirect_values_for_class(self.rdf_entity))
         if subclasses and subclasses[0] != Thing:
-            result['subClassOf'] = f'pot:{subclasses[0].name}'
+            result['subClassOf'] = f'{PREFIX}:{subclasses[0].name}'
 
         labels = dict()
         for l in label._get_indirect_values_for_class(self.rdf_entity):
