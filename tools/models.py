@@ -9,32 +9,40 @@ from utils import owl_property_to_python_for_vocabulary
 class AbstractRDFEntity:
     SKIP_BASES = 1
 
-    def __init__(self, cls):
-        self.cls = cls
+    def __init__(self, rdf_entity: Thing) -> None:
+        self.rdf_entity = rdf_entity
         self.directories = None
 
     @staticmethod
-    def build_directories(rdf_entity):
+    def build_directories(rdf_entity: Thing) -> list:
+        """
+        Build directories for rdf_entities and their parents
+            Parameters:
+                rdf_entity (owl.Thing): Thing entity
+            Returns:
+                directories (list): List or directories
+        """
         parents = rdf_entity.is_a
         new_directories = []
         if len(parents):
-            for i in parents:
-                directories = AbstractRDFEntity.build_directories(i)
+            for parent in parents:
+                directories = AbstractRDFEntity.build_directories(parent)
                 for directory in directories:
-                    new_directories.append(os.path.join(directory, rdf_entity.name))
+                    new_directories.append(
+                        os.path.join(directory, rdf_entity.name))
             return new_directories
         else:
             directories = [rdf_entity.name, ]
         return directories
 
-    def get_files(self):
+    def get_files(self) -> list:
         result_directories = []
-        for rd in self.build_directories(self.cls):
-            ar = rd.split(os.path.sep)
+        for result_directory in self.build_directories(self.rdf_entity):
+            entities = result_directory.split(os.path.sep)
             result_directories.append({
-                'dir': os.path.sep.join(ar[self.SKIP_BASES:-1]),
-                'filename': f'{ar[-1]}.jsonld',
-                'id': '/'.join(ar[self.SKIP_BASES:])
+                'dir': os.path.sep.join(entities[self.SKIP_BASES:-1]),
+                'filename': f'{entities[-1]}.jsonld',
+                'id': '/'.join(entities[self.SKIP_BASES:])
             })
         self.directories = result_directories
         return self.directories
@@ -43,17 +51,18 @@ class AbstractRDFEntity:
 class RDFProperty(AbstractRDFEntity):
     SKIP_BASES = 2
 
-    def get_files(self):
-        directory = max(self.build_directories(self.cls), key=len)
-        ar = directory.split(os.path.sep)[self.SKIP_BASES:]
-        ar = ar[1:] if ar[0] == 'topDataProperty' else ar
+    def get_files(self) -> list:
+        directories = max(self.build_directories(self.rdf_entity), key=len)
+        property_directories = directories.split(os.path.sep)[self.SKIP_BASES:]
+        if property_directories[0] == 'topDataProperty':
+            property_directories.pop(0)
         return [{
-            'dir': os.path.sep.join(ar[:-1]),
-            'filename': f'{ar[-1]}.jsonld',
-            'id': '/'.join(ar[self.SKIP_BASES:])
+            'dir': os.path.sep.join(property_directories[:-1]),
+            'filename': f'{property_directories[-1]}.jsonld',
+            'id': '/'.join(property_directories[self.SKIP_BASES:])
         }]
 
-    def to_python(self, vocabulary_template):
+    def to_python(self, vocabulary_template: dict) -> dict:
         vocabulary_dict = deepcopy(vocabulary_template)
         vocabulary_dict['@context']['label'] = {
             '@id': 'rdfs:label',
@@ -63,35 +72,33 @@ class RDFProperty(AbstractRDFEntity):
             '@id': 'rdfs:comment',
             "@container": ['@language', '@set']
         }
-        vocabulary_dict[self.cls.name] = owl_property_to_python_for_vocabulary(self.cls)
+        vocabulary_dict[self.rdf_entity.name] = owl_property_to_python_for_vocabulary(
+            self.rdf_entity)
         return vocabulary_dict
 
 
 class RDFClass(AbstractRDFEntity):
 
-    def to_python(self, context):
+    def to_python(self, context: dict) -> dict:
         result = {
-            '@id': 'pot:{}'.format(context.get('id')),
+            '@id': f'pot:{context.get("id")}',
             '@type': 'owl:Class'
         }
-        if list(subClassOf._get_indirect_values_for_class(self.cls)):
-            if subClassOf._get_indirect_values_for_class(self.cls)[0] != Thing:
-                result['subClassOf'] = 'pot:{}'.format(str(subClassOf._get_indirect_values_for_class(self.cls)[0].name))
+        subclasses = list(
+            subClassOf._get_indirect_values_for_class(self.rdf_entity))
+        if subclasses and subclasses[0] != Thing:
+            result['subClassOf'] = f'pot:{subclasses[0].name}'
 
-        labels = {}
-        for l in label._get_indirect_values_for_class(self.cls):
+        labels = dict()
+        for l in label._get_indirect_values_for_class(self.rdf_entity):
             labels[l.lang] = str(l)
-
         if len(labels):
             result['rdfs:label'] = labels
 
-        comments = {}
-        for c in comment._get_indirect_values_for_class(self.cls):
+        comments = dict()
+        for c in comment._get_indirect_values_for_class(self.rdf_entity):
             comments[c.lang] = str(c)
-
         if len(comments):
             result['rdfs:comment'] = comments
 
         return result
-
-
