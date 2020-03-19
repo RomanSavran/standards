@@ -17,6 +17,9 @@
             "@id": "pot:metadata/updatedBy",
             "@nest": "metadata"
         },
+        "id": {
+            "@id": "pot:identifier/id"
+        },
         "updatedAt": {
             "@id": "pot:metadata/updatedAt",
             "@nest": "metadata"
@@ -24,9 +27,6 @@
         "createdBy": {
             "@id": "pot:metadata/createdBy",
             "@nest": "metadata"
-        },
-        "id": {
-            "@id": "pot:identifier/id"
         },
         "createdAt": {
             "@id": "pot:metadata/createdAt",

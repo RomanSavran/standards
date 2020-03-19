@@ -39,31 +39,22 @@
             ]
         }
     },
-    "data": {
-        "@id": "pot:data",
+    "firstName": {
+        "@id": "pot:identifier/firstName",
         "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:topDataProperty",
+        "subPropertyOf": "pot:identifier",
+        "rdfs:label": {
+            "fi-fi": "Etunimi",
+            "en-us": "First Name"
+        },
+        "rdfs:comment": {
+            "en-us": "First name of the person"
+        },
+        "pot:valueType": [
+            "xsd:string"
+        ],
         "domain": [
-            "pot:Identity",
-            "pot:Link"
-        ]
-    },
-    "updatedBy": {
-        "@id": "pot:metadata/updatedBy",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:metadata",
-        "domain": [
-            "pot:Identity",
-            "pot:Link"
-        ]
-    },
-    "updatedAt": {
-        "@id": "pot:metadata/updatedAt",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:metadata",
-        "domain": [
-            "pot:Identity",
-            "pot:Link"
+            "pot:Person"
         ]
     },
     "middleName": {
@@ -79,6 +70,51 @@
         },
         "pot:valueType": [
             "xsd:string"
+        ],
+        "domain": [
+            "pot:Person"
+        ]
+    },
+    "lastName": {
+        "@id": "pot:identifier/lastName",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:identifier",
+        "rdfs:label": {
+            "en-us": "Last name",
+            "fi-fi": "Sukunimi"
+        },
+        "rdfs:comment": {
+            "en-us": "Last name of the person"
+        },
+        "pot:valueType": [
+            "xsd:string"
+        ],
+        "domain": [
+            "pot:Person"
+        ]
+    },
+    "metadata": {
+        "@id": "pot:metadata",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:topDataProperty",
+        "domain": [
+            "pot:Identity",
+            "pot:Link"
+        ]
+    },
+    "birthdate": {
+        "@id": "pot:identifier/birthdate",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:identifier",
+        "rdfs:label": {
+            "en-us": "Date of birth",
+            "fi-fi": "Syntymäaika"
+        },
+        "rdfs:comment": {
+            "en-us": "Birthdate of the person"
+        },
+        "pot:valueType": [
+            "xsd:date"
         ],
         "domain": [
             "pot:Person"
@@ -218,35 +254,8 @@
             "pot:Storey"
         ]
     },
-    "metadata": {
-        "@id": "pot:metadata",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:topDataProperty",
-        "domain": [
-            "pot:Identity",
-            "pot:Link"
-        ]
-    },
-    "lastName": {
-        "@id": "pot:identifier/lastName",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:identifier",
-        "rdfs:label": {
-            "en-us": "Last name",
-            "fi-fi": "Sukunimi"
-        },
-        "rdfs:comment": {
-            "en-us": "Last name of the person"
-        },
-        "pot:valueType": [
-            "xsd:string"
-        ],
-        "domain": [
-            "pot:Person"
-        ]
-    },
-    "createdBy": {
-        "@id": "pot:metadata/createdBy",
+    "updatedBy": {
+        "@id": "pot:metadata/updatedBy",
         "@type": "owl:DatatypeProperty",
         "subPropertyOf": "pot:metadata",
         "domain": [
@@ -260,15 +269,6 @@
         "subPropertyOf": "pot:identifier",
         "domain": [
             "pot:Identity"
-        ]
-    },
-    "createdAt": {
-        "@id": "pot:metadata/createdAt",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:metadata",
-        "domain": [
-            "pot:Identity",
-            "pot:Link"
         ]
     },
     "additionalInformation": {
@@ -291,6 +291,33 @@
             "pot:Person",
             "pot:Room",
             "pot:Storey"
+        ]
+    },
+    "updatedAt": {
+        "@id": "pot:metadata/updatedAt",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:metadata",
+        "domain": [
+            "pot:Identity",
+            "pot:Link"
+        ]
+    },
+    "createdBy": {
+        "@id": "pot:metadata/createdBy",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:metadata",
+        "domain": [
+            "pot:Identity",
+            "pot:Link"
+        ]
+    },
+    "createdAt": {
+        "@id": "pot:metadata/createdAt",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:metadata",
+        "domain": [
+            "pot:Identity",
+            "pot:Link"
         ]
     },
     "idOfficial": {
@@ -379,40 +406,13 @@
             "pot:Room"
         ]
     },
-    "firstName": {
-        "@id": "pot:identifier/firstName",
+    "data": {
+        "@id": "pot:data",
         "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:identifier",
-        "rdfs:label": {
-            "fi-fi": "Etunimi",
-            "en-us": "First Name"
-        },
-        "rdfs:comment": {
-            "en-us": "First name of the person"
-        },
-        "pot:valueType": [
-            "xsd:string"
-        ],
+        "subPropertyOf": "pot:topDataProperty",
         "domain": [
-            "pot:Person"
-        ]
-    },
-    "birthdate": {
-        "@id": "pot:identifier/birthdate",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:identifier",
-        "rdfs:label": {
-            "en-us": "Date of birth",
-            "fi-fi": "Syntymäaika"
-        },
-        "rdfs:comment": {
-            "en-us": "Birthdate of the person"
-        },
-        "pot:valueType": [
-            "xsd:date"
-        ],
-        "domain": [
-            "pot:Person"
+            "pot:Identity",
+            "pot:Link"
         ]
     },
     "Person": {
