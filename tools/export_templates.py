@@ -1,14 +1,14 @@
 VERSION = 1.1
-POT_EXPORT = 'https://standards.oftrust.net/v1/'
+EXPORT_URL = 'https://standards.oftrust.net/v1/'
 
 
-def get_base_identity_pot(pot_export_url):
+def BASE_IDENTITY_TEMPLATE(pot_export_url: str) -> dict:
     return {
         '@version': VERSION,
-        '@vocab': "{}vocabularies/.jsonld#".format(pot_export_url),
+        '@vocab': f"{pot_export_url}vocabularies/.jsonld#",
         '@classDefinition': '',
         "pot": {
-            "@id": "{}Vocabulary/".format(pot_export_url),
+            "@id": f"{pot_export_url}Vocabulary/",
             "@prefix": True
         },
         "data": "pot:data",
@@ -16,7 +16,7 @@ def get_base_identity_pot(pot_export_url):
     }
 
 
-def get_definition_pot(pot_export_url):
+def DEFENITION_TEMPLATE(pot_export_url: str) -> dict:
     return {
         "@context": {
             "@version": VERSION,
@@ -25,7 +25,7 @@ def get_definition_pot(pot_export_url):
                 "@prefix": True
             },
             "pot": {
-                "@id": "{}Vocabulary/".format(pot_export_url),
+                "@id": f"{pot_export_url}Vocabulary/",
                 "@prefix": True
             },
             "description": {},
@@ -41,12 +41,12 @@ def get_definition_pot(pot_export_url):
     }
 
 
-def get_vocabulary_pot(pot_export_url):
+def VOCABULARY_TEMPLATE(pot_export_url:str) -> dict:
     return {
         "@context": {
             '@version': VERSION,
             "pot": {
-                "@id": "{}Vocabulary/".format(pot_export_url),
+                "@id": f"{pot_export_url}Vocabulary/",
                 "@prefix": True
             },
             "rdf": {
