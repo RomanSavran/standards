@@ -13,9 +13,20 @@
         "metadata": {
             "@id": "pot:metadata"
         },
+        "updatedBy": {
+            "@id": "pot:metadata/updatedBy",
+            "@nest": "metadata"
+        },
+        "to": {
+            "@id": "pot:to"
+        },
         "updatedAt": {
             "@id": "pot:metadata/updatedAt",
             "@nest": "metadata"
+        },
+        "status": {
+            "@id": "pot:lifeCycle/status",
+            "@nest": "data"
         },
         "createdBy": {
             "@id": "pot:metadata/createdBy",
@@ -25,23 +36,12 @@
             "@id": "pot:time/startDateTime",
             "@nest": "data"
         },
-        "status": {
-            "@id": "pot:lifeCycle/status",
-            "@nest": "data"
-        },
         "createdAt": {
             "@id": "pot:metadata/createdAt",
             "@nest": "metadata"
         },
-        "to": {
-            "@id": "pot:to"
-        },
         "from": {
             "@id": "pot:from"
-        },
-        "updatedBy": {
-            "@id": "pot:metadata/updatedBy",
-            "@nest": "metadata"
         }
     }
 }

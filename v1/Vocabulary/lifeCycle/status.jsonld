@@ -43,44 +43,36 @@
         "@id": "pot:lifeCycle/status",
         "@type": "owl:DatatypeProperty",
         "subPropertyOf": "pot:lifeCycle",
-        "rdfs:nested_comments": [
+        "comment": [
             {
-                "comments": [
-                    {
-                        "en-us": "Process state"
-                    }
-                ],
-                "domains": [
+                "rdfs:comment": {
+                    "en-us": "Process state"
+                },
+                "domain": [
                     "pot:Process"
                 ]
             },
             {
-                "comments": [
-                    {
-                        "en-us": "project state"
-                    }
-                ],
-                "domains": [
+                "rdfs:comment": {
+                    "en-us": "project state"
+                },
+                "domain": [
                     "pot:Project"
                 ]
             },
             {
-                "comments": [
-                    {
-                        "en-us": "Case state"
-                    }
-                ],
-                "domains": [
+                "rdfs:comment": {
+                    "en-us": "Case state"
+                },
+                "domain": [
                     "pot:Case"
                 ]
             },
             {
-                "comments": [
-                    {
-                        "en-us": "Life cycle status"
-                    }
-                ],
-                "domains": [
+                "rdfs:comment": {
+                    "en-us": "Life cycle status"
+                },
+                "domain": [
                     "pot:Link",
                     "pot:Product",
                     "pot:Space",
@@ -95,53 +87,39 @@
                 ]
             },
             {
-                "comments": [
-                    {
-                        "en-us": "Life cycle status of the building"
-                    }
-                ],
-                "domains": [
+                "rdfs:comment": {
+                    "en-us": "Life cycle status of the building"
+                },
+                "domain": [
                     "pot:Building"
                 ]
             }
         ],
-        "rdfs:nested_labes": [
+        "label": [
             {
-                "labels": [
-                    {
-                        "en-us": "Process status"
-                    },
-                    {
-                        "fi-fi": "Prosessin tila"
-                    }
-                ],
-                "domains": [
+                "rdfs:label": {
+                    "en-us": "Process status",
+                    "fi-fi": "Prosessin tila"
+                },
+                "domain": [
                     "pot:Process"
                 ]
             },
             {
-                "labels": [
-                    {
-                        "en-us": "Case status"
-                    },
-                    {
-                        "fi-fi": "Palvelupyynnön tila"
-                    }
-                ],
-                "domains": [
+                "rdfs:label": {
+                    "en-us": "Case status",
+                    "fi-fi": "Palvelupyynnön tila"
+                },
+                "domain": [
                     "pot:Case"
                 ]
             },
             {
-                "labels": [
-                    {
-                        "fi-fi": "Elinkaari - Status"
-                    },
-                    {
-                        "en-us": "Life cycle status"
-                    }
-                ],
-                "domains": [
+                "rdfs:label": {
+                    "fi-fi": "Elinkaari - Status",
+                    "en-us": "Life cycle status"
+                },
+                "domain": [
                     "pot:Link",
                     "pot:Product",
                     "pot:Space",
@@ -156,28 +134,20 @@
                 ]
             },
             {
-                "labels": [
-                    {
-                        "fi-fi": "Elinkaari - Status"
-                    },
-                    {
-                        "en-us": "Life cycle status"
-                    }
-                ],
-                "domains": [
+                "rdfs:label": {
+                    "fi-fi": "Elinkaari - Status",
+                    "en-us": "Life cycle status"
+                },
+                "domain": [
                     "pot:Building"
                 ]
             },
             {
-                "labels": [
-                    {
-                        "en-us": "Project status"
-                    },
-                    {
-                        "fi-fi": "Projektin tila"
-                    }
-                ],
-                "domains": [
+                "rdfs:label": {
+                    "en-us": "Project status",
+                    "fi-fi": "Projektin tila"
+                },
+                "domain": [
                     "pot:Project"
                 ]
             }

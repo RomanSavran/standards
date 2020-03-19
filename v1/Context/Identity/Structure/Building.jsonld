@@ -13,79 +13,79 @@
         "metadata": {
             "@id": "pot:metadata"
         },
-        "id": {
-            "@id": "pot:identifier/id"
-        },
-        "createdBy": {
-            "@id": "pot:metadata/createdBy",
-            "@nest": "metadata"
-        },
-        "areaSquareMeterFloorNet": {
-            "@id": "pot:physical/areaSquareMeterFloorNet",
+        "completionMomentYear": {
+            "@id": "pot:lifeCycle/completionMomentYear",
             "@nest": "data"
         },
-        "idOfficialTemporary": {
-            "@id": "pot:identifier/idOfficialTemporary",
-            "@nest": "data"
-        },
-        "descriptionGeneral": {
-            "@id": "pot:description/descriptionGeneral",
-            "@nest": "data"
-        },
-        "cultureHistorySignificance": {
-            "@id": "pot:categorization/cultureHistorySignificance",
-            "@nest": "data"
-        },
-        "inaugurationMomentYear": {
-            "@id": "pot:lifeCycle/inaugurationMomentYear",
+        "name": {
+            "@id": "pot:identifier/name",
             "@nest": "data"
         },
         "updatedAt": {
             "@id": "pot:metadata/updatedAt",
             "@nest": "metadata"
         },
-        "areaSquareMeterLivingNet": {
-            "@id": "pot:physical/areaSquareMeterLivingNet",
-            "@nest": "data"
-        },
-        "inspectionMomentYear": {
-            "@id": "pot:lifeCycle/inspectionMomentYear",
-            "@nest": "data"
-        },
-        "updatedBy": {
-            "@id": "pot:metadata/updatedBy",
-            "@nest": "metadata"
-        },
-        "name": {
-            "@id": "pot:identifier/name",
+        "cultureHistorySignificance": {
+            "@id": "pot:categorization/cultureHistorySignificance",
             "@nest": "data"
         },
         "volume": {
             "@id": "pot:physical/volume",
             "@nest": "data"
         },
-        "ifcGuid": {
-            "@id": "pot:identifier/ifcGuid",
+        "areaSquareMeterFloorNet": {
+            "@id": "pot:physical/areaSquareMeterFloorNet",
             "@nest": "data"
         },
-        "completionMomentYear": {
-            "@id": "pot:lifeCycle/completionMomentYear",
-            "@nest": "data"
-        },
-        "createdAt": {
-            "@id": "pot:metadata/createdAt",
+        "updatedBy": {
+            "@id": "pot:metadata/updatedBy",
             "@nest": "metadata"
+        },
+        "createdBy": {
+            "@id": "pot:metadata/createdBy",
+            "@nest": "metadata"
+        },
+        "id": {
+            "@id": "pot:identifier/id"
+        },
+        "idOfficialTemporary": {
+            "@id": "pot:identifier/idOfficialTemporary",
+            "@nest": "data"
         },
         "idOfficialPermanent": {
             "@id": "pot:identifier/idOfficialPermanent",
+            "@nest": "data"
+        },
+        "inspectionMomentYear": {
+            "@id": "pot:lifeCycle/inspectionMomentYear",
             "@nest": "data"
         },
         "height": {
             "@id": "pot:physical/height",
             "@nest": "data"
         },
+        "inaugurationMomentYear": {
+            "@id": "pot:lifeCycle/inaugurationMomentYear",
+            "@nest": "data"
+        },
         "status": {
             "@id": "pot:lifeCycle/status",
+            "@nest": "data"
+        },
+        "ifcGuid": {
+            "@id": "pot:identifier/ifcGuid",
+            "@nest": "data"
+        },
+        "descriptionGeneral": {
+            "@id": "pot:description/descriptionGeneral",
+            "@nest": "data"
+        },
+        "createdAt": {
+            "@id": "pot:metadata/createdAt",
+            "@nest": "metadata"
+        },
+        "areaSquareMeterLivingNet": {
+            "@id": "pot:physical/areaSquareMeterLivingNet",
             "@nest": "data"
         }
     }

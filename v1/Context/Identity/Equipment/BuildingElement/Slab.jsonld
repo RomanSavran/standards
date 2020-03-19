@@ -13,100 +13,100 @@
         "metadata": {
             "@id": "pot:metadata"
         },
-        "id": {
-            "@id": "pot:identifier/id"
-        },
-        "createdBy": {
-            "@id": "pot:metadata/createdBy",
-            "@nest": "metadata"
-        },
-        "width": {
-            "@id": "pot:physical/width",
-            "@nest": "data"
-        },
-        "areaGross": {
-            "@id": "pot:physical/areaGross",
-            "@nest": "data"
-        },
-        "descriptionGeneral": {
-            "@id": "pot:description/descriptionGeneral",
-            "@nest": "data"
-        },
-        "idInstance": {
-            "@id": "pot:identifier/idInstance",
+        "name": {
+            "@id": "pot:identifier/name",
             "@nest": "data"
         },
         "updatedAt": {
             "@id": "pot:metadata/updatedAt",
             "@nest": "metadata"
         },
-        "thickness": {
-            "@id": "pot:physical/thickness",
+        "volume": {
+            "@id": "pot:physical/volume",
             "@nest": "data"
         },
-        "categorizationLocal": {
-            "@id": "pot:categorization/categorizationLocal",
-            "@nest": "data"
-        },
-        "areaNet": {
-            "@id": "pot:physical/areaNet",
-            "@nest": "data"
-        },
-        "length": {
-            "@id": "pot:physical/length",
+        "idInstance": {
+            "@id": "pot:identifier/idInstance",
             "@nest": "data"
         },
         "idLocal": {
             "@id": "pot:identifier/idLocal",
             "@nest": "data"
         },
-        "name": {
-            "@id": "pot:identifier/name",
+        "areaNet": {
+            "@id": "pot:physical/areaNet",
             "@nest": "data"
         },
         "updatedBy": {
             "@id": "pot:metadata/updatedBy",
             "@nest": "metadata"
         },
-        "ifcElementName": {
-            "@id": "pot:categorization/ifcElementName",
-            "@nest": "data"
-        },
-        "volume": {
-            "@id": "pot:physical/volume",
-            "@nest": "data"
-        },
-        "ifcGuid": {
-            "@id": "pot:identifier/ifcGuid",
-            "@nest": "data"
-        },
-        "createdAt": {
-            "@id": "pot:metadata/createdAt",
+        "createdBy": {
+            "@id": "pot:metadata/createdBy",
             "@nest": "metadata"
         },
-        "colorName": {
-            "@id": "pot:physical/colorName",
+        "thickness": {
+            "@id": "pot:physical/thickness",
             "@nest": "data"
+        },
+        "id": {
+            "@id": "pot:identifier/id"
         },
         "colorCode": {
             "@id": "pot:physical/colorCode",
             "@nest": "data"
         },
-        "ifcElementType": {
-            "@id": "pot:categorization/ifcElementType",
+        "areaGross": {
+            "@id": "pot:physical/areaGross",
+            "@nest": "data"
+        },
+        "length": {
+            "@id": "pot:physical/length",
+            "@nest": "data"
+        },
+        "width": {
+            "@id": "pot:physical/width",
+            "@nest": "data"
+        },
+        "colorName": {
+            "@id": "pot:physical/colorName",
+            "@nest": "data"
+        },
+        "ifcElementName": {
+            "@id": "pot:categorization/ifcElementName",
             "@nest": "data"
         },
         "height": {
             "@id": "pot:physical/height",
             "@nest": "data"
         },
-        "weight": {
-            "@id": "pot:physical/weight",
+        "ifcElementType": {
+            "@id": "pot:categorization/ifcElementType",
             "@nest": "data"
         },
         "status": {
             "@id": "pot:lifeCycle/status",
             "@nest": "data"
+        },
+        "weight": {
+            "@id": "pot:physical/weight",
+            "@nest": "data"
+        },
+        "ifcGuid": {
+            "@id": "pot:identifier/ifcGuid",
+            "@nest": "data"
+        },
+        "categorizationLocal": {
+            "@id": "pot:categorization/categorizationLocal",
+            "@nest": "data"
+        },
+        "descriptionGeneral": {
+            "@id": "pot:description/descriptionGeneral",
+            "@nest": "data"
+        },
+        "createdAt": {
+            "@id": "pot:metadata/createdAt",
+            "@nest": "metadata"
         }
     }
 }

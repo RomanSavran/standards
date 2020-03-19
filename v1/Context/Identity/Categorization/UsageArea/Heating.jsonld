@@ -13,23 +13,23 @@
         "metadata": {
             "@id": "pot:metadata"
         },
+        "updatedBy": {
+            "@id": "pot:metadata/updatedBy",
+            "@nest": "metadata"
+        },
         "updatedAt": {
             "@id": "pot:metadata/updatedAt",
             "@nest": "metadata"
-        },
-        "id": {
-            "@id": "pot:identifier/id"
         },
         "createdBy": {
             "@id": "pot:metadata/createdBy",
             "@nest": "metadata"
         },
+        "id": {
+            "@id": "pot:identifier/id"
+        },
         "createdAt": {
             "@id": "pot:metadata/createdAt",
-            "@nest": "metadata"
-        },
-        "updatedBy": {
-            "@id": "pot:metadata/updatedBy",
             "@nest": "metadata"
         }
     }

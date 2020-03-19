@@ -13,23 +13,79 @@
         "metadata": {
             "@id": "pot:metadata"
         },
-        "amountPoles": {
-            "@id": "pot:functional/amountPoles",
+        "name": {
+            "@id": "pot:identifier/name",
             "@nest": "data"
         },
-        "id": {
-            "@id": "pot:identifier/id"
+        "updatedAt": {
+            "@id": "pot:metadata/updatedAt",
+            "@nest": "metadata"
+        },
+        "function": {
+            "@id": "pot:function"
+        },
+        "volume": {
+            "@id": "pot:physical/volume",
+            "@nest": "data"
+        },
+        "idLocal": {
+            "@id": "pot:identifier/idLocal",
+            "@nest": "data"
+        },
+        "areaNet": {
+            "@id": "pot:physical/areaNet",
+            "@nest": "data"
+        },
+        "protectionDegreeAvailable": {
+            "@id": "pot:functional/protectionDegreeAvailable",
+            "@nest": "data"
+        },
+        "updatedBy": {
+            "@id": "pot:metadata/updatedBy",
+            "@nest": "metadata"
+        },
+        "weight": {
+            "@id": "pot:physical/weight",
+            "@nest": "data"
         },
         "createdBy": {
             "@id": "pot:metadata/createdBy",
             "@nest": "metadata"
         },
+        "electricityVoltage": {
+            "@id": "pot:physical/electricityVoltage",
+            "@nest": "data"
+        },
+        "thickness": {
+            "@id": "pot:physical/thickness",
+            "@nest": "data"
+        },
+        "amountUnits": {
+            "@id": "pot:functional/amountUnits",
+            "@nest": "data"
+        },
+        "id": {
+            "@id": "pot:identifier/id"
+        },
+        "colorCode": {
+            "@id": "pot:physical/colorCode",
+            "@nest": "data"
+        },
         "power": {
             "@id": "pot:physical/power",
             "@nest": "data"
         },
-        "function": {
-            "@id": "pot:function"
+        "areaGross": {
+            "@id": "pot:physical/areaGross",
+            "@nest": "data"
+        },
+        "serialNumber": {
+            "@id": "pot:identifier/serialNumber",
+            "@nest": "data"
+        },
+        "length": {
+            "@id": "pot:physical/length",
+            "@nest": "data"
         },
         "industryDomain": {
             "@id": "pot:categorization/industryDomain",
@@ -43,124 +99,68 @@
             "@id": "pot:physical/width",
             "@nest": "data"
         },
-        "installationType": {
-            "@id": "pot:functional/installationType",
-            "@nest": "data"
-        },
-        "protectionDegreeAvailable": {
-            "@id": "pot:functional/protectionDegreeAvailable",
-            "@nest": "data"
-        },
-        "typeName": {
-            "@id": "pot:material/typeName",
-            "@nest": "data"
-        },
-        "areaGross": {
-            "@id": "pot:physical/areaGross",
-            "@nest": "data"
-        },
-        "descriptionGeneral": {
-            "@id": "pot:description/descriptionGeneral",
-            "@nest": "data"
-        },
-        "amountUnits": {
-            "@id": "pot:functional/amountUnits",
-            "@nest": "data"
-        },
-        "updatedAt": {
-            "@id": "pot:metadata/updatedAt",
-            "@nest": "metadata"
-        },
-        "electricityVoltage": {
-            "@id": "pot:physical/electricityVoltage",
-            "@nest": "data"
-        },
-        "thickness": {
-            "@id": "pot:physical/thickness",
-            "@nest": "data"
-        },
-        "status": {
-            "@id": "pot:lifeCycle/status",
-            "@nest": "data"
-        },
-        "categorizationLocal": {
-            "@id": "pot:categorization/categorizationLocal",
-            "@nest": "data"
-        },
         "installationTypeAvailable": {
             "@id": "pot:functional/installationTypeAvailable",
             "@nest": "data"
         },
-        "areaNet": {
-            "@id": "pot:physical/areaNet",
-            "@nest": "data"
-        },
-        "electricityCurrent": {
-            "@id": "pot:physical/electricityCurrent",
-            "@nest": "data"
-        },
-        "length": {
-            "@id": "pot:physical/length",
-            "@nest": "data"
-        },
-        "processCapability": {
-            "@id": "pot:functional/processCapability",
-            "@nest": "data"
-        },
-        "idLocal": {
-            "@id": "pot:identifier/idLocal",
-            "@nest": "data"
-        },
-        "name": {
-            "@id": "pot:identifier/name",
-            "@nest": "data"
-        },
-        "ifcElementName": {
-            "@id": "pot:categorization/ifcElementName",
-            "@nest": "data"
-        },
-        "updatedBy": {
-            "@id": "pot:metadata/updatedBy",
-            "@nest": "metadata"
-        },
-        "volume": {
-            "@id": "pot:physical/volume",
-            "@nest": "data"
-        },
-        "ifcGuid": {
-            "@id": "pot:identifier/ifcGuid",
-            "@nest": "data"
-        },
-        "createdAt": {
-            "@id": "pot:metadata/createdAt",
-            "@nest": "metadata"
-        },
-        "electricityCurrentNominal": {
-            "@id": "pot:physical/electricityCurrentNominal",
+        "amountPoles": {
+            "@id": "pot:functional/amountPoles",
             "@nest": "data"
         },
         "colorName": {
             "@id": "pot:physical/colorName",
             "@nest": "data"
         },
+        "typeName": {
+            "@id": "pot:material/typeName",
+            "@nest": "data"
+        },
+        "ifcElementName": {
+            "@id": "pot:categorization/ifcElementName",
+            "@nest": "data"
+        },
+        "processCapability": {
+            "@id": "pot:functional/processCapability",
+            "@nest": "data"
+        },
         "ifcElementType": {
             "@id": "pot:categorization/ifcElementType",
             "@nest": "data"
         },
-        "colorCode": {
-            "@id": "pot:physical/colorCode",
+        "status": {
+            "@id": "pot:lifeCycle/status",
             "@nest": "data"
         },
         "height": {
             "@id": "pot:physical/height",
             "@nest": "data"
         },
-        "weight": {
-            "@id": "pot:physical/weight",
+        "installationType": {
+            "@id": "pot:functional/installationType",
             "@nest": "data"
         },
-        "serialNumber": {
-            "@id": "pot:identifier/serialNumber",
+        "ifcGuid": {
+            "@id": "pot:identifier/ifcGuid",
+            "@nest": "data"
+        },
+        "categorizationLocal": {
+            "@id": "pot:categorization/categorizationLocal",
+            "@nest": "data"
+        },
+        "descriptionGeneral": {
+            "@id": "pot:description/descriptionGeneral",
+            "@nest": "data"
+        },
+        "createdAt": {
+            "@id": "pot:metadata/createdAt",
+            "@nest": "metadata"
+        },
+        "electricityCurrent": {
+            "@id": "pot:physical/electricityCurrent",
+            "@nest": "data"
+        },
+        "electricityCurrentNominal": {
+            "@id": "pot:physical/electricityCurrentNominal",
             "@nest": "data"
         }
     }
