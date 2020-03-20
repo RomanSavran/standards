@@ -2,6 +2,7 @@ import json
 import os
 import sys
 import argparse
+from typing import Any, Dict, NoReturn
 
 from owlready2 import get_ontology, Ontology
 
@@ -12,20 +13,24 @@ from utils import create_definition_from_rdf_class, create_identity_from_rdf_cla
 
 
 def is_link_identity_relations(rdf_class) -> bool:
-    return (Link in rdf_class.rdf_entity.ancestors() or Identity in rdf_class.rdf_entity.ancestors()) and (rdf_class.rdf_entity != Link and rdf_class.rdf_entity != Identity)
+    """Return is either not rdf_class entity RDF class relations with Link or Identity
 
-
-def write_dump_to_file(dir_context: str, entity_file: dict, data_to_dump: dict) -> None:
-    """
-    Function to write all entities into various stuctured files.
-
-        Parameters:
-            dir_context (str): Entity directory.
-            entity_file (dict): Entity stucture dict.
-            data_to_dump (dict): Entity.
+        Args:
+            rdf_class (models.RDFClass): RDF class.
 
         Returns:
-            None
+            (bool) : Check result
+    """
+    return (Link in rdf_class.entity.ancestors() or Identity in rdf_class.entity.ancestors()) and (rdf_class.entity != Link and rdf_class.entity != Identity)
+
+
+def write_dump_to_file(dir_context: str, entity_file: Dict[str, str], data_to_dump: Dict[str, Any]) -> NoReturn:
+    """Function to write all entities into various stuctured files.
+
+        Args:
+            dir_context (str): Entity directory.
+            entity_file (dict of str: str): Entity stucture dict.
+            data_to_dump (dict of str: Any): Entity.
     """
     entity_dir_path = os.path.join(
         dir_context, entity_file.get('dir'))
@@ -38,21 +43,19 @@ def write_dump_to_file(dir_context: str, entity_file: dict, data_to_dump: dict) 
                             separators=(',', ': '), ensure_ascii=False))
 
 
-def build_rdf_clasess(onto, export_onto_url: str, definition_template: dict, base_identity_template: dict, vocabulary_template: dict) -> None:
-    """
-    Function to build rdf classes from ontology.
+def build_rdf_clasess(onto, export_onto_url: str, definition_template: Dict[str, str], base_identity_template: Dict[str, str], vocabulary_template: Dict[str, str]) -> NoReturn:
+    """Function to build rdf classes from ontology.
 
-        Parameters:
-            onto: An ontology loaded with owlready2.
+        Args:
+            onto (namespace.Ontology): An ontology loaded with owlready2.
             export_onto_url (str): Link to base ontologies.
-            definition_template (dict): Template for definitions.
-            base_identity_template (dict): Template for identities.
-            vocabulary_template (dict): Template for vocabularies.
-
-        Returns:
-            None
+            definition_template (dict of str: str): Template for definitions.
+            base_identity_template (dict of str: str): Template for identities.
+            vocabulary_template (dict of str: str): Template for vocabularies.
     """
-    for rdf_class in [RDFClass(i) for i in onto.classes()]:
+    # Transform ontology classes into our class models
+    rdf_classes = [RDFClass(i) for i in onto.classes()]
+    for rdf_class in rdf_classes:
         files = rdf_class.get_files()
         for entity_file in files:
             if is_link_identity_relations(rdf_class):
@@ -72,16 +75,12 @@ def build_rdf_clasess(onto, export_onto_url: str, definition_template: dict, bas
             write_dump_to_file(VOCABULARY_DIR, entity_file, data_to_dump)
 
 
-def build_rdf_properties(onto, vocabulary_template: dict) -> None:
-    """
-    Function to build rdf properties from ontology.
+def build_rdf_properties(onto, vocabulary_template: Dict[str, str]) -> NoReturn:
+    """Function to build rdf properties from ontology.
 
-        Parameters:
-            onto: An ontology loaded with owlready2.
-            vocabulary_template (dict): Template for vocabularies.
-
-        Returns:
-            None
+        Args:
+            onto (namespace.Ontology): An ontology loaded with owlready2.
+            vocabulary_template (dict of str: str): Template for vocabularies.
     """
     for rdf_property in [RDFProperty(i) for i in onto.properties()]:
         files = rdf_property.get_files()
@@ -90,16 +89,12 @@ def build_rdf_properties(onto, vocabulary_template: dict) -> None:
             write_dump_to_file(VOCABULARY_DIR, property_file, data_to_dump)
 
 
-def parse(fname: str, export_onto_url: str) -> None:
-    """
-    Main ontology parser.
+def parse(fname: str, export_onto_url: str) -> NoReturn:
+    """Main ontology parser.
 
-        Parameters:
+        Args:
             fname (str): File that contains ontology. <file.owl>
             export_onto_url (str): Link to base ontologies.
-
-        Returns:
-            None
     """
     onto = get_ontology(fname).load()
 
@@ -128,6 +123,5 @@ if __name__ == "__main__":
     VOCABULARY_DIR = os.path.join(BASE_DIR, 'Vocabulary')
     CONTEXT_DIR = os.path.join(BASE_DIR, 'Context')
     CLASS_DEFINITIONS_DIR = os.path.join(BASE_DIR, 'ClassDefinitions')
-    PREFIX = 'pot'
 
     parse(filename, export_onto_url)
