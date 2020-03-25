@@ -39,15 +39,6 @@
             ]
         }
     },
-    "metadata": {
-        "@id": "pot:metadata",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:topDataProperty",
-        "domain": [
-            "pot:Identity",
-            "pot:Link"
-        ]
-    },
     "status": {
         "@id": "pot:lifeCycle/status",
         "@type": "owl:DatatypeProperty",
@@ -182,24 +173,8 @@
             "pot:Storey"
         ]
     },
-    "updatedBy": {
-        "@id": "pot:metadata/updatedBy",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:metadata",
-        "domain": [
-            "pot:Identity",
-            "pot:Link"
-        ]
-    },
-    "to": {
-        "@id": "pot:to",
-        "@type": "owl:ObjectProperty",
-        "domain": [
-            "pot:Link"
-        ]
-    },
-    "updatedAt": {
-        "@id": "pot:metadata/updatedAt",
+    "createdBy": {
+        "@id": "pot:metadata/createdBy",
         "@type": "owl:DatatypeProperty",
         "subPropertyOf": "pot:metadata",
         "domain": [
@@ -259,10 +234,35 @@
             "pot:Project"
         ]
     },
-    "createdBy": {
-        "@id": "pot:metadata/createdBy",
+    "metadata": {
+        "@id": "pot:metadata",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:topDataProperty",
+        "domain": [
+            "pot:Identity",
+            "pot:Link"
+        ]
+    },
+    "updatedBy": {
+        "@id": "pot:metadata/updatedBy",
         "@type": "owl:DatatypeProperty",
         "subPropertyOf": "pot:metadata",
+        "domain": [
+            "pot:Identity",
+            "pot:Link"
+        ]
+    },
+    "to": {
+        "@id": "pot:to",
+        "@type": "owl:ObjectProperty",
+        "domain": [
+            "pot:Link"
+        ]
+    },
+    "data": {
+        "@id": "pot:data",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:topDataProperty",
         "domain": [
             "pot:Identity",
             "pot:Link"
@@ -284,10 +284,10 @@
             "pot:Link"
         ]
     },
-    "data": {
-        "@id": "pot:data",
+    "updatedAt": {
+        "@id": "pot:metadata/updatedAt",
         "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:topDataProperty",
+        "subPropertyOf": "pot:metadata",
         "domain": [
             "pot:Identity",
             "pot:Link"
