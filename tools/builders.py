@@ -1,7 +1,7 @@
 from typing import Any, Dict, List
 from owlready2 import default_world, base, locstr, label, comment
 
-from class_helpers import restriction
+from class_helpers import restriction, required
 from class_helpers import range as owl_range
 from class_helpers import label as pot_label
 from class_helpers import comment as pot_comment
@@ -29,7 +29,8 @@ def build_nested_labels(owl_property: Any) -> List[Dict[str, str]]:
             list_of_dict_labels = []
             temp_labels_dict = {'rdfs:label': {}}
             for nested_label in label._get_indirect_values_for_class(l):
-                list_of_dict_labels.append({nested_label.lang: nested_label})
+                if isinstance(nested_label, locstr):
+                    list_of_dict_labels.append({nested_label.lang: nested_label})
 
             for label_dict in list_of_dict_labels:
                 for item in label_dict.items():
@@ -163,3 +164,24 @@ def build_restrictions(owl_property: Any) -> List[str]:
             result_restrictions.append(
                 str(restriction_type).replace('XMLSchema.', 'xsd:'))
     return result_restrictions
+
+
+def build_attributes(rdf_class, onto):
+    total_attributes = set()
+
+    for a in onto.data_properties():
+        if rdf_class.entity.ancestors().intersection(a.domain):
+            total_attributes.add(a)
+
+    for a in onto.object_properties():
+        if rdf_class.entity.ancestors().intersection(a.domain):
+            total_attributes.add(a)
+
+    return total_attributes
+
+def build_required(owl_property):
+    required_attr = required._get_indirect_values_for_class(owl_property)
+    if required_attr:
+        if required_attr[0]:
+            return required_attr
+    return None
