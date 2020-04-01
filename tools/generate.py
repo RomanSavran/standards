@@ -128,6 +128,6 @@ if __name__ == "__main__":
     VOCABULARY_DIR = os.path.join(BASE_DIR, 'Vocabulary')
     CONTEXT_DIR = os.path.join(BASE_DIR, 'Context')
     CLASS_DEFINITIONS_DIR = os.path.join(BASE_DIR, 'ClassDefinitions')
-    SCHEMA_DIR = os.path.join(BASE_DIR, 'Schemas')
+    SCHEMA_DIR = os.path.join(BASE_DIR, 'Schema')
 
     parse(filename, export_onto_url)
