@@ -9,7 +9,7 @@ from owlready2 import get_ontology, Ontology
 from models import RDFClass, RDFProperty
 from class_helpers import Link, Identity
 from export_templates import BASE_IDENTITY_TEMPLATE, DEFENITION_TEMPLATE, VOCABULARY_TEMPLATE
-from utils import create_definition_from_rdf_class, create_identity_from_rdf_class, create_vocabulary_from_rdf_class
+from utils import create_definition_from_rdf_class, create_identity_from_rdf_class, create_vocabulary_from_rdf_class, create_schema_from_rdf_identity
 
 
 def is_link_identity_relations(rdf_class) -> bool:
@@ -32,12 +32,14 @@ def write_dump_to_file(dir_context: str, entity_file: Dict[str, str], data_to_du
             entity_file (dict of str: str): Entity stucture dict.
             data_to_dump (dict of str: Any): Entity.
     """
-    entity_dir_path = os.path.join(
-        dir_context, entity_file.get('dir'))
+
+    entity_dir_path = os.path.join(dir_context, entity_file.get('dir'))
     entity_file_path = os.path.join(
         entity_dir_path, entity_file.get('filename'))
     os.makedirs(entity_dir_path, exist_ok=True)
 
+    if data_to_dump.get('$schema'):
+        entity_file_path = entity_file_path[:-2]
     with open(entity_file_path, 'w', encoding='utf-8') as rf:
         rf.write(json.dumps(data_to_dump, indent=4,
                             separators=(',', ': '), ensure_ascii=False))
@@ -67,8 +69,11 @@ def build_rdf_clasess(onto, export_onto_url: str, definition_template: Dict[str,
 
                 data_to_dump = create_identity_from_rdf_class(
                     rdf_class, entity_file, onto, export_onto_url, base_identity_template)
-
                 write_dump_to_file(CONTEXT_DIR, entity_file, data_to_dump)
+
+                data_to_dump = create_schema_from_rdf_identity(
+                    rdf_class, entity_file, onto, export_onto_url, base_identity_template)
+                write_dump_to_file(SCHEMA_DIR, entity_file, data_to_dump)
 
             data_to_dump = create_vocabulary_from_rdf_class(
                 rdf_class, entity_file, onto, vocabulary_template)
@@ -123,5 +128,6 @@ if __name__ == "__main__":
     VOCABULARY_DIR = os.path.join(BASE_DIR, 'Vocabulary')
     CONTEXT_DIR = os.path.join(BASE_DIR, 'Context')
     CLASS_DEFINITIONS_DIR = os.path.join(BASE_DIR, 'ClassDefinitions')
+    SCHEMA_DIR = os.path.join(BASE_DIR, 'Schemas')
 
     parse(filename, export_onto_url)
