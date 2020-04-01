@@ -1,4 +1,4 @@
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Set
 from owlready2 import default_world, base, locstr, label, comment
 
 from class_helpers import restriction, required
@@ -30,7 +30,8 @@ def build_nested_labels(owl_property: Any) -> List[Dict[str, str]]:
             temp_labels_dict = {'rdfs:label': {}}
             for nested_label in label._get_indirect_values_for_class(l):
                 if isinstance(nested_label, locstr):
-                    list_of_dict_labels.append({nested_label.lang: nested_label})
+                    list_of_dict_labels.append(
+                        {nested_label.lang: nested_label})
 
             for label_dict in list_of_dict_labels:
                 for item in label_dict.items():
@@ -97,7 +98,7 @@ def build_labels(owl_property: Any) -> Dict[str, str]:
     return labels
 
 
-def build_comments(owl_property) -> dict:
+def build_comments(owl_property: Any) -> Dict[str, str]:
     """Return dict of comments.
 
         Args:
@@ -166,7 +167,17 @@ def build_restrictions(owl_property: Any) -> List[str]:
     return result_restrictions
 
 
-def build_attributes(rdf_class, onto):
+def build_attributes(rdf_class, onto) -> Set[Any]:
+    """Return list of attributes.
+
+        Args:
+            owl_property (Any): 
+                Property of entity.
+                Can be:  AnnotationPropertyClass, DataPropertyClass, ObjectPropertyClass.
+
+        Returns:
+            total_attributes (Any): List of attributes
+    """
     total_attributes = set()
 
     for a in onto.data_properties():
@@ -179,9 +190,19 @@ def build_attributes(rdf_class, onto):
 
     return total_attributes
 
-def build_required(owl_property):
+
+def build_required(owl_property: Any) -> bool:
+    """Is property required.
+
+        Args:
+            owl_property (Any): 
+                Property of entity.
+                Can be:  AnnotationPropertyClass, DataPropertyClass, ObjectPropertyClass.
+
+        Returns:
+            required_attr (bool): Is property required
+    """
     required_attr = required._get_indirect_values_for_class(owl_property)
     if required_attr:
-        if required_attr[0]:
-            return required_attr
-    return None
+        return required_attr[0]
+    return False

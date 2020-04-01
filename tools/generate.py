@@ -9,7 +9,7 @@ from owlready2 import get_ontology, Ontology
 from models import RDFClass, RDFProperty
 from class_helpers import Link, Identity
 from export_templates import BASE_IDENTITY_TEMPLATE, DEFENITION_TEMPLATE, VOCABULARY_TEMPLATE
-from utils import create_definition_from_rdf_class, create_identity_from_rdf_class, create_vocabulary_from_rdf_class, create_schema_from_rdf_identity
+from utils import create_definition_from_rdf_class, create_identity_from_rdf_class, create_vocabulary_from_rdf_class, create_schema_from_rdf_class
 
 
 def is_link_identity_relations(rdf_class) -> bool:
@@ -71,7 +71,7 @@ def build_rdf_clasess(onto, export_onto_url: str, definition_template: Dict[str,
                     rdf_class, entity_file, onto, export_onto_url, base_identity_template)
                 write_dump_to_file(CONTEXT_DIR, entity_file, data_to_dump)
 
-                data_to_dump = create_schema_from_rdf_identity(
+                data_to_dump = create_schema_from_rdf_class(
                     rdf_class, entity_file, onto, export_onto_url, base_identity_template)
                 write_dump_to_file(SCHEMA_DIR, entity_file, data_to_dump)
 
@@ -87,7 +87,8 @@ def build_rdf_properties(onto, vocabulary_template: Dict[str, str]) -> NoReturn:
             onto (namespace.Ontology): An ontology loaded with owlready2.
             vocabulary_template (dict of str: str): Template for vocabularies.
     """
-    for rdf_property in [RDFProperty(i) for i in onto.properties()]:
+    properties = [RDFProperty(i) for i in onto.properties()]
+    for rdf_property in properties:
         files = rdf_property.get_files()
         for property_file in files:
             data_to_dump = rdf_property.to_python(vocabulary_template)

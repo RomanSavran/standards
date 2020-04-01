@@ -291,7 +291,19 @@ def create_vocabulary_from_rdf_class(rdf_class, entity_file: Dict[str, Any], ont
     return vocabulary_dict
 
 
-def create_schema_from_rdf_identity(rdf_class, entity_file: Dict[str, Any], onto, export_onto_url: str, template: Dict[str, str]) -> Dict[str, Any]:
+def create_schema_from_rdf_class(rdf_class, entity_file: Dict[str, Any], onto, export_onto_url: str, template: Dict[str, str]) -> Dict[str, Any]:
+    """Return generated schema from rdf classes.
+
+        Args:
+            rdf_class (models.RDFClass): RDFClass model object.
+            entity_file (dict of str: Any):
+                Dictionary with directory, filename and id of entity.
+            onto (namespace.Ontology): An ontology loaded with owlready2.
+            template (dict of str: str): Template for definitions.
+
+        Returns:
+            schema (dict of str: Any): Generated schema.
+    """
     properties = set()
     parents = set()
     labels = dict()
@@ -304,7 +316,7 @@ def create_schema_from_rdf_identity(rdf_class, entity_file: Dict[str, Any], onto
             required_attrs.append(attr.name)
 
         attr_labels = build_labels(attr)
-        if build_labels(attr).get('en-us'):
+        if attr_labels.get('en-us'):
             labels[attr.name] = attr_labels['en-us']
         else:
             attr_nested_labels = build_nested_labels(attr)
