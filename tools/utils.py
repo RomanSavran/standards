@@ -245,7 +245,8 @@ def create_identity_from_rdf_class(rdf_class, entity_file: Dict[str, Any], onto,
         identity_dict[rdf_attribute.name] = owl_property_context(rdf_attribute)
 
     return {
-        '@context': identity_dict
+        '@context': identity_dict,
+        '@type': rdf_class.entity.name
     }
 
 
