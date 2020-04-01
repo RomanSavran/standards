@@ -39,6 +39,15 @@
             ]
         }
     },
+    "createdBy": {
+        "@id": "pot:metadata/createdBy",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:metadata",
+        "domain": [
+            "pot:Identity",
+            "pot:Link"
+        ]
+    },
     "metadata": {
         "@id": "pot:metadata",
         "@type": "owl:DatatypeProperty",
@@ -57,30 +66,21 @@
             "pot:Link"
         ]
     },
+    "data": {
+        "@id": "pot:data",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:topDataProperty",
+        "domain": [
+            "pot:Identity",
+            "pot:Link"
+        ]
+    },
     "id": {
         "@id": "pot:identifier/id",
         "@type": "owl:DatatypeProperty",
         "subPropertyOf": "pot:identifier",
         "domain": [
             "pot:Identity"
-        ]
-    },
-    "updatedAt": {
-        "@id": "pot:metadata/updatedAt",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:metadata",
-        "domain": [
-            "pot:Identity",
-            "pot:Link"
-        ]
-    },
-    "createdBy": {
-        "@id": "pot:metadata/createdBy",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:metadata",
-        "domain": [
-            "pot:Identity",
-            "pot:Link"
         ]
     },
     "createdAt": {
@@ -92,10 +92,10 @@
             "pot:Link"
         ]
     },
-    "data": {
-        "@id": "pot:data",
+    "updatedAt": {
+        "@id": "pot:metadata/updatedAt",
         "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:topDataProperty",
+        "subPropertyOf": "pot:metadata",
         "domain": [
             "pot:Identity",
             "pot:Link"

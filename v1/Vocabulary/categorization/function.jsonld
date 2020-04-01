@@ -64,22 +64,26 @@
         "label": [
             {
                 "rdfs:label": {
-                    "en-us": "Function",
-                    "fi-fi": "Toiminnallisuus"
-                },
-                "domain": [
-                    "pot:Process"
-                ]
-            },
-            {
-                "rdfs:label": {
                     "en-us": "Process function",
                     "fi-fi": "Prosessi Toiminnallisuus"
                 },
                 "domain": [
                     "pot:Device"
                 ]
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Function",
+                    "fi-fi": "Toiminnallisuus"
+                },
+                "domain": [
+                    "pot:Process"
+                ]
             }
+        ],
+        "domain": [
+            "pot:Process",
+            "pot:Device"
         ]
     }
 }

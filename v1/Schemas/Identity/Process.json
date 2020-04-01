@@ -1,0 +1,132 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "@context": {
+            "type": "string",
+            "minLength": 1
+        },
+        "@type": {
+            "type": "string",
+            "minLength": 1,
+            "enum": [
+                "Process"
+            ]
+        },
+        "executor": {
+            "title": "",
+            "description": "",
+            "type": "string"
+        },
+        "id": {
+            "title": "",
+            "description": "",
+            "type": "string"
+        },
+        "locationName": {
+            "title": "",
+            "description": "",
+            "type": "string"
+        },
+        "data": {
+            "title": "",
+            "description": "",
+            "type": "object",
+            "properties": {
+                "executor": {
+                    "title": "Process executor",
+                    "description": "Executor of the process (source of the data)",
+                    "type": "string"
+                },
+                "nameLocal": {
+                    "title": "Case header - > Case name",
+                    "description": "Locally given name (source system name) for the process",
+                    "type": "string"
+                },
+                "duration": {
+                    "title": "Duration time",
+                    "description": "Duration of the process",
+                    "type": "string"
+                },
+                "processTypePoT": {
+                    "title": "Process type - PoT type",
+                    "description": "PoT defined standard process type",
+                    "type": "string"
+                },
+                "descriptionGeneral": {
+                    "title": "Description",
+                    "description": "Description",
+                    "type": "string"
+                },
+                "status": {
+                    "title": "Life cycle status",
+                    "description": "Process state",
+                    "type": "string"
+                },
+                "function": {
+                    "title": "Process function",
+                    "description": "Function which process is executing",
+                    "type": "string"
+                },
+                "processValue": {
+                    "title": "Output value",
+                    "description": "Output value of the process",
+                    "type": "string"
+                },
+                "startDateTime": {
+                    "title": "Start time",
+                    "description": "Start time of the process",
+                    "type": "string"
+                },
+                "endDateTime": {
+                    "title": "End time",
+                    "description": "End time of the process",
+                    "type": "string"
+                },
+                "idLocal": {
+                    "title": "Local code",
+                    "description": "Locally given identifier for the process instance",
+                    "type": "string"
+                }
+            }
+        },
+        "function": {
+            "title": "",
+            "description": "",
+            "type": "string"
+        },
+        "metadata": {
+            "title": "Metadata",
+            "description": "Metadata container",
+            "type": "object",
+            "properties": {
+                "createdBy": {
+                    "title": "Creator",
+                    "description": "Creator of and identity",
+                    "type": "string"
+                },
+                "updatedAt": {
+                    "title": "Update time",
+                    "description": "Time when the data is updated",
+                    "type": "string"
+                },
+                "updatedBy": {
+                    "title": "Updater",
+                    "description": "Updater of an identity",
+                    "type": "string"
+                },
+                "createdAt": {
+                    "title": "Creation time",
+                    "description": "Time when the data is created",
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "required": [
+        "data",
+        "id",
+        "@context",
+        "@type"
+    ]
+}

@@ -13,6 +13,14 @@
         "metadata": {
             "@id": "pot:metadata"
         },
+        "controlCategory": {
+            "@id": "pot:administration/controlCategory",
+            "@nest": "data"
+        },
+        "createdBy": {
+            "@id": "pot:metadata/createdBy",
+            "@nest": "metadata"
+        },
         "areaSquareMeter": {
             "@id": "pot:physical/areaSquareMeter",
             "@nest": "data"
@@ -21,44 +29,20 @@
             "@id": "pot:lifeCycle/status",
             "@nest": "data"
         },
-        "createdBy": {
-            "@id": "pot:metadata/createdBy",
-            "@nest": "metadata"
-        },
-        "sizeAreaLiving": {
-            "@id": "pot:physical/sizeAreaLiving",
-            "@nest": "data"
-        },
-        "usageMain": {
-            "@id": "pot:categorization/usageMain",
+        "sizeAreaLivingAudited": {
+            "@id": "pot:physical/sizeAreaLivingAudited",
             "@nest": "data"
         },
         "locationUnseparatedLand": {
             "@id": "pot:categorization/locationUnseparatedLand",
             "@nest": "data"
         },
-        "height": {
-            "@id": "pot:physical/height",
-            "@nest": "data"
-        },
-        "categorizationLocal": {
-            "@id": "pot:categorization/categorizationLocal",
-            "@nest": "data"
-        },
-        "updatedAt": {
-            "@id": "pot:metadata/updatedAt",
-            "@nest": "metadata"
-        },
-        "dateOfMeasure": {
-            "@id": "pot:lifeCycle/dateOfMeasure",
+        "volume": {
+            "@id": "pot:physical/volume",
             "@nest": "data"
         },
         "idLocal": {
             "@id": "pot:identifier/idLocal",
-            "@nest": "data"
-        },
-        "areaTypeRegistration": {
-            "@id": "pot:categorization/areaTypeRegistration",
             "@nest": "data"
         },
         "createdAt": {
@@ -69,51 +53,67 @@
             "@id": "pot:identifier/idOfficial",
             "@nest": "data"
         },
-        "sizeAreaFloor": {
-            "@id": "pot:physical/sizeAreaFloor",
-            "@nest": "data"
-        },
-        "areaType": {
-            "@id": "pot:categorization/areaType",
-            "@nest": "data"
-        },
-        "ifcGuid": {
-            "@id": "pot:identifier/ifcGuid",
-            "@nest": "data"
-        },
-        "id": {
-            "@id": "pot:identifier/id"
-        },
-        "descriptionGeneral": {
-            "@id": "pot:description/descriptionGeneral",
-            "@nest": "data"
-        },
-        "volume": {
-            "@id": "pot:physical/volume",
-            "@nest": "data"
-        },
-        "name": {
-            "@id": "pot:identifier/name",
-            "@nest": "data"
-        },
-        "controlCategory": {
-            "@id": "pot:administration/controlCategory",
-            "@nest": "data"
-        },
-        "idOfficialUnseparatedLand": {
-            "@id": "pot:identifier/idOfficialUnseparatedLand",
-            "@nest": "data"
-        },
         "categorizationOfficial": {
             "@id": "pot:categorization/categorizationOfficial",
+            "@nest": "data"
+        },
+        "areaTypeRegistration": {
+            "@id": "pot:categorization/areaTypeRegistration",
             "@nest": "data"
         },
         "updatedBy": {
             "@id": "pot:metadata/updatedBy",
             "@nest": "metadata"
         },
-        "sizeAreaLivingAudited": {
-            "@id": "pot:physical/sizeAreaLivingAudited",
+        "idOfficialUnseparatedLand": {
+            "@id": "pot:identifier/idOfficialUnseparatedLand",
+            "@nest": "data"
+        },
+        "ifcGuid": {
+            "@id": "pot:identifier/ifcGuid",
+            "@nest": "data"
+        },
+        "sizeAreaFloor": {
+            "@id": "pot:physical/sizeAreaFloor",
+            "@nest": "data"
+        },
+        "categorizationLocal": {
+            "@id": "pot:categorization/categorizationLocal",
+            "@nest": "data"
+        },
+        "usageMain": {
+            "@id": "pot:categorization/usageMain",
+            "@nest": "data"
+        },
+        "sizeAreaLiving": {
+            "@id": "pot:physical/sizeAreaLiving",
+            "@nest": "data"
+        },
+        "name": {
+            "@id": "pot:identifier/name",
+            "@nest": "data"
+        },
+        "areaType": {
+            "@id": "pot:categorization/areaType",
+            "@nest": "data"
+        },
+        "height": {
+            "@id": "pot:physical/height",
+            "@nest": "data"
+        },
+        "updatedAt": {
+            "@id": "pot:metadata/updatedAt",
+            "@nest": "metadata"
+        },
+        "descriptionGeneral": {
+            "@id": "pot:description/descriptionGeneral",
+            "@nest": "data"
+        },
+        "id": {
+            "@id": "pot:identifier/id"
+        },
+        "dateOfMeasure": {
+            "@id": "pot:lifeCycle/dateOfMeasure",
             "@nest": "data"
         }
     }

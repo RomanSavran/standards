@@ -39,109 +39,20 @@
             ]
         }
     },
-    "colorCode": {
-        "@id": "pot:physical/colorCode",
+    "createdBy": {
+        "@id": "pot:metadata/createdBy",
         "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:physical",
+        "subPropertyOf": "pot:metadata",
         "rdfs:label": {
-            "en-us": "Color code",
-            "fi-fi": "Väritunnus"
-        },
-        "comment": [
-            {
-                "rdfs:comment": {
-                    "en-us": "Color code of the element"
-                },
-                "domain": [
-                    "pot:BuildingElement"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Color code of the device"
-                },
-                "domain": [
-                    "pot:Device"
-                ]
-            }
-        ],
-        "pot:valueType": [
-            "xsd:string"
-        ],
-        "domain": [
-            "pot:BuildingElement",
-            "pot:Device"
-        ]
-    },
-    "power": {
-        "@id": "pot:physical/power",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:physical",
-        "rdfs:label": {
-            "en-us": "Power (W)",
-            "fi-fi": "Teho (W)"
+            "en-us": "Creator",
+            "fi-fi": "Identiteetin luoja"
         },
         "rdfs:comment": {
-            "en-us": "Power measured in Watts"
+            "en-us": "Creator of and identity"
         },
-        "pot:valueType": [
-            "xsd:decimal"
-        ],
         "domain": [
-            "pot:Device"
-        ]
-    },
-    "ifcElementName": {
-        "@id": "pot:categorization/ifcElementName",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:categorization",
-        "rdfs:label": {
-            "en-us": "IFC element name",
-            "fi-fi": "IFC element nimi"
-        },
-        "rdfs:comment": {
-            "en-us": "IFC standard element name"
-        },
-        "pot:valueType": [
-            "xsd:string"
-        ],
-        "domain": [
-            "pot:BuildingElement",
-            "pot:Device"
-        ]
-    },
-    "areaGross": {
-        "@id": "pot:physical/areaGross",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:physical",
-        "rdfs:label": {
-            "en-us": "Area - gross",
-            "fi-fi": "Pinta-ala - brutto"
-        },
-        "comment": [
-            {
-                "rdfs:comment": {
-                    "en-us": "Gross area of the device"
-                },
-                "domain": [
-                    "pot:Device"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Gross area of the element"
-                },
-                "domain": [
-                    "pot:BuildingElement"
-                ]
-            }
-        ],
-        "pot:valueType": [
-            "xsd:decimal"
-        ],
-        "domain": [
-            "pot:BuildingElement",
-            "pot:Device"
+            "pot:Identity",
+            "pot:Link"
         ]
     },
     "status": {
@@ -151,18 +62,10 @@
         "comment": [
             {
                 "rdfs:comment": {
-                    "en-us": "Process state"
+                    "fi-fi": "Life-cycle status of the product"
                 },
                 "domain": [
-                    "pot:Process"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "project state"
-                },
-                "domain": [
-                    "pot:Project"
+                    "pot:Product"
                 ]
             },
             {
@@ -175,11 +78,18 @@
             },
             {
                 "rdfs:comment": {
+                    "en-us": "project state"
+                },
+                "domain": [
+                    "pot:Project"
+                ]
+            },
+            {
+                "rdfs:comment": {
                     "en-us": "Life cycle status"
                 },
                 "domain": [
                     "pot:Link",
-                    "pot:Product",
                     "pot:Space",
                     "pot:BuildingElement",
                     "pot:Device",
@@ -189,6 +99,14 @@
                     "pot:RealEstate",
                     "pot:Room",
                     "pot:Storey"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Process state"
+                },
+                "domain": [
+                    "pot:Process"
                 ]
             },
             {
@@ -203,11 +121,11 @@
         "label": [
             {
                 "rdfs:label": {
-                    "en-us": "Process status",
-                    "fi-fi": "Prosessin tila"
+                    "fi-fi": "Elinkaari - Status",
+                    "en-us": "Life cycle status"
                 },
                 "domain": [
-                    "pot:Process"
+                    "pot:Building"
                 ]
             },
             {
@@ -226,7 +144,6 @@
                 },
                 "domain": [
                     "pot:Link",
-                    "pot:Product",
                     "pot:Space",
                     "pot:BuildingElement",
                     "pot:Device",
@@ -240,11 +157,20 @@
             },
             {
                 "rdfs:label": {
-                    "fi-fi": "Elinkaari - Status",
-                    "en-us": "Life cycle status"
+                    "en-us": "Product status",
+                    "fi-fi": "Tuotteen status"
                 },
                 "domain": [
-                    "pot:Building"
+                    "pot:Product"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Process status",
+                    "fi-fi": "Prosessin tila"
+                },
+                "domain": [
+                    "pot:Process"
                 ]
             },
             {
@@ -278,315 +204,13 @@
             "pot:Storey"
         ]
     },
-    "length": {
-        "@id": "pot:physical/length",
+    "data": {
+        "@id": "pot:data",
         "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:physical",
-        "rdfs:label": {
-            "en-us": "Length",
-            "fi-fi": "Pituus"
-        },
-        "comment": [
-            {
-                "rdfs:comment": {
-                    "en-us": "Length of the element"
-                },
-                "domain": [
-                    "pot:BuildingElement"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Length of the device"
-                },
-                "domain": [
-                    "pot:Device"
-                ]
-            }
-        ],
-        "pot:valueType": [
-            "xsd:decimal"
-        ],
-        "domain": [
-            "pot:BuildingElement",
-            "pot:Device"
-        ]
-    },
-    "industryDomain": {
-        "@id": "pot:categorization/industryDomain",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:categorization",
-        "rdfs:label": {
-            "en-us": "Industry sector name",
-            "fi-fi": "Tekniikan ala"
-        },
-        "rdfs:comment": {
-            "en-us": "Industry sector name to which the device belongs"
-        },
-        "pot:valueType": [
-            "xsd:string"
-        ],
-        "domain": [
-            "pot:Device"
-        ]
-    },
-    "width": {
-        "@id": "pot:physical/width",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:physical",
-        "rdfs:label": {
-            "fi-fi": "Leveys",
-            "en-us": "Width"
-        },
-        "comment": [
-            {
-                "rdfs:comment": {
-                    "en-us": "Width of the element"
-                },
-                "domain": [
-                    "pot:BuildingElement"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Width of the device"
-                },
-                "domain": [
-                    "pot:Device"
-                ]
-            }
-        ],
-        "pot:valueType": [
-            "xsd:decimal"
-        ],
-        "domain": [
-            "pot:BuildingElement",
-            "pot:Device"
-        ]
-    },
-    "createdBy": {
-        "@id": "pot:metadata/createdBy",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:metadata",
+        "subPropertyOf": "pot:topDataProperty",
         "domain": [
             "pot:Identity",
             "pot:Link"
-        ]
-    },
-    "installationType": {
-        "@id": "pot:functional/installationType",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:functional",
-        "rdfs:label": {
-            "fi-fi": "Asennustapa",
-            "en-us": "Installation/mounting type"
-        },
-        "rdfs:comment": {
-            "en-us": "Actual installation type for the device"
-        },
-        "pot:valueType": [
-            "xsd:string"
-        ],
-        "domain": [
-            "pot:Device"
-        ]
-    },
-    "serialNumber": {
-        "@id": "pot:identifier/serialNumber",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:identifier",
-        "rdfs:label": {
-            "fi-fi": "Sarjanumero",
-            "en-us": "Serial number"
-        },
-        "rdfs:comment": {
-            "en-us": "Unique identifier for the device instance"
-        },
-        "pot:valueType": [
-            "xsd:string"
-        ],
-        "domain": [
-            "pot:Device"
-        ]
-    },
-    "colorName": {
-        "@id": "pot:physical/colorName",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:physical",
-        "rdfs:label": {
-            "en-us": "Color",
-            "fi-fi": "Väri"
-        },
-        "comment": [
-            {
-                "rdfs:comment": {
-                    "en-us": "Color of the element"
-                },
-                "domain": [
-                    "pot:BuildingElement"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Color of the device"
-                },
-                "domain": [
-                    "pot:Device"
-                ]
-            }
-        ],
-        "pot:valueType": [
-            "xsd:string"
-        ],
-        "domain": [
-            "pot:BuildingElement",
-            "pot:Device"
-        ]
-    },
-    "typeName": {
-        "@id": "pot:material/typeName",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:material",
-        "rdfs:label": {
-            "fi-fi": "Materiaali",
-            "en-us": "Material"
-        },
-        "rdfs:comment": {
-            "en-us": "Main material which device is composed"
-        },
-        "pot:valueType": [
-            "xsd:string"
-        ],
-        "domain": [
-            "pot:Device"
-        ]
-    },
-    "fireResistance": {
-        "@id": "pot:quality/fireResistance",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:quality",
-        "rdfs:label": {
-            "en-us": "Fireproof level",
-            "fi-fi": "Palonkestävyys"
-        },
-        "rdfs:comment": {
-            "en-us": "Fire resistance classification"
-        },
-        "pot:valueType": [
-            "xsd:string"
-        ],
-        "domain": [
-            "pot:CableTray"
-        ]
-    },
-    "height": {
-        "@id": "pot:physical/height",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:physical",
-        "rdfs:label": {
-            "en-us": "Height",
-            "fi-fi": "Korkeus"
-        },
-        "comment": [
-            {
-                "rdfs:comment": {
-                    "en-us": "Height of the building"
-                },
-                "domain": [
-                    "pot:Building"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Height of the space"
-                },
-                "domain": [
-                    "pot:Space"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Height of the device"
-                },
-                "domain": [
-                    "pot:Device"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Height of the object"
-                },
-                "domain": [
-                    "pot:Room"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Height of the element"
-                },
-                "domain": [
-                    "pot:BuildingElement"
-                ]
-            }
-        ],
-        "pot:valueType": [
-            "xsd:decimal"
-        ],
-        "domain": [
-            "pot:Space",
-            "pot:BuildingElement",
-            "pot:Device",
-            "pot:Room",
-            "pot:Building"
-        ]
-    },
-    "categorizationLocal": {
-        "@id": "pot:categorization/categorizationLocal",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:categorization",
-        "rdfs:comment": {
-            "en-us": "Categorisation name given locally"
-        },
-        "label": [
-            {
-                "rdfs:label": {
-                    "en-us": "Space type - local",
-                    "fi-fi": "Tilatyyppi - paikallinen"
-                },
-                "domain": [
-                    "pot:Space",
-                    "pot:Room"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "fi-fi": "Lokaali tyypitys",
-                    "en-us": "Type name given locally"
-                },
-                "domain": [
-                    "pot:BuildingElement",
-                    "pot:Device"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "en-us": "Case category",
-                    "fi-fi": "Palvelupyynnön luokka"
-                },
-                "domain": [
-                    "pot:Case"
-                ]
-            }
-        ],
-        "pot:valueType": [
-            "xsd:string"
-        ],
-        "domain": [
-            "pot:Space",
-            "pot:BuildingElement",
-            "pot:Device",
-            "pot:Case",
-            "pot:Room"
         ]
     },
     "weight": {
@@ -623,28 +247,214 @@
             "pot:Device"
         ]
     },
-    "updatedAt": {
-        "@id": "pot:metadata/updatedAt",
+    "fireResistance": {
+        "@id": "pot:quality/fireResistance",
         "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:metadata",
+        "subPropertyOf": "pot:quality",
+        "rdfs:label": {
+            "en-us": "Fireproof level",
+            "fi-fi": "Palonkestävyys"
+        },
+        "rdfs:comment": {
+            "en-us": "Fire resistance classification"
+        },
+        "pot:valueType": [
+            "xsd:string"
+        ],
         "domain": [
-            "pot:Identity",
-            "pot:Link"
+            "pot:CableTray"
         ]
     },
-    "electricityCurrent": {
-        "@id": "pot:physical/electricityCurrent",
+    "processCapability": {
+        "@id": "pot:functional/processCapability",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:functional",
+        "rdfs:label": {
+            "en-us": "Process capability",
+            "fi-fi": "Prosessikyky"
+        },
+        "rdfs:comment": {
+            "en-us": "Process which device is capable executing to produce output"
+        },
+        "domain": [
+            "pot:Device"
+        ]
+    },
+    "length": {
+        "@id": "pot:physical/length",
         "@type": "owl:DatatypeProperty",
         "subPropertyOf": "pot:physical",
         "rdfs:label": {
-            "en-us": "Electric current",
-            "fi-fi": "Sähkövirta"
+            "en-us": "Length",
+            "fi-fi": "Pituus"
         },
-        "rdfs:comment": {
-            "en-us": "An electric current is the rate of flow of electric charge past a point"
-        },
+        "comment": [
+            {
+                "rdfs:comment": {
+                    "en-us": "Length of the element"
+                },
+                "domain": [
+                    "pot:BuildingElement"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Length of the device"
+                },
+                "domain": [
+                    "pot:Device"
+                ]
+            }
+        ],
         "pot:valueType": [
             "xsd:decimal"
+        ],
+        "domain": [
+            "pot:BuildingElement",
+            "pot:Device"
+        ]
+    },
+    "volume": {
+        "@id": "pot:physical/volume",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:physical",
+        "rdfs:label": {
+            "fi-fi": "Tilavuus",
+            "en-us": "Volume"
+        },
+        "comment": [
+            {
+                "rdfs:comment": {
+                    "en-us": "Volume of the element"
+                },
+                "domain": [
+                    "pot:BuildingElement"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Volume of the device"
+                },
+                "domain": [
+                    "pot:Device"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Volume of the object"
+                },
+                "domain": [
+                    "pot:Room",
+                    "pot:Storey"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Volume of the building"
+                },
+                "domain": [
+                    "pot:Building"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Volume of the space"
+                },
+                "domain": [
+                    "pot:Space"
+                ]
+            }
+        ],
+        "pot:valueType": [
+            "xsd:decimal"
+        ],
+        "domain": [
+            "pot:Space",
+            "pot:BuildingElement",
+            "pot:Device",
+            "pot:Room",
+            "pot:Building",
+            "pot:Storey"
+        ]
+    },
+    "function": {
+        "@id": "pot:categorization/function",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:categorization",
+        "comment": [
+            {
+                "rdfs:comment": {
+                    "en-us": "Function which process is executing"
+                },
+                "domain": [
+                    "pot:Process"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Process which device is capable executing"
+                },
+                "domain": [
+                    "pot:Device"
+                ]
+            }
+        ],
+        "label": [
+            {
+                "rdfs:label": {
+                    "en-us": "Process function",
+                    "fi-fi": "Prosessi Toiminnallisuus"
+                },
+                "domain": [
+                    "pot:Device"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Function",
+                    "fi-fi": "Toiminnallisuus"
+                },
+                "domain": [
+                    "pot:Process"
+                ]
+            }
+        ],
+        "domain": [
+            "pot:Process",
+            "pot:Device"
+        ]
+    },
+    "industryDomain": {
+        "@id": "pot:categorization/industryDomain",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:categorization",
+        "rdfs:label": {
+            "en-us": "Industry sector name",
+            "fi-fi": "Tekniikan ala"
+        },
+        "rdfs:comment": {
+            "en-us": "Industry sector name to which the device belongs"
+        },
+        "pot:valueType": [
+            "xsd:string"
+        ],
+        "domain": [
+            "pot:Device"
+        ]
+    },
+    "typeName": {
+        "@id": "pot:material/typeName",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:material",
+        "rdfs:label": {
+            "fi-fi": "Materiaali",
+            "en-us": "Material"
+        },
+        "rdfs:comment": {
+            "en-us": "Main material which device is composed"
+        },
+        "pot:valueType": [
+            "xsd:string"
         ],
         "domain": [
             "pot:Device"
@@ -655,39 +465,6 @@
         "@type": "owl:DatatypeProperty",
         "subPropertyOf": "pot:identifier",
         "comment": [
-            {
-                "rdfs:comment": {
-                    "en-us": "Identifier given locally for the building element"
-                },
-                "domain": [
-                    "pot:BuildingElement"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Locally given identifier for the space"
-                },
-                "domain": [
-                    "pot:Space",
-                    "pot:Room"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Locally given identifier for the storey"
-                },
-                "domain": [
-                    "pot:Storey"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Identifier given locally for the device"
-                },
-                "domain": [
-                    "pot:Device"
-                ]
-            },
             {
                 "rdfs:comment": {
                     "en-us": "Locally given identifier for the process instance"
@@ -706,30 +483,54 @@
             },
             {
                 "rdfs:comment": {
-                    "en-us": "Local identifier (system identifier)"
+                    "en-us": "Locally given identifier for the space"
                 },
                 "domain": [
-                    "pot:Case"
+                    "pot:Space",
+                    "pot:Room"
                 ]
-            }
-        ],
-        "label": [
+            },
             {
-                "rdfs:label": {
-                    "en-us": "Case Id",
-                    "fi-fi": "Palvelupyynnön tunniste"
+                "rdfs:comment": {
+                    "en-us": "Identifier given locally for the device"
+                },
+                "domain": [
+                    "pot:Device"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Locally given identifier for the storey"
+                },
+                "domain": [
+                    "pot:Storey"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Local identifier (system identifier)"
                 },
                 "domain": [
                     "pot:Case"
                 ]
             },
             {
-                "rdfs:label": {
-                    "en-us": "Process Id",
-                    "fi-fi": "Prosessin tunniste"
+                "rdfs:comment": {
+                    "en-us": "Identifier given locally for the building element"
                 },
                 "domain": [
-                    "pot:Process"
+                    "pot:BuildingElement"
+                ]
+            }
+        ],
+        "label": [
+            {
+                "rdfs:label": {
+                    "en-us": "Local code",
+                    "fi-fi": "Paikallinen koodi"
+                },
+                "domain": [
+                    "pot:BuildingElement"
                 ]
             },
             {
@@ -743,21 +544,11 @@
             },
             {
                 "rdfs:label": {
-                    "en-us": "Local identifier",
-                    "fi-fi": "Paikallinen tunniste"
+                    "en-us": "Case Id",
+                    "fi-fi": "Palvelupyynnön tunniste"
                 },
                 "domain": [
-                    "pot:Space",
-                    "pot:Room"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "en-us": "Local code",
-                    "fi-fi": "Paikallinen koodi"
-                },
-                "domain": [
-                    "pot:BuildingElement"
+                    "pot:Case"
                 ]
             },
             {
@@ -767,6 +558,25 @@
                 },
                 "domain": [
                     "pot:Project"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Process Id",
+                    "fi-fi": "Prosessin tunniste"
+                },
+                "domain": [
+                    "pot:Process"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Local identifier",
+                    "fi-fi": "Paikallinen tunniste"
+                },
+                "domain": [
+                    "pot:Space",
+                    "pot:Room"
                 ]
             },
             {
@@ -793,10 +603,137 @@
             "pot:Storey"
         ]
     },
+    "serialNumber": {
+        "@id": "pot:identifier/serialNumber",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:identifier",
+        "rdfs:label": {
+            "fi-fi": "Sarjanumero",
+            "en-us": "Serial number"
+        },
+        "rdfs:comment": {
+            "en-us": "Unique identifier for the device instance"
+        },
+        "pot:valueType": [
+            "xsd:string"
+        ],
+        "domain": [
+            "pot:Device"
+        ]
+    },
     "createdAt": {
         "@id": "pot:metadata/createdAt",
         "@type": "owl:DatatypeProperty",
         "subPropertyOf": "pot:metadata",
+        "rdfs:label": {
+            "en-us": "Creation time",
+            "fi-fi": "Luomisaika"
+        },
+        "rdfs:comment": {
+            "en-us": "Time when the data is created"
+        },
+        "domain": [
+            "pot:Identity",
+            "pot:Link"
+        ]
+    },
+    "areaNet": {
+        "@id": "pot:physical/areaNet",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:physical",
+        "rdfs:label": {
+            "en-us": "Area - net",
+            "fi-fi": "Pinta-ala - netto"
+        },
+        "comment": [
+            {
+                "rdfs:comment": {
+                    "en-us": "Net area of the device"
+                },
+                "domain": [
+                    "pot:Device"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Net area of the element"
+                },
+                "domain": [
+                    "pot:BuildingElement"
+                ]
+            }
+        ],
+        "pot:valueType": [
+            "xsd:decimal"
+        ],
+        "domain": [
+            "pot:BuildingElement",
+            "pot:Device"
+        ]
+    },
+    "electricityCurrent": {
+        "@id": "pot:physical/electricityCurrent",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:physical",
+        "rdfs:label": {
+            "en-us": "Electric current",
+            "fi-fi": "Sähkövirta"
+        },
+        "rdfs:comment": {
+            "en-us": "An electric current is the rate of flow of electric charge past a point"
+        },
+        "pot:valueType": [
+            "xsd:decimal"
+        ],
+        "domain": [
+            "pot:Device"
+        ]
+    },
+    "colorCode": {
+        "@id": "pot:physical/colorCode",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:physical",
+        "rdfs:label": {
+            "en-us": "Color code",
+            "fi-fi": "Väritunnus"
+        },
+        "comment": [
+            {
+                "rdfs:comment": {
+                    "en-us": "Color code of the element"
+                },
+                "domain": [
+                    "pot:BuildingElement"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Color code of the device"
+                },
+                "domain": [
+                    "pot:Device"
+                ]
+            }
+        ],
+        "pot:valueType": [
+            "xsd:string"
+        ],
+        "domain": [
+            "pot:BuildingElement",
+            "pot:Device"
+        ]
+    },
+    "updatedBy": {
+        "@id": "pot:metadata/updatedBy",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:metadata",
+        "rdfs:label": {
+            "fi-fi": "Identieetin päivittäjä",
+            "en-us": "Updater"
+        },
+        "rdfs:comment": {
+            "en-us": "Updater of an identity"
+        },
         "domain": [
             "pot:Identity",
             "pot:Link"
@@ -806,6 +743,12 @@
         "@id": "pot:metadata",
         "@type": "owl:DatatypeProperty",
         "subPropertyOf": "pot:topDataProperty",
+        "rdfs:label": {
+            "en-us": "Metadata"
+        },
+        "rdfs:comment": {
+            "en-us": "Metadata container"
+        },
         "domain": [
             "pot:Identity",
             "pot:Link"
@@ -836,309 +779,29 @@
             "pot:Storey"
         ]
     },
-    "id": {
-        "@id": "pot:identifier/id",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:identifier",
-        "domain": [
-            "pot:Identity"
-        ]
-    },
-    "descriptionGeneral": {
-        "@id": "pot:description/descriptionGeneral",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:description",
-        "comment": [
-            {
-                "rdfs:comment": {
-                    "en-us": "Description of the building element"
-                },
-                "domain": [
-                    "pot:BuildingElement"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Description of the space"
-                },
-                "domain": [
-                    "pot:Space"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Description of the building"
-                },
-                "domain": [
-                    "pot:Building"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Description of the case"
-                },
-                "domain": [
-                    "pot:Case"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Description of the product"
-                },
-                "domain": [
-                    "pot:Product"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Description of the project"
-                },
-                "domain": [
-                    "pot:Project"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Description of the system"
-                },
-                "domain": [
-                    "pot:System"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Description of the real estate"
-                },
-                "domain": [
-                    "pot:RealEstate"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Description of the device"
-                },
-                "domain": [
-                    "pot:Device"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Description of the room"
-                },
-                "domain": [
-                    "pot:Room"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Description of the storey"
-                },
-                "domain": [
-                    "pot:Storey"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Description of the organisation"
-                },
-                "domain": [
-                    "pot:Organization"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Description of the process"
-                },
-                "domain": [
-                    "pot:Process"
-                ]
-            }
-        ],
-        "label": [
-            {
-                "rdfs:label": {
-                    "fi-fi": "Huoneen kuvaus",
-                    "en-us": "Room description"
-                },
-                "domain": [
-                    "pot:Room"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "en-us": "Case description",
-                    "fi-fi": "Palvelupyynnön kuvaus"
-                },
-                "domain": [
-                    "pot:Case"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "fi-fi": "Kiinteistön kuvaus",
-                    "en-us": "Real estate description"
-                },
-                "domain": [
-                    "pot:RealEstate"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "en-us": "Device description",
-                    "fi-fi": "Laitteen kuvaus"
-                },
-                "domain": [
-                    "pot:Device"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "fi-fi": "Järjestelmän kuvaus",
-                    "en-us": "System description"
-                },
-                "domain": [
-                    "pot:System"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "en-us": "Process description",
-                    "fi-fi": "Prosessin kuvaus"
-                },
-                "domain": [
-                    "pot:Process"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "en-us": "Product description",
-                    "fi-fi": "Tuotekuvaus"
-                },
-                "domain": [
-                    "pot:Product"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "en-us": "Building element description",
-                    "fi-fi": "Rakennuselementin kuvaus"
-                },
-                "domain": [
-                    "pot:BuildingElement"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "fi-fi": "Organisaation kuvaus",
-                    "en-us": "Organization description"
-                },
-                "domain": [
-                    "pot:Organization"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "en-us": "Project description",
-                    "fi-fi": "Projektin kuvaus"
-                },
-                "domain": [
-                    "pot:Project"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "en-us": "Building description",
-                    "fi-fi": "Rakennuksen kuvaus"
-                },
-                "domain": [
-                    "pot:Building"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "fi-fi": "Kerroksen kuvaus",
-                    "en-us": "Storey description"
-                },
-                "domain": [
-                    "pot:Storey"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "en-us": "Space description",
-                    "fi-fi": "Tilan kuvaus"
-                },
-                "domain": [
-                    "pot:Space"
-                ]
-            }
-        ],
-        "pot:valueType": [
-            "xsd:string"
-        ],
-        "domain": [
-            "pot:Process",
-            "pot:Product",
-            "pot:Space",
-            "pot:BuildingElement",
-            "pot:Device",
-            "pot:Organization",
-            "pot:Case",
-            "pot:Project",
-            "pot:RealEstate",
-            "pot:Room",
-            "pot:Building",
-            "pot:Storey"
-        ]
-    },
-    "volume": {
-        "@id": "pot:physical/volume",
+    "areaGross": {
+        "@id": "pot:physical/areaGross",
         "@type": "owl:DatatypeProperty",
         "subPropertyOf": "pot:physical",
         "rdfs:label": {
-            "fi-fi": "Tilavuus",
-            "en-us": "Volume"
+            "en-us": "Area - gross",
+            "fi-fi": "Pinta-ala - brutto"
         },
         "comment": [
             {
                 "rdfs:comment": {
-                    "en-us": "Volume of the element"
-                },
-                "domain": [
-                    "pot:BuildingElement"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Volume of the object"
-                },
-                "domain": [
-                    "pot:Room",
-                    "pot:Storey"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Volume of the space"
-                },
-                "domain": [
-                    "pot:Space"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Volume of the building"
-                },
-                "domain": [
-                    "pot:Building"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Volume of the device"
+                    "en-us": "Gross area of the device"
                 },
                 "domain": [
                     "pot:Device"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Gross area of the element"
+                },
+                "domain": [
+                    "pot:BuildingElement"
                 ]
             }
         ],
@@ -1146,212 +809,8 @@
             "xsd:decimal"
         ],
         "domain": [
-            "pot:Space",
             "pot:BuildingElement",
-            "pot:Device",
-            "pot:Room",
-            "pot:Building",
-            "pot:Storey"
-        ]
-    },
-    "processCapability": {
-        "@id": "pot:functional/processCapability",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:functional",
-        "rdfs:label": {
-            "en-us": "Process capability",
-            "fi-fi": "Prosessikyky"
-        },
-        "rdfs:comment": {
-            "en-us": "Process which device is capable executing to produce output"
-        },
-        "domain": [
             "pot:Device"
-        ]
-    },
-    "data": {
-        "@id": "pot:data",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:topDataProperty",
-        "domain": [
-            "pot:Identity",
-            "pot:Link"
-        ]
-    },
-    "name": {
-        "@id": "pot:identifier/name",
-        "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:identifier",
-        "comment": [
-            {
-                "rdfs:comment": {
-                    "en-us": "Name givento the system"
-                },
-                "domain": [
-                    "pot:System"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Name of the building"
-                },
-                "domain": [
-                    "pot:Building"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Name given locally for the device"
-                },
-                "domain": [
-                    "pot:Device"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Unique product name given by manufacturer"
-                },
-                "domain": [
-                    "pot:Product"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Room name"
-                },
-                "domain": [
-                    "pot:Room"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Apartment name"
-                },
-                "domain": [
-                    "pot:Apartment"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Name given locally for the building element"
-                },
-                "domain": [
-                    "pot:BuildingElement"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Name of the real estate"
-                },
-                "domain": [
-                    "pot:RealEstate"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Name of organisation"
-                },
-                "domain": [
-                    "pot:Organization"
-                ]
-            }
-        ],
-        "label": [
-            {
-                "rdfs:label": {
-                    "fi-fi": "Kiinteistön nimi",
-                    "en-us": "Name"
-                },
-                "domain": [
-                    "pot:RealEstate"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "en-us": "Building name",
-                    "fi-fi": "Rakennuksen nimi"
-                },
-                "domain": [
-                    "pot:Building"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "en-us": "Local name",
-                    "fi-fi": "Paikallinen nimi"
-                },
-                "domain": [
-                    "pot:BuildingElement"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "en-us": "Apartment name",
-                    "fi-fi": "Huoneistotunnus"
-                },
-                "domain": [
-                    "pot:Apartment"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "fi-fi": "Järjestelmän nimi",
-                    "en-us": "System name"
-                },
-                "domain": [
-                    "pot:System"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "fi-fi": "Huoneen nimi",
-                    "en-us": "Room name"
-                },
-                "domain": [
-                    "pot:Room"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "fi-fi": "Organisaation nimi",
-                    "en-us": "Organization name"
-                },
-                "domain": [
-                    "pot:Organization"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "en-us": "Product name",
-                    "fi-fi": "Tuotenimi"
-                },
-                "domain": [
-                    "pot:Product"
-                ]
-            },
-            {
-                "rdfs:label": {
-                    "en-us": "Local name",
-                    "fi-fi": "Paikallinen nimi"
-                },
-                "domain": [
-                    "pot:Device"
-                ]
-            }
-        ],
-        "pot:valueType": [
-            "xsd:string"
-        ],
-        "domain": [
-            "pot:Product",
-            "pot:BuildingElement",
-            "pot:Device",
-            "pot:System",
-            "pot:Organization",
-            "pot:Apartment",
-            "pot:RealEstate",
-            "pot:Room",
-            "pot:Building"
         ]
     },
     "ifcElementType": {
@@ -1373,35 +832,87 @@
             "pot:Device"
         ]
     },
-    "updatedBy": {
-        "@id": "pot:metadata/updatedBy",
+    "categorizationLocal": {
+        "@id": "pot:categorization/categorizationLocal",
         "@type": "owl:DatatypeProperty",
-        "subPropertyOf": "pot:metadata",
+        "subPropertyOf": "pot:categorization",
+        "rdfs:comment": {
+            "en-us": "Categorisation name given locally"
+        },
+        "label": [
+            {
+                "rdfs:label": {
+                    "en-us": "Condition local class",
+                    "fi-fi": "Ehdon paikallinen luokka"
+                },
+                "domain": [
+                    "pot:Condition"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "fi-fi": "Laatuominaisuuden paikallinen luokka",
+                    "en-us": "Quality local class"
+                },
+                "domain": [
+                    "pot:Quality"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "fi-fi": "Lokaali tyypitys",
+                    "en-us": "Type name given locally"
+                },
+                "domain": [
+                    "pot:BuildingElement",
+                    "pot:Device"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Case category",
+                    "fi-fi": "Palvelupyynnön luokka"
+                },
+                "domain": [
+                    "pot:Case"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Space type - local",
+                    "fi-fi": "Tilatyyppi - paikallinen"
+                },
+                "domain": [
+                    "pot:Space",
+                    "pot:Room"
+                ]
+            }
+        ],
+        "pot:valueType": [
+            "xsd:string"
+        ],
         "domain": [
-            "pot:Identity",
-            "pot:Link"
+            "pot:Space",
+            "pot:Condition",
+            "pot:Quality",
+            "pot:BuildingElement",
+            "pot:Device",
+            "pot:Case",
+            "pot:Room"
         ]
     },
-    "function": {
-        "@id": "pot:function",
-        "@type": "owl:ObjectProperty",
-        "domain": [
-            "pot:Process",
-            "pot:Device"
-        ]
-    },
-    "areaNet": {
-        "@id": "pot:physical/areaNet",
+    "width": {
+        "@id": "pot:physical/width",
         "@type": "owl:DatatypeProperty",
         "subPropertyOf": "pot:physical",
         "rdfs:label": {
-            "en-us": "Area - net",
-            "fi-fi": "Pinta-ala - netto"
+            "fi-fi": "Leveys",
+            "en-us": "Width"
         },
         "comment": [
             {
                 "rdfs:comment": {
-                    "en-us": "Net area of the element"
+                    "en-us": "Width of the element"
                 },
                 "domain": [
                     "pot:BuildingElement"
@@ -1409,7 +920,7 @@
             },
             {
                 "rdfs:comment": {
-                    "en-us": "Net area of the device"
+                    "en-us": "Width of the device"
                 },
                 "domain": [
                     "pot:Device"
@@ -1467,6 +978,638 @@
             "pot:Storey"
         ]
     },
+    "name": {
+        "@id": "pot:identifier/name",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:identifier",
+        "comment": [
+            {
+                "rdfs:comment": {
+                    "en-us": "Name of organisation"
+                },
+                "domain": [
+                    "pot:Organization"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Apartment name"
+                },
+                "domain": [
+                    "pot:Apartment"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Name given locally for the building element"
+                },
+                "domain": [
+                    "pot:BuildingElement"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Name of the real estate"
+                },
+                "domain": [
+                    "pot:RealEstate"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Room name"
+                },
+                "domain": [
+                    "pot:Room"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Name of the building"
+                },
+                "domain": [
+                    "pot:Building"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Name of the condition"
+                },
+                "domain": [
+                    "pot:Condition"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Name of the quality class"
+                },
+                "domain": [
+                    "pot:Quality"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Name givento the system"
+                },
+                "domain": [
+                    "pot:System"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Name of the price plan"
+                },
+                "domain": [
+                    "pot:PricePlan"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Name given locally for the device"
+                },
+                "domain": [
+                    "pot:Device"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Unique product name given by manufacturer"
+                },
+                "domain": [
+                    "pot:Product"
+                ]
+            }
+        ],
+        "label": [
+            {
+                "rdfs:label": {
+                    "en-us": "Building name",
+                    "fi-fi": "Rakennuksen nimi"
+                },
+                "domain": [
+                    "pot:Building"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "fi-fi": "Järjestelmän nimi",
+                    "en-us": "System name"
+                },
+                "domain": [
+                    "pot:System"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "fi-fi": "Huoneen nimi",
+                    "en-us": "Room name"
+                },
+                "domain": [
+                    "pot:Room"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "fi-fi": "Laatuominaisuuden nimi",
+                    "en-us": "Quality name"
+                },
+                "domain": [
+                    "pot:Quality"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Condition name",
+                    "fi-fi": "Ehdon nimi"
+                },
+                "domain": []
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Local name",
+                    "fi-fi": "Paikallinen nimi"
+                },
+                "domain": [
+                    "pot:Device"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Local name",
+                    "fi-fi": "Paikallinen nimi"
+                },
+                "domain": [
+                    "pot:BuildingElement"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Apartment name",
+                    "fi-fi": "Huoneistotunnus"
+                },
+                "domain": [
+                    "pot:Apartment"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "fi-fi": "Kiinteistön nimi",
+                    "en-us": "Name"
+                },
+                "domain": [
+                    "pot:RealEstate"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "fi-fi": "Hinnastonimi",
+                    "en-us": "Price plan name"
+                },
+                "domain": [
+                    "pot:PricePlan"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Product name",
+                    "fi-fi": "Tuotenimi"
+                },
+                "domain": [
+                    "pot:Product"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "fi-fi": "Organisaation nimi",
+                    "en-us": "Organization name"
+                },
+                "domain": [
+                    "pot:Organization"
+                ]
+            }
+        ],
+        "pot:valueType": [
+            "xsd:string"
+        ],
+        "domain": [
+            "pot:Product",
+            "pot:Condition",
+            "pot:PricePlan",
+            "pot:BuildingElement",
+            "pot:Device",
+            "pot:System",
+            "pot:Organization",
+            "pot:Apartment",
+            "pot:RealEstate",
+            "pot:Room",
+            "pot:Building"
+        ]
+    },
+    "height": {
+        "@id": "pot:physical/height",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:physical",
+        "rdfs:label": {
+            "en-us": "Height",
+            "fi-fi": "Korkeus"
+        },
+        "comment": [
+            {
+                "rdfs:comment": {
+                    "en-us": "Height of the device"
+                },
+                "domain": [
+                    "pot:Device"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Height of the object"
+                },
+                "domain": [
+                    "pot:Room"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Height of the space"
+                },
+                "domain": [
+                    "pot:Space"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Height of the building"
+                },
+                "domain": [
+                    "pot:Building"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Height of the element"
+                },
+                "domain": [
+                    "pot:BuildingElement"
+                ]
+            }
+        ],
+        "pot:valueType": [
+            "xsd:decimal"
+        ],
+        "domain": [
+            "pot:Space",
+            "pot:BuildingElement",
+            "pot:Device",
+            "pot:Room",
+            "pot:Building"
+        ]
+    },
+    "updatedAt": {
+        "@id": "pot:metadata/updatedAt",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:metadata",
+        "rdfs:label": {
+            "fi-fi": "Päivitysaika",
+            "en-us": "Update time"
+        },
+        "rdfs:comment": {
+            "en-us": "Time when the data is updated"
+        },
+        "domain": [
+            "pot:Identity",
+            "pot:Link"
+        ]
+    },
+    "descriptionGeneral": {
+        "@id": "pot:description/descriptionGeneral",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:description",
+        "rdfs:label": {
+            "en-us": "Description",
+            "fi-fi": "Description"
+        },
+        "rdfs:comment": {
+            "en-us": "Description"
+        },
+        "comment": [
+            {
+                "rdfs:comment": {
+                    "en-us": "Description of the device"
+                },
+                "domain": [
+                    "pot:Device"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Description of the room"
+                },
+                "domain": [
+                    "pot:Room"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Description of the real estate"
+                },
+                "domain": [
+                    "pot:RealEstate"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Description of the case"
+                },
+                "domain": [
+                    "pot:Case"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Description of the building element"
+                },
+                "domain": [
+                    "pot:BuildingElement"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Description of the project"
+                },
+                "domain": [
+                    "pot:Project"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Description of the process"
+                },
+                "domain": [
+                    "pot:Process"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Description of the building"
+                },
+                "domain": [
+                    "pot:Building"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Description of the system"
+                },
+                "domain": [
+                    "pot:System"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Description of the product"
+                },
+                "domain": [
+                    "pot:Product"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Description of the organisation"
+                },
+                "domain": [
+                    "pot:Organization"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Description of the storey"
+                },
+                "domain": [
+                    "pot:Storey"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Description of the space"
+                },
+                "domain": [
+                    "pot:Space"
+                ]
+            }
+        ],
+        "label": [
+            {
+                "rdfs:label": {
+                    "en-us": "Building element description",
+                    "fi-fi": "Rakennuselementin kuvaus"
+                },
+                "domain": [
+                    "pot:BuildingElement"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "fi-fi": "Organisaation kuvaus",
+                    "en-us": "Organization description"
+                },
+                "domain": [
+                    "pot:Organization"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Description",
+                    "fi-fi": "Kuvaus"
+                },
+                "domain": [
+                    "pot:Quality"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "fi-fi": "Huoneen kuvaus",
+                    "en-us": "Room description"
+                },
+                "domain": [
+                    "pot:Room"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Product description",
+                    "fi-fi": "Tuotekuvaus"
+                },
+                "domain": [
+                    "pot:Product"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "fi-fi": "Järjestelmän kuvaus",
+                    "en-us": "System description"
+                },
+                "domain": [
+                    "pot:System"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Case description",
+                    "fi-fi": "Palvelupyynnön kuvaus"
+                },
+                "domain": [
+                    "pot:Case"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Space description",
+                    "fi-fi": "Tilan kuvaus"
+                },
+                "domain": [
+                    "pot:Space"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Building description",
+                    "fi-fi": "Rakennuksen kuvaus"
+                },
+                "domain": [
+                    "pot:Building"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "fi-fi": "Kiinteistön kuvaus",
+                    "en-us": "Real estate description"
+                },
+                "domain": [
+                    "pot:RealEstate"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "fi-fi": "Kerroksen kuvaus",
+                    "en-us": "Storey description"
+                },
+                "domain": [
+                    "pot:Storey"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Device description",
+                    "fi-fi": "Laitteen kuvaus"
+                },
+                "domain": [
+                    "pot:Device"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Process description",
+                    "fi-fi": "Prosessin kuvaus"
+                },
+                "domain": [
+                    "pot:Process"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Project description",
+                    "fi-fi": "Projektin kuvaus"
+                },
+                "domain": [
+                    "pot:Project"
+                ]
+            }
+        ],
+        "pot:valueType": [
+            "xsd:string"
+        ],
+        "domain": [
+            "pot:Process",
+            "pot:Product",
+            "pot:Space",
+            "pot:Condition",
+            "pot:Quality",
+            "pot:BuildingElement",
+            "pot:Device",
+            "pot:Organization",
+            "pot:Case",
+            "pot:Project",
+            "pot:RealEstate",
+            "pot:Room",
+            "pot:Building",
+            "pot:Storey"
+        ]
+    },
+    "id": {
+        "@id": "pot:identifier/id",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:identifier",
+        "domain": [
+            "pot:Identity"
+        ]
+    },
+    "ifcElementName": {
+        "@id": "pot:categorization/ifcElementName",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:categorization",
+        "rdfs:label": {
+            "en-us": "IFC element name",
+            "fi-fi": "IFC element nimi"
+        },
+        "rdfs:comment": {
+            "en-us": "IFC standard element name"
+        },
+        "pot:valueType": [
+            "xsd:string"
+        ],
+        "domain": [
+            "pot:BuildingElement",
+            "pot:Device"
+        ]
+    },
+    "power": {
+        "@id": "pot:physical/power",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:physical",
+        "rdfs:label": {
+            "en-us": "Power (W)",
+            "fi-fi": "Teho (W)"
+        },
+        "rdfs:comment": {
+            "en-us": "Power measured in Watts"
+        },
+        "pot:valueType": [
+            "xsd:decimal"
+        ],
+        "domain": [
+            "pot:Device"
+        ]
+    },
+    "installationType": {
+        "@id": "pot:functional/installationType",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:functional",
+        "rdfs:label": {
+            "fi-fi": "Asennustapa",
+            "en-us": "Installation/mounting type"
+        },
+        "rdfs:comment": {
+            "en-us": "Actual installation type for the device"
+        },
+        "pot:valueType": [
+            "xsd:string"
+        ],
+        "domain": [
+            "pot:Device"
+        ]
+    },
     "installationTypeAvailable": {
         "@id": "pot:functional/installationTypeAvailable",
         "@type": "owl:DatatypeProperty",
@@ -1482,6 +1625,40 @@
             "xsd:string"
         ],
         "domain": [
+            "pot:Device"
+        ]
+    },
+    "colorName": {
+        "@id": "pot:physical/colorName",
+        "@type": "owl:DatatypeProperty",
+        "subPropertyOf": "pot:physical",
+        "rdfs:label": {
+            "en-us": "Color",
+            "fi-fi": "Väri"
+        },
+        "comment": [
+            {
+                "rdfs:comment": {
+                    "en-us": "Color of the element"
+                },
+                "domain": [
+                    "pot:BuildingElement"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Color of the device"
+                },
+                "domain": [
+                    "pot:Device"
+                ]
+            }
+        ],
+        "pot:valueType": [
+            "xsd:string"
+        ],
+        "domain": [
+            "pot:BuildingElement",
             "pot:Device"
         ]
     },

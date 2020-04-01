@@ -46,22 +46,6 @@
         "comment": [
             {
                 "rdfs:comment": {
-                    "en-us": "Real estate identifier for the land in Finland"
-                },
-                "domain": [
-                    "pot:RealEstate"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Officially given identifier for the space in Finland"
-                },
-                "domain": [
-                    "pot:Space"
-                ]
-            },
-            {
-                "rdfs:comment": {
                     "en-us": "Officially given identifier for the space"
                 },
                 "domain": [
@@ -75,18 +59,25 @@
                 "domain": [
                     "pot:Person"
                 ]
-            }
-        ],
-        "label": [
+            },
             {
-                "rdfs:label": {
-                    "fi-fi": "Kiinteistötunnus",
-                    "en-us": "Real estate Id"
+                "rdfs:comment": {
+                    "en-us": "Real estate identifier for the land in Finland"
                 },
                 "domain": [
                     "pot:RealEstate"
                 ]
             },
+            {
+                "rdfs:comment": {
+                    "en-us": "Officially given identifier for the space in Finland"
+                },
+                "domain": [
+                    "pot:Space"
+                ]
+            }
+        ],
+        "label": [
             {
                 "rdfs:label": {
                     "fi-fi": "Henkilötunnus",
@@ -112,6 +103,15 @@
                 },
                 "domain": [
                     "pot:Room"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "fi-fi": "Kiinteistötunnus",
+                    "en-us": "Real estate Id"
+                },
+                "domain": [
+                    "pot:RealEstate"
                 ]
             }
         ],

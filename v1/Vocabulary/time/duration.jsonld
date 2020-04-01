@@ -45,6 +45,12 @@
         "subPropertyOf": "pot:time",
         "comment": [
             {
+                "rdfs:comment": {},
+                "domain": [
+                    "pot:Case"
+                ]
+            },
+            {
                 "rdfs:comment": {
                     "en-us": "Duration of the process"
                 },
@@ -58,12 +64,6 @@
                 },
                 "domain": [
                     "pot:Project"
-                ]
-            },
-            {
-                "rdfs:comment": {},
-                "domain": [
-                    "pot:Case"
                 ]
             }
         ],

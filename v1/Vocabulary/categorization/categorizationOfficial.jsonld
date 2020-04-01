@@ -46,19 +46,19 @@
         "comment": [
             {
                 "rdfs:comment": {
-                    "en-us": "Organization categorization given by official authority"
-                },
-                "domain": [
-                    "pot:Organization"
-                ]
-            },
-            {
-                "rdfs:comment": {
                     "en-us": "Space type name derived from official categorization naming"
                 },
                 "domain": [
                     "pot:Space",
                     "pot:Room"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Organization categorization given by official authority"
+                },
+                "domain": [
+                    "pot:Organization"
                 ]
             }
         ],

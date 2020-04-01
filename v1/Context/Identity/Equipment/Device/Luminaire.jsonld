@@ -13,131 +13,32 @@
         "metadata": {
             "@id": "pot:metadata"
         },
-        "colorCode": {
-            "@id": "pot:physical/colorCode",
-            "@nest": "data"
-        },
-        "power": {
-            "@id": "pot:physical/power",
-            "@nest": "data"
-        },
-        "ifcElementName": {
-            "@id": "pot:categorization/ifcElementName",
-            "@nest": "data"
-        },
-        "areaGross": {
-            "@id": "pot:physical/areaGross",
-            "@nest": "data"
-        },
-        "status": {
-            "@id": "pot:lifeCycle/status",
-            "@nest": "data"
-        },
-        "length": {
-            "@id": "pot:physical/length",
-            "@nest": "data"
-        },
-        "industryDomain": {
-            "@id": "pot:categorization/industryDomain",
-            "@nest": "data"
-        },
-        "width": {
-            "@id": "pot:physical/width",
-            "@nest": "data"
-        },
-        "protectionDegree": {
-            "@id": "pot:functional/protectionDegree",
+        "lightColorRenderingIndex": {
+            "@id": "pot:physical/lightColorRenderingIndex",
             "@nest": "data"
         },
         "createdBy": {
             "@id": "pot:metadata/createdBy",
             "@nest": "metadata"
         },
-        "electricityPower": {
-            "@id": "pot:physical/electricityPower",
-            "@nest": "data"
-        },
-        "controlMechanism": {
-            "@id": "pot:functional/controlMechanism",
-            "@nest": "data"
-        },
-        "installationType": {
-            "@id": "pot:functional/installationType",
-            "@nest": "data"
-        },
-        "serialNumber": {
-            "@id": "pot:identifier/serialNumber",
-            "@nest": "data"
-        },
-        "colorName": {
-            "@id": "pot:physical/colorName",
-            "@nest": "data"
-        },
-        "typeName": {
-            "@id": "pot:material/typeName",
-            "@nest": "data"
-        },
-        "lightFlux": {
-            "@id": "pot:physical/lightFlux",
-            "@nest": "data"
-        },
-        "height": {
-            "@id": "pot:physical/height",
-            "@nest": "data"
-        },
-        "categorizationLocal": {
-            "@id": "pot:categorization/categorizationLocal",
-            "@nest": "data"
-        },
-        "weight": {
-            "@id": "pot:physical/weight",
-            "@nest": "data"
-        },
-        "updatedAt": {
-            "@id": "pot:metadata/updatedAt",
-            "@nest": "metadata"
-        },
-        "lightDirection": {
-            "@id": "pot:functional/lightDirection",
-            "@nest": "data"
-        },
-        "electricityCurrent": {
-            "@id": "pot:physical/electricityCurrent",
-            "@nest": "data"
-        },
-        "lightVisor": {
-            "@id": "pot:functional/lightVisor",
-            "@nest": "data"
-        },
-        "idLocal": {
-            "@id": "pot:identifier/idLocal",
-            "@nest": "data"
-        },
-        "createdAt": {
-            "@id": "pot:metadata/createdAt",
-            "@nest": "metadata"
-        },
-        "connectionMechanism": {
-            "@id": "pot:functional/connectionMechanism",
-            "@nest": "data"
-        },
-        "ifcGuid": {
-            "@id": "pot:identifier/ifcGuid",
-            "@nest": "data"
-        },
-        "lightColorRenderingIndex": {
-            "@id": "pot:physical/lightColorRenderingIndex",
+        "status": {
+            "@id": "pot:lifeCycle/status",
             "@nest": "data"
         },
         "protectionResilience": {
             "@id": "pot:functional/protectionResilience",
             "@nest": "data"
         },
-        "id": {
-            "@id": "pot:identifier/id"
+        "weight": {
+            "@id": "pot:physical/weight",
+            "@nest": "data"
         },
-        "descriptionGeneral": {
-            "@id": "pot:description/descriptionGeneral",
+        "processCapability": {
+            "@id": "pot:functional/processCapability",
+            "@nest": "data"
+        },
+        "length": {
+            "@id": "pot:physical/length",
             "@nest": "data"
         },
         "controlMode": {
@@ -148,43 +49,143 @@
             "@id": "pot:physical/volume",
             "@nest": "data"
         },
-        "processCapability": {
-            "@id": "pot:functional/processCapability",
+        "function": {
+            "@id": "pot:categorization/function",
             "@nest": "data"
         },
-        "lampType": {
-            "@id": "pot:functional/lampType",
+        "industryDomain": {
+            "@id": "pot:categorization/industryDomain",
             "@nest": "data"
         },
-        "name": {
-            "@id": "pot:identifier/name",
+        "typeName": {
+            "@id": "pot:material/typeName",
             "@nest": "data"
         },
-        "ifcElementType": {
-            "@id": "pot:categorization/ifcElementType",
+        "idLocal": {
+            "@id": "pot:identifier/idLocal",
             "@nest": "data"
         },
-        "lightColor": {
-            "@id": "pot:physical/lightColor",
+        "serialNumber": {
+            "@id": "pot:identifier/serialNumber",
+            "@nest": "data"
+        },
+        "createdAt": {
+            "@id": "pot:metadata/createdAt",
+            "@nest": "metadata"
+        },
+        "areaNet": {
+            "@id": "pot:physical/areaNet",
+            "@nest": "data"
+        },
+        "lightDirection": {
+            "@id": "pot:functional/lightDirection",
+            "@nest": "data"
+        },
+        "lightVisor": {
+            "@id": "pot:functional/lightVisor",
+            "@nest": "data"
+        },
+        "electricityCurrent": {
+            "@id": "pot:physical/electricityCurrent",
+            "@nest": "data"
+        },
+        "colorCode": {
+            "@id": "pot:physical/colorCode",
             "@nest": "data"
         },
         "updatedBy": {
             "@id": "pot:metadata/updatedBy",
             "@nest": "metadata"
         },
-        "function": {
-            "@id": "pot:function"
+        "lightFlux": {
+            "@id": "pot:physical/lightFlux",
+            "@nest": "data"
         },
-        "areaNet": {
-            "@id": "pot:physical/areaNet",
+        "ifcGuid": {
+            "@id": "pot:identifier/ifcGuid",
+            "@nest": "data"
+        },
+        "electricityPower": {
+            "@id": "pot:physical/electricityPower",
+            "@nest": "data"
+        },
+        "areaGross": {
+            "@id": "pot:physical/areaGross",
+            "@nest": "data"
+        },
+        "ifcElementType": {
+            "@id": "pot:categorization/ifcElementType",
+            "@nest": "data"
+        },
+        "protectionDegree": {
+            "@id": "pot:functional/protectionDegree",
+            "@nest": "data"
+        },
+        "categorizationLocal": {
+            "@id": "pot:categorization/categorizationLocal",
+            "@nest": "data"
+        },
+        "lampType": {
+            "@id": "pot:functional/lampType",
+            "@nest": "data"
+        },
+        "width": {
+            "@id": "pot:physical/width",
             "@nest": "data"
         },
         "thickness": {
             "@id": "pot:physical/thickness",
             "@nest": "data"
         },
+        "controlMechanism": {
+            "@id": "pot:functional/controlMechanism",
+            "@nest": "data"
+        },
+        "name": {
+            "@id": "pot:identifier/name",
+            "@nest": "data"
+        },
+        "height": {
+            "@id": "pot:physical/height",
+            "@nest": "data"
+        },
+        "updatedAt": {
+            "@id": "pot:metadata/updatedAt",
+            "@nest": "metadata"
+        },
+        "descriptionGeneral": {
+            "@id": "pot:description/descriptionGeneral",
+            "@nest": "data"
+        },
+        "connectionMechanism": {
+            "@id": "pot:functional/connectionMechanism",
+            "@nest": "data"
+        },
+        "id": {
+            "@id": "pot:identifier/id"
+        },
+        "ifcElementName": {
+            "@id": "pot:categorization/ifcElementName",
+            "@nest": "data"
+        },
+        "power": {
+            "@id": "pot:physical/power",
+            "@nest": "data"
+        },
+        "installationType": {
+            "@id": "pot:functional/installationType",
+            "@nest": "data"
+        },
         "installationTypeAvailable": {
             "@id": "pot:functional/installationTypeAvailable",
+            "@nest": "data"
+        },
+        "colorName": {
+            "@id": "pot:physical/colorName",
+            "@nest": "data"
+        },
+        "lightColor": {
+            "@id": "pot:physical/lightColor",
             "@nest": "data"
         }
     }

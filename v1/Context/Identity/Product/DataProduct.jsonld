@@ -13,79 +13,114 @@
         "metadata": {
             "@id": "pot:metadata"
         },
-        "gTIN": {
-            "@id": "pot:identifier/gTIN",
+        "ean": {
+            "@id": "pot:identifier/ean",
             "@nest": "data"
         },
-        "pricePurchase": {
-            "@id": "pot:financial/pricePurchase",
-            "@nest": "data"
-        },
-        "status": {
-            "@id": "pot:lifeCycle/status",
+        "groupCode": {
+            "@id": "pot:identifier/groupCode",
             "@nest": "data"
         },
         "createdBy": {
             "@id": "pot:metadata/createdBy",
             "@nest": "metadata"
         },
-        "groupName": {
-            "@id": "pot:identifier/groupName",
+        "status": {
+            "@id": "pot:lifeCycle/status",
             "@nest": "data"
         },
-        "priceCurrent": {
-            "@id": "pot:financial/priceCurrent",
+        "additionalInformation": {
+            "@id": "pot:description/additionalInformation",
             "@nest": "data"
         },
-        "updatedAt": {
-            "@id": "pot:metadata/updatedAt",
-            "@nest": "metadata"
-        },
-        "createdAt": {
-            "@id": "pot:metadata/createdAt",
-            "@nest": "metadata"
-        },
-        "groupCode": {
-            "@id": "pot:identifier/groupCode",
+        "visibility": {
+            "@id": "pot:other/visibility",
             "@nest": "data"
         },
-        "ean": {
-            "@id": "pot:identifier/ean",
-            "@nest": "data"
-        },
-        "id": {
-            "@id": "pot:identifier/id"
-        },
-        "descriptionGeneral": {
-            "@id": "pot:description/descriptionGeneral",
-            "@nest": "data"
-        },
-        "url": {
-            "@id": "pot:identifier/url",
-            "@nest": "data"
-        },
-        "name": {
-            "@id": "pot:identifier/name",
-            "@nest": "data"
-        },
-        "priceSell": {
-            "@id": "pot:financial/priceSell",
+        "categorizationPoT": {
+            "@id": "pot:categorization/categorizationPoT",
             "@nest": "data"
         },
         "categorizationETIM": {
             "@id": "pot:categorization/categorizationETIM",
             "@nest": "data"
         },
+        "validFrom": {
+            "@id": "pot:time/validFrom"
+        },
+        "other": {
+            "@id": "pot:other",
+            "@nest": "data"
+        },
         "codeProduct": {
             "@id": "pot:identifier/codeProduct",
             "@nest": "data"
+        },
+        "createdAt": {
+            "@id": "pot:metadata/createdAt",
+            "@nest": "metadata"
+        },
+        "translatorUrl": {
+            "@id": "pot:other/translatorUrl"
+        },
+        "priceSell": {
+            "@id": "pot:financial/priceSell",
+            "@nest": "data"
+        },
+        "organizationPublicKeys": {
+            "@id": "pot:other/organizationPublicKeys"
         },
         "updatedBy": {
             "@id": "pot:metadata/updatedBy",
             "@nest": "metadata"
         },
-        "additionalInformation": {
-            "@id": "pot:description/additionalInformation",
+        "imageUrl": {
+            "@id": "pot:description/imageUrl",
+            "@nest": "data"
+        },
+        "priceCurrent": {
+            "@id": "pot:financial/priceCurrent",
+            "@nest": "data"
+        },
+        "name": {
+            "@id": "pot:identifier/name",
+            "@nest": "data"
+        },
+        "groupName": {
+            "@id": "pot:identifier/groupName",
+            "@nest": "data"
+        },
+        "url": {
+            "@id": "pot:identifier/url",
+            "@nest": "data"
+        },
+        "updatedAt": {
+            "@id": "pot:metadata/updatedAt",
+            "@nest": "metadata"
+        },
+        "version": {
+            "@id": "pot:lifeCycle/version",
+            "@nest": "data"
+        },
+        "descriptionGeneral": {
+            "@id": "pot:description/descriptionGeneral",
+            "@nest": "data"
+        },
+        "id": {
+            "@id": "pot:identifier/id"
+        },
+        "gTIN": {
+            "@id": "pot:identifier/gTIN",
+            "@nest": "data"
+        },
+        "parameterContext": {
+            "@id": "pot:other/parameterContext"
+        },
+        "validTo": {
+            "@id": "pot:time/validTo"
+        },
+        "pricePurchase": {
+            "@id": "pot:financial/pricePurchase",
             "@nest": "data"
         }
     }

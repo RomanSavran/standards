@@ -13,51 +13,51 @@
         "metadata": {
             "@id": "pot:metadata"
         },
-        "firstName": {
-            "@id": "pot:identifier/firstName",
-            "@nest": "data"
-        },
         "middleName": {
             "@id": "pot:identifier/middleName",
-            "@nest": "data"
-        },
-        "lastName": {
-            "@id": "pot:identifier/lastName",
-            "@nest": "data"
-        },
-        "birthdate": {
-            "@id": "pot:identifier/birthdate",
-            "@nest": "data"
-        },
-        "status": {
-            "@id": "pot:lifeCycle/status",
             "@nest": "data"
         },
         "updatedBy": {
             "@id": "pot:metadata/updatedBy",
             "@nest": "metadata"
         },
-        "id": {
-            "@id": "pot:identifier/id"
-        },
-        "additionalInformation": {
-            "@id": "pot:description/additionalInformation",
+        "firstName": {
+            "@id": "pot:identifier/firstName",
             "@nest": "data"
         },
-        "updatedAt": {
-            "@id": "pot:metadata/updatedAt",
-            "@nest": "metadata"
+        "lastName": {
+            "@id": "pot:identifier/lastName",
+            "@nest": "data"
         },
         "createdBy": {
             "@id": "pot:metadata/createdBy",
+            "@nest": "metadata"
+        },
+        "updatedAt": {
+            "@id": "pot:metadata/updatedAt",
             "@nest": "metadata"
         },
         "createdAt": {
             "@id": "pot:metadata/createdAt",
             "@nest": "metadata"
         },
+        "birthdate": {
+            "@id": "pot:identifier/birthdate",
+            "@nest": "data"
+        },
         "idOfficial": {
             "@id": "pot:identifier/idOfficial",
+            "@nest": "data"
+        },
+        "id": {
+            "@id": "pot:identifier/id"
+        },
+        "status": {
+            "@id": "pot:lifeCycle/status",
+            "@nest": "data"
+        },
+        "additionalInformation": {
+            "@id": "pot:description/additionalInformation",
             "@nest": "data"
         }
     }

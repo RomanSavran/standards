@@ -49,12 +49,20 @@
         "label": [
             {
                 "rdfs:label": {
-                    "en-us": "Space type - local",
-                    "fi-fi": "Tilatyyppi - paikallinen"
+                    "en-us": "Condition local class",
+                    "fi-fi": "Ehdon paikallinen luokka"
                 },
                 "domain": [
-                    "pot:Space",
-                    "pot:Room"
+                    "pot:Condition"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "fi-fi": "Laatuominaisuuden paikallinen luokka",
+                    "en-us": "Quality local class"
+                },
+                "domain": [
+                    "pot:Quality"
                 ]
             },
             {
@@ -75,6 +83,16 @@
                 "domain": [
                     "pot:Case"
                 ]
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Space type - local",
+                    "fi-fi": "Tilatyyppi - paikallinen"
+                },
+                "domain": [
+                    "pot:Space",
+                    "pot:Room"
+                ]
             }
         ],
         "pot:valueType": [
@@ -82,6 +100,8 @@
         ],
         "domain": [
             "pot:Space",
+            "pot:Condition",
+            "pot:Quality",
             "pot:BuildingElement",
             "pot:Device",
             "pot:Case",

@@ -58,18 +58,18 @@
             },
             {
                 "rdfs:comment": {
-                    "en-us": "End time of the case"
-                },
-                "domain": [
-                    "pot:Case"
-                ]
-            },
-            {
-                "rdfs:comment": {
                     "en-us": "End time of the process"
                 },
                 "domain": [
                     "pot:Process"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "End time of the case"
+                },
+                "domain": [
+                    "pot:Case"
                 ]
             }
         ],

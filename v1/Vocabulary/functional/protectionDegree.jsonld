@@ -46,32 +46,23 @@
         "comment": [
             {
                 "rdfs:comment": {
+                    "en-us": "Class or degree of protection (IP)"
+                },
+                "domain": [
+                    "pot:Luminaire"
+                ]
+            },
+            {
+                "rdfs:comment": {
                     "en-us": "Degree of protection (IP)"
                 },
                 "domain": [
                     "pot:SocketOutlet",
                     "pot:Switch"
                 ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Class or degree of protection (IP)"
-                },
-                "domain": [
-                    "pot:Luminaire"
-                ]
             }
         ],
         "label": [
-            {
-                "rdfs:label": {
-                    "en-us": "Degree of protection",
-                    "fi-fi": "Kotelointiluokka"
-                },
-                "domain": [
-                    "pot:Luminaire"
-                ]
-            },
             {
                 "rdfs:label": {
                     "en-us": "Degree of protection (IP)",
@@ -80,6 +71,15 @@
                 "domain": [
                     "pot:SocketOutlet",
                     "pot:Switch"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Degree of protection",
+                    "fi-fi": "Kotelointiluokka"
+                },
+                "domain": [
+                    "pot:Luminaire"
                 ]
             }
         ],

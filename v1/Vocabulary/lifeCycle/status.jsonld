@@ -46,18 +46,10 @@
         "comment": [
             {
                 "rdfs:comment": {
-                    "en-us": "Process state"
+                    "fi-fi": "Life-cycle status of the product"
                 },
                 "domain": [
-                    "pot:Process"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "project state"
-                },
-                "domain": [
-                    "pot:Project"
+                    "pot:Product"
                 ]
             },
             {
@@ -70,11 +62,18 @@
             },
             {
                 "rdfs:comment": {
+                    "en-us": "project state"
+                },
+                "domain": [
+                    "pot:Project"
+                ]
+            },
+            {
+                "rdfs:comment": {
                     "en-us": "Life cycle status"
                 },
                 "domain": [
                     "pot:Link",
-                    "pot:Product",
                     "pot:Space",
                     "pot:BuildingElement",
                     "pot:Device",
@@ -84,6 +83,14 @@
                     "pot:RealEstate",
                     "pot:Room",
                     "pot:Storey"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Process state"
+                },
+                "domain": [
+                    "pot:Process"
                 ]
             },
             {
@@ -98,11 +105,11 @@
         "label": [
             {
                 "rdfs:label": {
-                    "en-us": "Process status",
-                    "fi-fi": "Prosessin tila"
+                    "fi-fi": "Elinkaari - Status",
+                    "en-us": "Life cycle status"
                 },
                 "domain": [
-                    "pot:Process"
+                    "pot:Building"
                 ]
             },
             {
@@ -121,7 +128,6 @@
                 },
                 "domain": [
                     "pot:Link",
-                    "pot:Product",
                     "pot:Space",
                     "pot:BuildingElement",
                     "pot:Device",
@@ -135,11 +141,20 @@
             },
             {
                 "rdfs:label": {
-                    "fi-fi": "Elinkaari - Status",
-                    "en-us": "Life cycle status"
+                    "en-us": "Product status",
+                    "fi-fi": "Tuotteen status"
                 },
                 "domain": [
-                    "pot:Building"
+                    "pot:Product"
+                ]
+            },
+            {
+                "rdfs:label": {
+                    "en-us": "Process status",
+                    "fi-fi": "Prosessin tila"
+                },
+                "domain": [
+                    "pot:Process"
                 ]
             },
             {

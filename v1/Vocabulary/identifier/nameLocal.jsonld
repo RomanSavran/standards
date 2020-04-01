@@ -46,14 +46,6 @@
         "comment": [
             {
                 "rdfs:comment": {
-                    "en-us": "Locally given name (source system name)"
-                },
-                "domain": [
-                    "pot:Case"
-                ]
-            },
-            {
-                "rdfs:comment": {
                     "en-us": "Locally given name (source system name) for the process"
                 },
                 "domain": [
@@ -66,6 +58,14 @@
                 },
                 "domain": [
                     "pot:Project"
+                ]
+            },
+            {
+                "rdfs:comment": {
+                    "en-us": "Locally given name (source system name)"
+                },
+                "domain": [
+                    "pot:Case"
                 ]
             }
         ],

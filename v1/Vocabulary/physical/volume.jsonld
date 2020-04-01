@@ -58,19 +58,19 @@
             },
             {
                 "rdfs:comment": {
+                    "en-us": "Volume of the device"
+                },
+                "domain": [
+                    "pot:Device"
+                ]
+            },
+            {
+                "rdfs:comment": {
                     "en-us": "Volume of the object"
                 },
                 "domain": [
                     "pot:Room",
                     "pot:Storey"
-                ]
-            },
-            {
-                "rdfs:comment": {
-                    "en-us": "Volume of the space"
-                },
-                "domain": [
-                    "pot:Space"
                 ]
             },
             {
@@ -83,10 +83,10 @@
             },
             {
                 "rdfs:comment": {
-                    "en-us": "Volume of the device"
+                    "en-us": "Volume of the space"
                 },
                 "domain": [
-                    "pot:Device"
+                    "pot:Space"
                 ]
             }
         ],
