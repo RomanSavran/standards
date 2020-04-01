@@ -13,6 +13,26 @@
         "metadata": {
             "@id": "pot:metadata"
         },
+        "vatIncluded": {
+            "@id": "pot:financial/vatIncluded",
+            "@nest": "data"
+        },
+        "name": {
+            "@id": "pot:identifier/name",
+            "@nest": "data"
+        },
+        "currency": {
+            "@id": "pot:financial/currency",
+            "@nest": "data"
+        },
+        "rate": {
+            "@id": "pot:financial/rate",
+            "@nest": "data"
+        },
+        "unit": {
+            "@id": "pot:physical/unit",
+            "@nest": "data"
+        },
         "updatedBy": {
             "@id": "pot:metadata/updatedBy",
             "@nest": "metadata"
@@ -25,8 +45,8 @@
             "@id": "pot:metadata/createdBy",
             "@nest": "metadata"
         },
-        "unit": {
-            "@id": "pot:physical/unit",
+        "unitGroup": {
+            "@id": "pot:physical/unitGroup",
             "@nest": "data"
         },
         "createdAt": {
@@ -39,26 +59,7 @@
         "vatPercentage": {
             "@id": "pot:financial/vatPercentage",
             "@nest": "data"
-        },
-        "vatIncluded": {
-            "@id": "pot:financial/vatIncluded",
-            "@nest": "data"
-        },
-        "rate": {
-            "@id": "pot:financial/rate",
-            "@nest": "data"
-        },
-        "currency": {
-            "@id": "pot:financial/currency",
-            "@nest": "data"
-        },
-        "unitGroup": {
-            "@id": "pot:physical/unitGroup",
-            "@nest": "data"
-        },
-        "name": {
-            "@id": "pot:identifier/name",
-            "@nest": "data"
         }
-    }
+    },
+    "@type": "PricePlan"
 }

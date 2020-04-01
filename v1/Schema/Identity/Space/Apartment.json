@@ -1,0 +1,142 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "@context": {
+            "type": "string",
+            "minLength": 1
+        },
+        "@type": {
+            "type": "string",
+            "minLength": 1,
+            "enum": [
+                "Apartment"
+            ]
+        },
+        "metadata": {
+            "title": "Metadata",
+            "description": "Metadata container",
+            "type": "object",
+            "properties": {
+                "createdAt": {
+                    "title": "Creation time",
+                    "description": "Time when the data is created",
+                    "type": "string"
+                },
+                "updatedBy": {
+                    "title": "Updater",
+                    "description": "Updater of an identity",
+                    "type": "string"
+                },
+                "updatedAt": {
+                    "title": "Update time",
+                    "description": "Time when the data is updated",
+                    "type": "string"
+                },
+                "createdBy": {
+                    "title": "Creator",
+                    "description": "Creator of and identity",
+                    "type": "string"
+                }
+            }
+        },
+        "data": {
+            "title": "",
+            "description": "",
+            "type": "object",
+            "properties": {
+                "categorizationLocal": {
+                    "title": "Condition local class",
+                    "description": "Categorisation name given locally",
+                    "type": "string"
+                },
+                "usageMain": {
+                    "title": "Main usage purpose",
+                    "description": "Main usage purpose",
+                    "type": "string"
+                },
+                "ifcGuid": {
+                    "title": "IFC GUID",
+                    "description": "IFC standard based Globally Unique Identifier",
+                    "type": "string"
+                },
+                "status": {
+                    "title": "Life cycle status",
+                    "description": "",
+                    "type": "string"
+                },
+                "sizeAreaFloor": {
+                    "title": "Floor area size",
+                    "description": "Area of the space",
+                    "type": "string"
+                },
+                "sizeAreaLivingAudited": {
+                    "title": "Audited living area size",
+                    "description": "Size of audited area suitable for, or used for, living",
+                    "type": "string"
+                },
+                "sizeAreaLiving": {
+                    "title": "Living area size",
+                    "description": "Size of area suitable for, or used for. living",
+                    "type": "string"
+                },
+                "idLocal": {
+                    "title": "Local code",
+                    "description": "",
+                    "type": "string"
+                },
+                "height": {
+                    "title": "Height",
+                    "description": "",
+                    "type": "string"
+                },
+                "name": {
+                    "title": "Building name",
+                    "description": "Apartment name",
+                    "type": "string"
+                },
+                "roomAmount": {
+                    "title": "Number of rooms",
+                    "description": "Number of rooms within the apartment",
+                    "type": "string"
+                },
+                "categorizationOfficial": {
+                    "title": "Industry category",
+                    "description": "",
+                    "type": "string"
+                },
+                "descriptionKitchen": {
+                    "title": "Kitchen type",
+                    "description": "Type of kitchen in the apartment",
+                    "type": "string"
+                },
+                "idOfficial": {
+                    "title": "Identity number",
+                    "description": "",
+                    "type": "string"
+                },
+                "descriptionGeneral": {
+                    "title": "Description",
+                    "description": "Description",
+                    "type": "string"
+                },
+                "volume": {
+                    "title": "Volume",
+                    "description": "",
+                    "type": "string"
+                }
+            }
+        },
+        "id": {
+            "title": "",
+            "description": "",
+            "type": "string"
+        }
+    },
+    "required": [
+        "data",
+        "id",
+        "@context",
+        "@type"
+    ]
+}

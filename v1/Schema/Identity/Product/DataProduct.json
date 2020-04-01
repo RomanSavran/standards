@@ -1,0 +1,182 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "@context": {
+            "type": "string",
+            "minLength": 1
+        },
+        "@type": {
+            "type": "string",
+            "minLength": 1,
+            "enum": [
+                "DataProduct"
+            ]
+        },
+        "validFrom": {
+            "title": "",
+            "description": "",
+            "type": "string"
+        },
+        "parameterContext": {
+            "title": "",
+            "description": "",
+            "type": "string"
+        },
+        "organizationPublicKeys": {
+            "title": "",
+            "description": "",
+            "type": "string"
+        },
+        "validTo": {
+            "title": "",
+            "description": "",
+            "type": "string"
+        },
+        "translatorUrl": {
+            "title": "",
+            "description": "",
+            "type": "string"
+        },
+        "metadata": {
+            "title": "Metadata",
+            "description": "Metadata container",
+            "type": "object",
+            "properties": {
+                "createdAt": {
+                    "title": "Creation time",
+                    "description": "Time when the data is created",
+                    "type": "string"
+                },
+                "updatedBy": {
+                    "title": "Updater",
+                    "description": "Updater of an identity",
+                    "type": "string"
+                },
+                "updatedAt": {
+                    "title": "Update time",
+                    "description": "Time when the data is updated",
+                    "type": "string"
+                },
+                "createdBy": {
+                    "title": "Creator",
+                    "description": "Creator of and identity",
+                    "type": "string"
+                }
+            }
+        },
+        "data": {
+            "title": "",
+            "description": "",
+            "type": "object",
+            "properties": {
+                "priceSell": {
+                    "title": "Sales price",
+                    "description": "Sales price of the product",
+                    "type": "string"
+                },
+                "categorizationPoT": {
+                    "title": "Quality PoT class",
+                    "description": "Categorization class name in PoT standard",
+                    "type": "string"
+                },
+                "codeProduct": {
+                    "title": "Product code",
+                    "description": "Unique product code given by manufacturer",
+                    "type": "string"
+                },
+                "version": {
+                    "title": "Product version",
+                    "description": "Version of the product",
+                    "type": "string"
+                },
+                "pricePurchase": {
+                    "title": "Purchase price",
+                    "description": "Purchase price of the product",
+                    "type": "string"
+                },
+                "status": {
+                    "title": "Life cycle status",
+                    "description": "",
+                    "type": "string"
+                },
+                "gTIN": {
+                    "title": "GTIN code",
+                    "description": "GTIN standard based identifier",
+                    "type": "string"
+                },
+                "ean": {
+                    "title": "EAN code",
+                    "description": "EAN standard based identifier",
+                    "type": "string"
+                },
+                "priceCurrent": {
+                    "title": "Estimated price",
+                    "description": "Estimated value of the current price",
+                    "type": "string"
+                },
+                "additionalInformation": {
+                    "title": "Additional information",
+                    "description": "Additional information",
+                    "type": "string"
+                },
+                "groupName": {
+                    "title": "Product group name",
+                    "description": "Unique product group name given by manufacturer",
+                    "type": "string"
+                },
+                "name": {
+                    "title": "Building name",
+                    "description": "",
+                    "type": "string"
+                },
+                "visibility": {
+                    "title": "Product visibility",
+                    "description": "Product visibility restriction defined by PoT",
+                    "type": "string"
+                },
+                "url": {
+                    "title": "Product information link",
+                    "description": "URL address for the product information",
+                    "type": "string"
+                },
+                "groupCode": {
+                    "title": "Product group code",
+                    "description": "Unique product group code given by manufacturer",
+                    "type": "string"
+                },
+                "descriptionGeneral": {
+                    "title": "Description",
+                    "description": "Description",
+                    "type": "string"
+                },
+                "categorizationETIM": {
+                    "title": "ETIM class name",
+                    "description": "ETIM standard product category name",
+                    "type": "string"
+                },
+                "other": {
+                    "title": "Other",
+                    "description": "",
+                    "type": "string"
+                },
+                "imageUrl": {
+                    "title": "Product image",
+                    "description": "Image URL for the product",
+                    "type": "string"
+                }
+            }
+        },
+        "id": {
+            "title": "",
+            "description": "",
+            "type": "string"
+        }
+    },
+    "required": [
+        "data",
+        "id",
+        "@context",
+        "@type"
+    ]
+}

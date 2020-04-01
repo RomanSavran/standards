@@ -32,5 +32,6 @@
         "id": {
             "@id": "pot:identifier/id"
         }
-    }
+    },
+    "@type": "Material"
 }
