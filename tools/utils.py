@@ -246,7 +246,8 @@ def create_identity_from_rdf_class(rdf_class, entity_file: Dict[str, Any], onto,
 
     return {
         '@context': identity_dict,
-        '@type': rdf_class.entity.name
+        '@type': rdf_class.entity.name,
+        '@schema': f"{export_onto_url}Schema/{entity_file.get('id')}"
     }
 
 
