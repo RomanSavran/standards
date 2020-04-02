@@ -13,17 +13,28 @@
         "metadata": {
             "@id": "pot:metadata"
         },
+        "id": {
+            "@id": "pot:identifier/id"
+        },
         "name": {
             "@id": "pot:identifier/name",
             "@nest": "data"
+        },
+        "createdBy": {
+            "@id": "pot:metadata/createdBy",
+            "@nest": "metadata"
+        },
+        "updatedAt": {
+            "@id": "pot:metadata/updatedAt",
+            "@nest": "metadata"
         },
         "createdAt": {
             "@id": "pot:metadata/createdAt",
             "@nest": "metadata"
         },
-        "endDateTimeValidity": {
-            "@id": "pot:time/endDateTimeValidity",
-            "@nest": "data"
+        "updatedBy": {
+            "@id": "pot:metadata/updatedBy",
+            "@nest": "metadata"
         },
         "status": {
             "@id": "pot:lifeCycle/status",
@@ -33,17 +44,9 @@
             "@id": "pot:time/startDateTimeValidity",
             "@nest": "data"
         },
-        "updatedBy": {
-            "@id": "pot:metadata/updatedBy",
-            "@nest": "metadata"
-        },
-        "updatedAt": {
-            "@id": "pot:metadata/updatedAt",
-            "@nest": "metadata"
-        },
-        "createdBy": {
-            "@id": "pot:metadata/createdBy",
-            "@nest": "metadata"
+        "endDateTimeValidity": {
+            "@id": "pot:time/endDateTimeValidity",
+            "@nest": "data"
         },
         "additionalInformation": {
             "@id": "pot:description/additionalInformation",
@@ -52,10 +55,8 @@
         "usageMain": {
             "@id": "pot:categorization/usageMain",
             "@nest": "data"
-        },
-        "id": {
-            "@id": "pot:identifier/id"
         }
     },
-    "@type": "System"
+    "@type": "System",
+    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Group/System"
 }

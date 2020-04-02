@@ -13,53 +13,54 @@
         "metadata": {
             "@id": "pot:metadata"
         },
+        "id": {
+            "@id": "pot:identifier/id"
+        },
         "name": {
             "@id": "pot:identifier/name",
-            "@nest": "data"
-        },
-        "status": {
-            "@id": "pot:lifeCycle/status",
-            "@nest": "data"
-        },
-        "ifcGuid": {
-            "@id": "pot:identifier/ifcGuid",
             "@nest": "data"
         },
         "createdBy": {
             "@id": "pot:metadata/createdBy",
             "@nest": "metadata"
         },
-        "taxVatCode": {
-            "@id": "pot:identifier/taxVatCode",
-            "@nest": "data"
-        },
-        "governmentPermanent": {
-            "@id": "pot:identifier/governmentPermanent",
-            "@nest": "data"
-        },
-        "updatedBy": {
-            "@id": "pot:metadata/updatedBy",
-            "@nest": "metadata"
-        },
         "updatedAt": {
             "@id": "pot:metadata/updatedAt",
             "@nest": "metadata"
         },
-        "descriptionGeneral": {
-            "@id": "pot:description/descriptionGeneral",
+        "governmentPermanent": {
+            "@id": "pot:identifier/governmentPermanent",
             "@nest": "data"
         },
         "createdAt": {
             "@id": "pot:metadata/createdAt",
             "@nest": "metadata"
         },
+        "updatedBy": {
+            "@id": "pot:metadata/updatedBy",
+            "@nest": "metadata"
+        },
+        "status": {
+            "@id": "pot:lifeCycle/status",
+            "@nest": "data"
+        },
+        "taxVatCode": {
+            "@id": "pot:identifier/taxVatCode",
+            "@nest": "data"
+        },
+        "ifcGuid": {
+            "@id": "pot:identifier/ifcGuid",
+            "@nest": "data"
+        },
+        "descriptionGeneral": {
+            "@id": "pot:description/descriptionGeneral",
+            "@nest": "data"
+        },
         "categorizationOfficial": {
             "@id": "pot:categorization/categorizationOfficial",
             "@nest": "data"
-        },
-        "id": {
-            "@id": "pot:identifier/id"
         }
     },
-    "@type": "LimitedCompany"
+    "@type": "LimitedCompany",
+    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/LegalParty/Organization/LimitedCompany"
 }

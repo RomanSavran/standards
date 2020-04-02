@@ -13,44 +13,29 @@
                 "Process"
             ]
         },
-        "locationName": {
-            "title": "",
-            "description": "",
-            "type": "string"
-        },
-        "executor": {
-            "title": "",
-            "description": "",
-            "type": "string"
-        },
-        "function": {
-            "title": "",
-            "description": "",
-            "type": "string"
-        },
         "metadata": {
             "title": "Metadata",
             "description": "Metadata container",
             "type": "object",
             "properties": {
-                "updatedAt": {
-                    "title": "Update time",
-                    "description": "Time when the data is updated",
-                    "type": "string"
-                },
-                "createdBy": {
-                    "title": "Creator",
-                    "description": "Creator of and identity",
-                    "type": "string"
-                },
                 "createdAt": {
                     "title": "Creation time",
                     "description": "Time when the data is created",
                     "type": "string"
                 },
+                "updatedAt": {
+                    "title": "Update time",
+                    "description": "Time when the data is updated",
+                    "type": "string"
+                },
                 "updatedBy": {
                     "title": "Updater",
                     "description": "Updater of an identity",
+                    "type": "string"
+                },
+                "createdBy": {
+                    "title": "Creator",
+                    "description": "Creator of and identity",
                     "type": "string"
                 }
             }
@@ -60,14 +45,9 @@
             "description": "",
             "type": "object",
             "properties": {
-                "nameLocal": {
-                    "title": "Case header - > Case name",
-                    "description": "Locally given name (source system name) for the process",
-                    "type": "string"
-                },
-                "function": {
-                    "title": "",
-                    "description": "",
+                "processValue": {
+                    "title": "Output value",
+                    "description": "Output value of the process",
                     "type": "string"
                 },
                 "processTypePoT": {
@@ -75,24 +55,14 @@
                     "description": "PoT defined standard process type",
                     "type": "string"
                 },
-                "idLocal": {
-                    "title": "Local code",
-                    "description": "Locally given identifier for the process instance",
-                    "type": "string"
-                },
-                "descriptionGeneral": {
-                    "title": "Description",
-                    "description": "Description",
-                    "type": "string"
-                },
                 "startDateTime": {
                     "title": "Start time",
                     "description": "Start time of the process",
                     "type": "string"
                 },
-                "duration": {
-                    "title": "Duration time",
-                    "description": "Duration of the process",
+                "function": {
+                    "title": "Process function",
+                    "description": "Function which process is executing",
                     "type": "string"
                 },
                 "executor": {
@@ -100,9 +70,24 @@
                     "description": "Executor of the process (source of the data)",
                     "type": "string"
                 },
-                "endDateTime": {
-                    "title": "End time",
-                    "description": "End time of the process",
+                "descriptionGeneral": {
+                    "title": "Description",
+                    "description": "Description",
+                    "type": "string"
+                },
+                "idLocal": {
+                    "title": "Local code",
+                    "description": "Locally given identifier for the process instance",
+                    "type": "string"
+                },
+                "nameLocal": {
+                    "title": "Case header - > Case name",
+                    "description": "Locally given name (source system name) for the process",
+                    "type": "string"
+                },
+                "duration": {
+                    "title": "Duration time",
+                    "description": "Duration of the process",
                     "type": "string"
                 },
                 "status": {
@@ -110,14 +95,29 @@
                     "description": "Process state",
                     "type": "string"
                 },
-                "processValue": {
-                    "title": "Output value",
-                    "description": "Output value of the process",
+                "endDateTime": {
+                    "title": "End time",
+                    "description": "End time of the process",
                     "type": "string"
                 }
             }
         },
         "id": {
+            "title": "",
+            "description": "",
+            "type": "string"
+        },
+        "executor": {
+            "title": "",
+            "description": "",
+            "type": "string"
+        },
+        "locationName": {
+            "title": "",
+            "description": "",
+            "type": "string"
+        },
+        "function": {
             "title": "",
             "description": "",
             "type": "string"

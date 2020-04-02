@@ -13,44 +13,29 @@
                 "Calculate"
             ]
         },
-        "locationName": {
-            "title": "",
-            "description": "",
-            "type": "string"
-        },
-        "executor": {
-            "title": "",
-            "description": "",
-            "type": "string"
-        },
-        "function": {
-            "title": "",
-            "description": "",
-            "type": "string"
-        },
         "metadata": {
             "title": "Metadata",
             "description": "Metadata container",
             "type": "object",
             "properties": {
-                "updatedAt": {
-                    "title": "Update time",
-                    "description": "Time when the data is updated",
-                    "type": "string"
-                },
-                "createdBy": {
-                    "title": "Creator",
-                    "description": "Creator of and identity",
-                    "type": "string"
-                },
                 "createdAt": {
                     "title": "Creation time",
                     "description": "Time when the data is created",
                     "type": "string"
                 },
+                "updatedAt": {
+                    "title": "Update time",
+                    "description": "Time when the data is updated",
+                    "type": "string"
+                },
                 "updatedBy": {
                     "title": "Updater",
                     "description": "Updater of an identity",
+                    "type": "string"
+                },
+                "createdBy": {
+                    "title": "Creator",
+                    "description": "Creator of and identity",
                     "type": "string"
                 }
             }
@@ -60,14 +45,9 @@
             "description": "",
             "type": "object",
             "properties": {
-                "nameLocal": {
-                    "title": "Case header - > Case name",
-                    "description": "",
-                    "type": "string"
-                },
-                "function": {
-                    "title": "",
-                    "description": "",
+                "processValue": {
+                    "title": "Output value",
+                    "description": "Output value of the process",
                     "type": "string"
                 },
                 "processTypePoT": {
@@ -75,23 +55,13 @@
                     "description": "PoT defined standard process type",
                     "type": "string"
                 },
-                "idLocal": {
-                    "title": "Local code",
-                    "description": "",
-                    "type": "string"
-                },
-                "descriptionGeneral": {
-                    "title": "Description",
-                    "description": "Description",
-                    "type": "string"
-                },
                 "startDateTime": {
                     "title": "Start time",
                     "description": "",
                     "type": "string"
                 },
-                "duration": {
-                    "title": "Duration time",
+                "function": {
+                    "title": "Process function",
                     "description": "",
                     "type": "string"
                 },
@@ -100,8 +70,23 @@
                     "description": "Executor of the process (source of the data)",
                     "type": "string"
                 },
-                "endDateTime": {
-                    "title": "End time",
+                "descriptionGeneral": {
+                    "title": "Description",
+                    "description": "Description",
+                    "type": "string"
+                },
+                "idLocal": {
+                    "title": "Local code",
+                    "description": "",
+                    "type": "string"
+                },
+                "nameLocal": {
+                    "title": "Case header - > Case name",
+                    "description": "",
+                    "type": "string"
+                },
+                "duration": {
+                    "title": "Duration time",
                     "description": "",
                     "type": "string"
                 },
@@ -110,14 +95,29 @@
                     "description": "",
                     "type": "string"
                 },
-                "processValue": {
-                    "title": "Output value",
-                    "description": "Output value of the process",
+                "endDateTime": {
+                    "title": "End time",
+                    "description": "",
                     "type": "string"
                 }
             }
         },
         "id": {
+            "title": "",
+            "description": "",
+            "type": "string"
+        },
+        "executor": {
+            "title": "",
+            "description": "",
+            "type": "string"
+        },
+        "locationName": {
+            "title": "",
+            "description": "",
+            "type": "string"
+        },
+        "function": {
             "title": "",
             "description": "",
             "type": "string"

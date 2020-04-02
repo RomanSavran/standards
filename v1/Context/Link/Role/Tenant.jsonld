@@ -13,24 +13,6 @@
         "metadata": {
             "@id": "pot:metadata"
         },
-        "status": {
-            "@id": "pot:lifeCycle/status",
-            "@nest": "data"
-        },
-        "from": {
-            "@id": "pot:from"
-        },
-        "to": {
-            "@id": "pot:to"
-        },
-        "startDateTime": {
-            "@id": "pot:time/startDateTime",
-            "@nest": "data"
-        },
-        "updatedBy": {
-            "@id": "pot:metadata/updatedBy",
-            "@nest": "metadata"
-        },
         "updatedAt": {
             "@id": "pot:metadata/updatedAt",
             "@nest": "metadata"
@@ -42,7 +24,26 @@
         "createdAt": {
             "@id": "pot:metadata/createdAt",
             "@nest": "metadata"
+        },
+        "status": {
+            "@id": "pot:lifeCycle/status",
+            "@nest": "data"
+        },
+        "startDateTime": {
+            "@id": "pot:time/startDateTime",
+            "@nest": "data"
+        },
+        "to": {
+            "@id": "pot:to"
+        },
+        "from": {
+            "@id": "pot:from"
+        },
+        "updatedBy": {
+            "@id": "pot:metadata/updatedBy",
+            "@nest": "metadata"
         }
     },
-    "@type": "Tenant"
+    "@type": "Tenant",
+    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Link/Role/Tenant"
 }

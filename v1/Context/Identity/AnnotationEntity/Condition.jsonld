@@ -13,24 +13,23 @@
         "metadata": {
             "@id": "pot:metadata"
         },
-        "categorizationLocal": {
-            "@id": "pot:categorization/categorizationLocal",
-            "@nest": "data"
+        "id": {
+            "@id": "pot:identifier/id"
         },
         "name": {
             "@id": "pot:identifier/name",
             "@nest": "data"
         },
-        "createdAt": {
-            "@id": "pot:metadata/createdAt",
-            "@nest": "metadata"
+        "categorizationLocal": {
+            "@id": "pot:categorization/categorizationLocal",
+            "@nest": "data"
         },
         "createdBy": {
             "@id": "pot:metadata/createdBy",
             "@nest": "metadata"
         },
-        "updatedBy": {
-            "@id": "pot:metadata/updatedBy",
+        "createdAt": {
+            "@id": "pot:metadata/createdAt",
             "@nest": "metadata"
         },
         "updatedAt": {
@@ -45,9 +44,11 @@
             "@id": "pot:categorization/categorizationPoT",
             "@nest": "data"
         },
-        "id": {
-            "@id": "pot:identifier/id"
+        "updatedBy": {
+            "@id": "pot:metadata/updatedBy",
+            "@nest": "metadata"
         }
     },
-    "@type": "Condition"
+    "@type": "Condition",
+    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/AnnotationEntity/Condition"
 }

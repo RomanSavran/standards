@@ -13,83 +13,32 @@
         "metadata": {
             "@id": "pot:metadata"
         },
-        "areaNet": {
-            "@id": "pot:physical/areaNet",
+        "colorName": {
+            "@id": "pot:physical/colorName",
             "@nest": "data"
         },
-        "status": {
-            "@id": "pot:lifeCycle/status",
+        "categorizationLocal": {
+            "@id": "pot:categorization/categorizationLocal",
             "@nest": "data"
         },
-        "length": {
-            "@id": "pot:physical/length",
-            "@nest": "data"
-        },
-        "idLocal": {
-            "@id": "pot:identifier/idLocal",
-            "@nest": "data"
-        },
-        "weight": {
-            "@id": "pot:physical/weight",
+        "width": {
+            "@id": "pot:physical/width",
             "@nest": "data"
         },
         "processCapability": {
             "@id": "pot:functional/processCapability",
             "@nest": "data"
         },
-        "updatedAt": {
-            "@id": "pot:metadata/updatedAt",
-            "@nest": "metadata"
-        },
-        "descriptionGeneral": {
-            "@id": "pot:description/descriptionGeneral",
-            "@nest": "data"
-        },
-        "typeName": {
-            "@id": "pot:material/typeName",
-            "@nest": "data"
-        },
-        "areaGross": {
-            "@id": "pot:physical/areaGross",
-            "@nest": "data"
-        },
-        "thickness": {
-            "@id": "pot:physical/thickness",
+        "areaNet": {
+            "@id": "pot:physical/areaNet",
             "@nest": "data"
         },
         "power": {
             "@id": "pot:physical/power",
             "@nest": "data"
         },
-        "function": {
-            "@id": "pot:function"
-        },
-        "volume": {
-            "@id": "pot:physical/volume",
-            "@nest": "data"
-        },
-        "colorName": {
-            "@id": "pot:physical/colorName",
-            "@nest": "data"
-        },
-        "ifcElementType": {
-            "@id": "pot:categorization/ifcElementType",
-            "@nest": "data"
-        },
-        "createdBy": {
-            "@id": "pot:metadata/createdBy",
-            "@nest": "metadata"
-        },
-        "industryDomain": {
-            "@id": "pot:categorization/industryDomain",
-            "@nest": "data"
-        },
-        "electricityCurrent": {
-            "@id": "pot:physical/electricityCurrent",
-            "@nest": "data"
-        },
-        "height": {
-            "@id": "pot:physical/height",
+        "length": {
+            "@id": "pot:physical/length",
             "@nest": "data"
         },
         "ifcGuid": {
@@ -100,28 +49,71 @@
             "@id": "pot:physical/colorCode",
             "@nest": "data"
         },
-        "createdAt": {
-            "@id": "pot:metadata/createdAt",
+        "updatedAt": {
+            "@id": "pot:metadata/updatedAt",
             "@nest": "metadata"
         },
-        "ifcElementName": {
-            "@id": "pot:categorization/ifcElementName",
+        "weight": {
+            "@id": "pot:physical/weight",
             "@nest": "data"
         },
-        "categorizationLocal": {
-            "@id": "pot:categorization/categorizationLocal",
+        "areaGross": {
+            "@id": "pot:physical/areaGross",
+            "@nest": "data"
+        },
+        "function": {
+            "@id": "pot:categorization/function",
+            "@nest": "data"
+        },
+        "height": {
+            "@id": "pot:physical/height",
+            "@nest": "data"
+        },
+        "descriptionGeneral": {
+            "@id": "pot:description/descriptionGeneral",
+            "@nest": "data"
+        },
+        "electricityCurrent": {
+            "@id": "pot:physical/electricityCurrent",
             "@nest": "data"
         },
         "name": {
             "@id": "pot:identifier/name",
             "@nest": "data"
         },
-        "width": {
-            "@id": "pot:physical/width",
+        "createdBy": {
+            "@id": "pot:metadata/createdBy",
+            "@nest": "metadata"
+        },
+        "status": {
+            "@id": "pot:lifeCycle/status",
             "@nest": "data"
         },
-        "updatedBy": {
-            "@id": "pot:metadata/updatedBy",
+        "volume": {
+            "@id": "pot:physical/volume",
+            "@nest": "data"
+        },
+        "ifcElementType": {
+            "@id": "pot:categorization/ifcElementType",
+            "@nest": "data"
+        },
+        "industryDomain": {
+            "@id": "pot:categorization/industryDomain",
+            "@nest": "data"
+        },
+        "serialNumber": {
+            "@id": "pot:identifier/serialNumber",
+            "@nest": "data"
+        },
+        "id": {
+            "@id": "pot:identifier/id"
+        },
+        "typeName": {
+            "@id": "pot:material/typeName",
+            "@nest": "data"
+        },
+        "createdAt": {
+            "@id": "pot:metadata/createdAt",
             "@nest": "metadata"
         },
         "installationType": {
@@ -132,13 +124,23 @@
             "@id": "pot:functional/installationTypeAvailable",
             "@nest": "data"
         },
-        "serialNumber": {
-            "@id": "pot:identifier/serialNumber",
+        "idLocal": {
+            "@id": "pot:identifier/idLocal",
             "@nest": "data"
         },
-        "id": {
-            "@id": "pot:identifier/id"
+        "thickness": {
+            "@id": "pot:physical/thickness",
+            "@nest": "data"
+        },
+        "ifcElementName": {
+            "@id": "pot:categorization/ifcElementName",
+            "@nest": "data"
+        },
+        "updatedBy": {
+            "@id": "pot:metadata/updatedBy",
+            "@nest": "metadata"
         }
     },
-    "@type": "TemperatureSensor"
+    "@type": "TemperatureSensor",
+    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Equipment/Device/Sensor/TemperatureSensor"
 }

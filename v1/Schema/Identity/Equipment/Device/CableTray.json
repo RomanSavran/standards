@@ -13,46 +13,19 @@
                 "CableTray"
             ]
         },
-        "metadata": {
-            "title": "Metadata",
-            "description": "Metadata container",
-            "type": "object",
-            "properties": {
-                "createdAt": {
-                    "title": "Creation time",
-                    "description": "Time when the data is created",
-                    "type": "string"
-                },
-                "updatedBy": {
-                    "title": "Updater",
-                    "description": "Updater of an identity",
-                    "type": "string"
-                },
-                "updatedAt": {
-                    "title": "Update time",
-                    "description": "Time when the data is updated",
-                    "type": "string"
-                },
-                "createdBy": {
-                    "title": "Creator",
-                    "description": "Creator of and identity",
-                    "type": "string"
-                }
-            }
-        },
         "data": {
             "title": "",
             "description": "",
             "type": "object",
             "properties": {
-                "areaNet": {
-                    "title": "Area - net",
-                    "description": "",
+                "processCapability": {
+                    "title": "Process capability",
+                    "description": "Process which device is capable executing to produce output",
                     "type": "string"
                 },
-                "power": {
-                    "title": "Power (W)",
-                    "description": "Power measured in Watts",
+                "areaGross": {
+                    "title": "Area - gross",
+                    "description": "",
                     "type": "string"
                 },
                 "electricityCurrent": {
@@ -60,19 +33,14 @@
                     "description": "An electric current is the rate of flow of electric charge past a point",
                     "type": "string"
                 },
-                "categorizationLocal": {
-                    "title": "Condition local class",
-                    "description": "Categorisation name given locally",
+                "volume": {
+                    "title": "Volume",
+                    "description": "",
                     "type": "string"
                 },
-                "installationTypeAvailable": {
-                    "title": "Installation/mounting type available",
-                    "description": "Installation type available",
-                    "type": "string"
-                },
-                "ifcElementType": {
-                    "title": "IFC element type",
-                    "description": "IFC standard element type",
+                "colorName": {
+                    "title": "Color",
+                    "description": "",
                     "type": "string"
                 },
                 "thickness": {
@@ -80,14 +48,39 @@
                     "description": "",
                     "type": "string"
                 },
-                "ifcGuid": {
-                    "title": "IFC GUID",
-                    "description": "IFC standard based Globally Unique Identifier",
+                "name": {
+                    "title": "Building name",
+                    "description": "",
+                    "type": "string"
+                },
+                "areaNet": {
+                    "title": "Area - net",
+                    "description": "",
+                    "type": "string"
+                },
+                "ifcElementType": {
+                    "title": "IFC element type",
+                    "description": "IFC standard element type",
+                    "type": "string"
+                },
+                "height": {
+                    "title": "Height",
+                    "description": "",
+                    "type": "string"
+                },
+                "industryDomain": {
+                    "title": "Industry sector name",
+                    "description": "Industry sector name to which the device belongs",
                     "type": "string"
                 },
                 "colorCode": {
                     "title": "Color code",
                     "description": "",
+                    "type": "string"
+                },
+                "ifcGuid": {
+                    "title": "IFC GUID",
+                    "description": "IFC standard based Globally Unique Identifier",
                     "type": "string"
                 },
                 "weight": {
@@ -97,21 +90,6 @@
                 },
                 "status": {
                     "title": "Life cycle status",
-                    "description": "",
-                    "type": "string"
-                },
-                "length": {
-                    "title": "Length",
-                    "description": "",
-                    "type": "string"
-                },
-                "industryDomain": {
-                    "title": "Industry sector name",
-                    "description": "Industry sector name to which the device belongs",
-                    "type": "string"
-                },
-                "width": {
-                    "title": "Width",
                     "description": "",
                     "type": "string"
                 },
@@ -130,9 +108,14 @@
                     "description": "Actual installation type for the device",
                     "type": "string"
                 },
-                "processCapability": {
-                    "title": "Process capability",
-                    "description": "Process which device is capable executing to produce output",
+                "descriptionGeneral": {
+                    "title": "Description",
+                    "description": "Description",
+                    "type": "string"
+                },
+                "power": {
+                    "title": "Power (W)",
+                    "description": "Power measured in Watts",
                     "type": "string"
                 },
                 "idLocal": {
@@ -140,29 +123,9 @@
                     "description": "",
                     "type": "string"
                 },
-                "height": {
-                    "title": "Height",
+                "length": {
+                    "title": "Length",
                     "description": "",
-                    "type": "string"
-                },
-                "colorName": {
-                    "title": "Color",
-                    "description": "",
-                    "type": "string"
-                },
-                "name": {
-                    "title": "Building name",
-                    "description": "",
-                    "type": "string"
-                },
-                "function": {
-                    "title": "",
-                    "description": "",
-                    "type": "string"
-                },
-                "descriptionGeneral": {
-                    "title": "Description",
-                    "description": "Description",
                     "type": "string"
                 },
                 "typeName": {
@@ -170,29 +133,66 @@
                     "description": "Main material which device is composed",
                     "type": "string"
                 },
+                "installationTypeAvailable": {
+                    "title": "Installation/mounting type available",
+                    "description": "Installation type available",
+                    "type": "string"
+                },
                 "serialNumber": {
                     "title": "Serial number",
                     "description": "Unique identifier for the device instance",
                     "type": "string"
                 },
-                "areaGross": {
-                    "title": "Area - gross",
+                "categorizationLocal": {
+                    "title": "Condition local class",
+                    "description": "Categorisation name given locally",
+                    "type": "string"
+                },
+                "function": {
+                    "title": "Process function",
                     "description": "",
                     "type": "string"
                 },
-                "volume": {
-                    "title": "Volume",
+                "width": {
+                    "title": "Width",
                     "description": "",
                     "type": "string"
                 }
             }
         },
-        "id": {
+        "metadata": {
+            "title": "Metadata",
+            "description": "Metadata container",
+            "type": "object",
+            "properties": {
+                "updatedAt": {
+                    "title": "Update time",
+                    "description": "Time when the data is updated",
+                    "type": "string"
+                },
+                "createdBy": {
+                    "title": "Creator",
+                    "description": "Creator of and identity",
+                    "type": "string"
+                },
+                "createdAt": {
+                    "title": "Creation time",
+                    "description": "Time when the data is created",
+                    "type": "string"
+                },
+                "updatedBy": {
+                    "title": "Updater",
+                    "description": "Updater of an identity",
+                    "type": "string"
+                }
+            }
+        },
+        "function": {
             "title": "",
             "description": "",
             "type": "string"
         },
-        "function": {
+        "id": {
             "title": "",
             "description": "",
             "type": "string"

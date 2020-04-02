@@ -13,19 +13,24 @@
                 "Person"
             ]
         },
+        "id": {
+            "title": "",
+            "description": "",
+            "type": "string"
+        },
         "metadata": {
             "title": "Metadata",
             "description": "Metadata container",
             "type": "object",
             "properties": {
-                "updatedAt": {
-                    "title": "Update time",
-                    "description": "Time when the data is updated",
-                    "type": "string"
-                },
                 "createdAt": {
                     "title": "Creation time",
                     "description": "Time when the data is created",
+                    "type": "string"
+                },
+                "updatedAt": {
+                    "title": "Update time",
+                    "description": "Time when the data is updated",
                     "type": "string"
                 },
                 "updatedBy": {
@@ -45,24 +50,14 @@
             "description": "",
             "type": "object",
             "properties": {
-                "additionalInformation": {
-                    "title": "Additional information",
-                    "description": "Additional information",
-                    "type": "string"
-                },
-                "firstName": {
-                    "title": "First Name",
-                    "description": "First name of the person",
-                    "type": "string"
-                },
                 "idOfficial": {
                     "title": "Identity number",
                     "description": "Official identifier of the person in Finland",
                     "type": "string"
                 },
-                "birthdate": {
-                    "title": "Date of birth",
-                    "description": "Birthdate of the person",
+                "firstName": {
+                    "title": "First Name",
+                    "description": "First name of the person",
                     "type": "string"
                 },
                 "middleName": {
@@ -75,17 +70,22 @@
                     "description": "Last name of the person",
                     "type": "string"
                 },
+                "birthdate": {
+                    "title": "Date of birth",
+                    "description": "Birthdate of the person",
+                    "type": "string"
+                },
+                "additionalInformation": {
+                    "title": "Additional information",
+                    "description": "Additional information",
+                    "type": "string"
+                },
                 "status": {
                     "title": "Life cycle status",
                     "description": "Life cycle status",
                     "type": "string"
                 }
             }
-        },
-        "id": {
-            "title": "",
-            "description": "",
-            "type": "string"
         }
     },
     "required": [

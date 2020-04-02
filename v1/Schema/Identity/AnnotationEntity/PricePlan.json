@@ -13,14 +13,19 @@
                 "PricePlan"
             ]
         },
+        "id": {
+            "title": "",
+            "description": "",
+            "type": "string"
+        },
         "metadata": {
             "title": "Metadata",
             "description": "Metadata container",
             "type": "object",
             "properties": {
-                "updatedAt": {
-                    "title": "Update time",
-                    "description": "Time when the data is updated",
+                "createdAt": {
+                    "title": "Creation time",
+                    "description": "Time when the data is created",
                     "type": "string"
                 },
                 "createdBy": {
@@ -28,14 +33,14 @@
                     "description": "Creator of and identity",
                     "type": "string"
                 },
+                "updatedAt": {
+                    "title": "Update time",
+                    "description": "Time when the data is updated",
+                    "type": "string"
+                },
                 "updatedBy": {
                     "title": "Updater",
                     "description": "Updater of an identity",
-                    "type": "string"
-                },
-                "createdAt": {
-                    "title": "Creation time",
-                    "description": "Time when the data is created",
                     "type": "string"
                 }
             }
@@ -60,14 +65,14 @@
                     "description": "Percentage value used for VAT taxation",
                     "type": "string"
                 },
-                "currency": {
-                    "title": "Currency",
-                    "description": "Currency used for rate",
-                    "type": "string"
-                },
                 "name": {
                     "title": "Building name",
                     "description": "Name of the price plan",
+                    "type": "string"
+                },
+                "unit": {
+                    "title": "Unit",
+                    "description": "Exact name of the unit used for rate (price) value",
                     "type": "string"
                 },
                 "rate": {
@@ -75,17 +80,12 @@
                     "description": "Rate value for the unit",
                     "type": "string"
                 },
-                "unit": {
-                    "title": "Unit",
-                    "description": "Exact name of the unit used for rate (price) value",
+                "currency": {
+                    "title": "Currency",
+                    "description": "Currency used for rate",
                     "type": "string"
                 }
             }
-        },
-        "id": {
-            "title": "",
-            "description": "",
-            "type": "string"
         }
     },
     "required": [

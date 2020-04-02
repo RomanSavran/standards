@@ -13,33 +13,6 @@
                 "Zone"
             ]
         },
-        "metadata": {
-            "title": "Metadata",
-            "description": "Metadata container",
-            "type": "object",
-            "properties": {
-                "updatedAt": {
-                    "title": "Update time",
-                    "description": "Time when the data is updated",
-                    "type": "string"
-                },
-                "createdBy": {
-                    "title": "Creator",
-                    "description": "Creator of and identity",
-                    "type": "string"
-                },
-                "createdAt": {
-                    "title": "Creation time",
-                    "description": "Time when the data is created",
-                    "type": "string"
-                },
-                "updatedBy": {
-                    "title": "Updater",
-                    "description": "Updater of an identity",
-                    "type": "string"
-                }
-            }
-        },
         "data": {
             "title": "",
             "description": "",
@@ -70,23 +43,8 @@
                     "description": "Main usage purpose",
                     "type": "string"
                 },
-                "idOfficial": {
-                    "title": "Identity number",
-                    "description": "",
-                    "type": "string"
-                },
-                "idLocal": {
-                    "title": "Local code",
-                    "description": "",
-                    "type": "string"
-                },
-                "descriptionGeneral": {
-                    "title": "Description",
-                    "description": "Description",
-                    "type": "string"
-                },
-                "height": {
-                    "title": "Height",
+                "volume": {
+                    "title": "Volume",
                     "description": "",
                     "type": "string"
                 },
@@ -95,19 +53,61 @@
                     "description": "IFC standard based Globally Unique Identifier",
                     "type": "string"
                 },
+                "idOfficial": {
+                    "title": "Identity number",
+                    "description": "",
+                    "type": "string"
+                },
                 "status": {
                     "title": "Life cycle status",
                     "description": "",
                     "type": "string"
                 },
-                "volume": {
-                    "title": "Volume",
+                "descriptionGeneral": {
+                    "title": "Description",
+                    "description": "Description",
+                    "type": "string"
+                },
+                "idLocal": {
+                    "title": "Local code",
+                    "description": "",
+                    "type": "string"
+                },
+                "height": {
+                    "title": "Height",
                     "description": "",
                     "type": "string"
                 },
                 "sizeAreaLivingAudited": {
                     "title": "Audited living area size",
                     "description": "Size of audited area suitable for, or used for, living",
+                    "type": "string"
+                }
+            }
+        },
+        "metadata": {
+            "title": "Metadata",
+            "description": "Metadata container",
+            "type": "object",
+            "properties": {
+                "createdAt": {
+                    "title": "Creation time",
+                    "description": "Time when the data is created",
+                    "type": "string"
+                },
+                "createdBy": {
+                    "title": "Creator",
+                    "description": "Creator of and identity",
+                    "type": "string"
+                },
+                "updatedAt": {
+                    "title": "Update time",
+                    "description": "Time when the data is updated",
+                    "type": "string"
+                },
+                "updatedBy": {
+                    "title": "Updater",
+                    "description": "Updater of an identity",
                     "type": "string"
                 }
             }

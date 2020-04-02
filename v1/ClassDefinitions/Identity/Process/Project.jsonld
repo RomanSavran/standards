@@ -476,8 +476,49 @@
                 "pot:readonly": false
             },
             "function": {
-                "@id": "pot:function",
-                "@type": "owl:ObjectProperty"
+                "@id": "pot:categorization/function",
+                "@type": "owl:DatatypeProperty",
+                "subPropertyOf": "pot:categorization",
+                "comment": [
+                    {
+                        "rdfs:comment": {
+                            "en-us": "Function which process is executing"
+                        },
+                        "domain": [
+                            "pot:Process"
+                        ]
+                    },
+                    {
+                        "rdfs:comment": {
+                            "en-us": "Process which device is capable executing"
+                        },
+                        "domain": [
+                            "pot:Device"
+                        ]
+                    }
+                ],
+                "label": [
+                    {
+                        "rdfs:label": {
+                            "en-us": "Process function",
+                            "fi-fi": "Prosessi Toiminnallisuus"
+                        },
+                        "domain": [
+                            "pot:Device"
+                        ]
+                    },
+                    {
+                        "rdfs:label": {
+                            "en-us": "Function",
+                            "fi-fi": "Toiminnallisuus"
+                        },
+                        "domain": [
+                            "pot:Process"
+                        ]
+                    }
+                ],
+                "pot:required": false,
+                "pot:readonly": false
             },
             "id": {
                 "@id": "pot:identifier/id",

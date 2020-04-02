@@ -13,14 +13,19 @@
                 "Platform"
             ]
         },
+        "id": {
+            "title": "",
+            "description": "",
+            "type": "string"
+        },
         "metadata": {
             "title": "Metadata",
             "description": "Metadata container",
             "type": "object",
             "properties": {
-                "updatedAt": {
-                    "title": "Update time",
-                    "description": "Time when the data is updated",
+                "createdAt": {
+                    "title": "Creation time",
+                    "description": "Time when the data is created",
                     "type": "string"
                 },
                 "createdBy": {
@@ -33,19 +38,14 @@
                     "description": "Updater of an identity",
                     "type": "string"
                 },
-                "createdAt": {
-                    "title": "Creation time",
-                    "description": "Time when the data is created",
+                "updatedAt": {
+                    "title": "Update time",
+                    "description": "Time when the data is updated",
                     "type": "string"
                 }
             }
         },
         "data": {
-            "title": "",
-            "description": "",
-            "type": "string"
-        },
-        "id": {
             "title": "",
             "description": "",
             "type": "string"

@@ -13,24 +13,23 @@
         "metadata": {
             "@id": "pot:metadata"
         },
+        "id": {
+            "@id": "pot:identifier/id"
+        },
+        "updatedAt": {
+            "@id": "pot:metadata/updatedAt",
+            "@nest": "metadata"
+        },
         "categorizationLocal": {
             "@id": "pot:categorization/categorizationLocal",
             "@nest": "data"
-        },
-        "createdAt": {
-            "@id": "pot:metadata/createdAt",
-            "@nest": "metadata"
         },
         "createdBy": {
             "@id": "pot:metadata/createdBy",
             "@nest": "metadata"
         },
-        "updatedBy": {
-            "@id": "pot:metadata/updatedBy",
-            "@nest": "metadata"
-        },
-        "updatedAt": {
-            "@id": "pot:metadata/updatedAt",
+        "createdAt": {
+            "@id": "pot:metadata/createdAt",
             "@nest": "metadata"
         },
         "descriptionGeneral": {
@@ -41,9 +40,11 @@
             "@id": "pot:categorization/categorizationPoT",
             "@nest": "data"
         },
-        "id": {
-            "@id": "pot:identifier/id"
+        "updatedBy": {
+            "@id": "pot:metadata/updatedBy",
+            "@nest": "metadata"
         }
     },
-    "@type": "Quality"
+    "@type": "Quality",
+    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/AnnotationEntity/Quality"
 }
