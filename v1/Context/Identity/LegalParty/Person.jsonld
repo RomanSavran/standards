@@ -3,6 +3,10 @@
         "@version": 1.1,
         "@vocab": "https://standards-ontotest.oftrust.net/v1/Vocabulary/Identity/LegalParty/Person",
         "@classDefinition": "https://standards-ontotest.oftrust.net/v1/ClassDefinitions/Identity/LegalParty/Person",
+        "Person": {
+            "@id": "Person"
+        },
+        "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/LegalParty/Person",
         "pot": {
             "@id": "https://standards-ontotest.oftrust.net/v1/Vocabulary/",
             "@prefix": true
@@ -13,41 +17,6 @@
         "metadata": {
             "@id": "pot:metadata"
         },
-        "createdBy": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/createdBy"
-        },
-        "id": {
-            "@id": "pot:identifier/id"
-        },
-        "createdAt": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/createdAt"
-        },
-        "firstName": {
-            "@nest": "data",
-            "@id": "pot:identifier/firstName"
-        },
-        "status": {
-            "@nest": "data",
-            "@id": "pot:lifeCycle/status"
-        },
-        "additionalInformation": {
-            "@nest": "data",
-            "@id": "pot:description/additionalInformation"
-        },
-        "birthdate": {
-            "@nest": "data",
-            "@id": "pot:identifier/birthdate"
-        },
-        "middleName": {
-            "@nest": "data",
-            "@id": "pot:identifier/middleName"
-        },
-        "lastName": {
-            "@nest": "data",
-            "@id": "pot:identifier/lastName"
-        },
         "updatedBy": {
             "@nest": "metadata",
             "@id": "pot:metadata/updatedBy"
@@ -56,11 +25,44 @@
             "@nest": "metadata",
             "@id": "pot:metadata/updatedAt"
         },
+        "lastName": {
+            "@nest": "data",
+            "@id": "pot:identifier/lastName"
+        },
+        "createdAt": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/createdAt"
+        },
+        "createdBy": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/createdBy"
+        },
+        "additionalInformation": {
+            "@nest": "data",
+            "@id": "pot:description/additionalInformation"
+        },
+        "firstName": {
+            "@nest": "data",
+            "@id": "pot:identifier/firstName"
+        },
         "idOfficial": {
             "@nest": "data",
             "@id": "pot:identifier/idOfficial"
+        },
+        "id": {
+            "@id": "pot:identifier/id"
+        },
+        "status": {
+            "@nest": "data",
+            "@id": "pot:lifeCycle/status"
+        },
+        "middleName": {
+            "@nest": "data",
+            "@id": "pot:identifier/middleName"
+        },
+        "birthdate": {
+            "@nest": "data",
+            "@id": "pot:identifier/birthdate"
         }
-    },
-    "@type": "Person",
-    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/LegalParty/Person"
+    }
 }

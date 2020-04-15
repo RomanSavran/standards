@@ -3,6 +3,10 @@
         "@version": 1.1,
         "@vocab": "https://standards-ontotest.oftrust.net/v1/Vocabulary/Identity/Process/Project",
         "@classDefinition": "https://standards-ontotest.oftrust.net/v1/ClassDefinitions/Identity/Process/Project",
+        "Project": {
+            "@id": "Project"
+        },
+        "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Process/Project",
         "pot": {
             "@id": "https://standards-ontotest.oftrust.net/v1/Vocabulary/",
             "@prefix": true
@@ -13,13 +17,36 @@
         "metadata": {
             "@id": "pot:metadata"
         },
-        "duration": {
+        "nameLocal": {
             "@nest": "data",
-            "@id": "pot:time/duration"
+            "@id": "pot:identifier/nameLocal"
+        },
+        "updatedBy": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/updatedBy"
+        },
+        "id": {
+            "@id": "pot:identifier/id"
+        },
+        "startDateTime": {
+            "@nest": "data",
+            "@id": "pot:time/startDateTime"
         },
         "processValue": {
             "@nest": "data",
             "@id": "pot:other/processValue"
+        },
+        "endDateTime": {
+            "@nest": "data",
+            "@id": "pot:time/endDateTime"
+        },
+        "updatedAt": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/updatedAt"
+        },
+        "processTypePoT": {
+            "@nest": "data",
+            "@id": "pot:categorization/processTypePoT"
         },
         "executor": {
             "@nest": "data",
@@ -29,60 +56,35 @@
             "@nest": "data",
             "@id": "pot:time/durationEstimate"
         },
-        "updatedAt": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedAt"
-        },
-        "idLocal": {
-            "@nest": "data",
-            "@id": "pot:identifier/idLocal"
-        },
-        "startDateTime": {
-            "@nest": "data",
-            "@id": "pot:time/startDateTime"
-        },
-        "function": {
-            "@id": "pot:function"
-        },
         "createdBy": {
             "@nest": "metadata",
             "@id": "pot:metadata/createdBy"
-        },
-        "status": {
-            "@nest": "data",
-            "@id": "pot:lifeCycle/status"
-        },
-        "nameLocal": {
-            "@nest": "data",
-            "@id": "pot:identifier/nameLocal"
-        },
-        "id": {
-            "@id": "pot:identifier/id"
-        },
-        "createdAt": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/createdAt"
         },
         "descriptionGeneral": {
             "@nest": "data",
             "@id": "pot:description/descriptionGeneral"
         },
-        "processTypePoT": {
+        "function": {
+            "@id": "pot:function"
+        },
+        "idLocal": {
             "@nest": "data",
-            "@id": "pot:categorization/processTypePoT"
+            "@id": "pot:identifier/idLocal"
+        },
+        "status": {
+            "@nest": "data",
+            "@id": "pot:lifeCycle/status"
         },
         "locationName": {
             "@id": "pot:location/locationName"
         },
-        "endDateTime": {
+        "duration": {
             "@nest": "data",
-            "@id": "pot:time/endDateTime"
+            "@id": "pot:time/duration"
         },
-        "updatedBy": {
+        "createdAt": {
             "@nest": "metadata",
-            "@id": "pot:metadata/updatedBy"
+            "@id": "pot:metadata/createdAt"
         }
-    },
-    "@type": "Project",
-    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Process/Project"
+    }
 }

@@ -3,6 +3,10 @@
         "@version": 1.1,
         "@vocab": "https://standards-ontotest.oftrust.net/v1/Vocabulary/Identity/Space/RealEstate",
         "@classDefinition": "https://standards-ontotest.oftrust.net/v1/ClassDefinitions/Identity/Space/RealEstate",
+        "RealEstate": {
+            "@id": "RealEstate"
+        },
+        "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Space/RealEstate",
         "pot": {
             "@id": "https://standards-ontotest.oftrust.net/v1/Vocabulary/",
             "@prefix": true
@@ -13,80 +17,48 @@
         "metadata": {
             "@id": "pot:metadata"
         },
-        "areaType": {
+        "volume": {
             "@nest": "data",
-            "@id": "pot:categorization/areaType"
+            "@id": "pot:physical/volume"
         },
-        "sizeAreaLivingAudited": {
-            "@nest": "data",
-            "@id": "pot:physical/sizeAreaLivingAudited"
-        },
-        "idLocal": {
-            "@nest": "data",
-            "@id": "pot:identifier/idLocal"
-        },
-        "updatedAt": {
+        "updatedBy": {
             "@nest": "metadata",
-            "@id": "pot:metadata/updatedAt"
-        },
-        "idOfficial": {
-            "@nest": "data",
-            "@id": "pot:identifier/idOfficial"
+            "@id": "pot:metadata/updatedBy"
         },
         "usageMain": {
             "@nest": "data",
             "@id": "pot:categorization/usageMain"
         },
-        "categorizationLocal": {
-            "@nest": "data",
-            "@id": "pot:categorization/categorizationLocal"
-        },
-        "controlCategory": {
-            "@nest": "data",
-            "@id": "pot:administration/controlCategory"
+        "id": {
+            "@id": "pot:identifier/id"
         },
         "dateOfMeasure": {
             "@nest": "data",
             "@id": "pot:lifeCycle/dateOfMeasure"
         },
-        "height": {
+        "categorizationLocal": {
             "@nest": "data",
-            "@id": "pot:physical/height"
+            "@id": "pot:categorization/categorizationLocal"
         },
-        "idOfficialUnseparatedLand": {
+        "areaType": {
             "@nest": "data",
-            "@id": "pot:identifier/idOfficialUnseparatedLand"
+            "@id": "pot:categorization/areaType"
         },
-        "ifcGuid": {
-            "@nest": "data",
-            "@id": "pot:identifier/ifcGuid"
-        },
-        "createdBy": {
+        "updatedAt": {
             "@nest": "metadata",
-            "@id": "pot:metadata/createdBy"
+            "@id": "pot:metadata/updatedAt"
         },
-        "areaSquareMeter": {
+        "sizeAreaLivingAudited": {
             "@nest": "data",
-            "@id": "pot:physical/areaSquareMeter"
-        },
-        "status": {
-            "@nest": "data",
-            "@id": "pot:lifeCycle/status"
+            "@id": "pot:physical/sizeAreaLivingAudited"
         },
         "name": {
             "@nest": "data",
             "@id": "pot:identifier/name"
         },
-        "sizeAreaLiving": {
-            "@nest": "data",
-            "@id": "pot:physical/sizeAreaLiving"
-        },
-        "id": {
-            "@id": "pot:identifier/id"
-        },
-        "createdAt": {
+        "createdBy": {
             "@nest": "metadata",
-            "@id": "pot:metadata/createdAt"
+            "@id": "pot:metadata/createdBy"
         },
         "locationUnseparatedLand": {
             "@nest": "data",
@@ -96,6 +68,26 @@
             "@nest": "data",
             "@id": "pot:description/descriptionGeneral"
         },
+        "idLocal": {
+            "@nest": "data",
+            "@id": "pot:identifier/idLocal"
+        },
+        "areaSquareMeter": {
+            "@nest": "data",
+            "@id": "pot:physical/areaSquareMeter"
+        },
+        "idOfficial": {
+            "@nest": "data",
+            "@id": "pot:identifier/idOfficial"
+        },
+        "status": {
+            "@nest": "data",
+            "@id": "pot:lifeCycle/status"
+        },
+        "height": {
+            "@nest": "data",
+            "@id": "pot:physical/height"
+        },
         "categorizationOfficial": {
             "@nest": "data",
             "@id": "pot:categorization/categorizationOfficial"
@@ -104,19 +96,29 @@
             "@nest": "data",
             "@id": "pot:categorization/areaTypeRegistration"
         },
+        "idOfficialUnseparatedLand": {
+            "@nest": "data",
+            "@id": "pot:identifier/idOfficialUnseparatedLand"
+        },
+        "ifcGuid": {
+            "@nest": "data",
+            "@id": "pot:identifier/ifcGuid"
+        },
+        "createdAt": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/createdAt"
+        },
         "sizeAreaFloor": {
             "@nest": "data",
             "@id": "pot:physical/sizeAreaFloor"
         },
-        "updatedBy": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedBy"
-        },
-        "volume": {
+        "sizeAreaLiving": {
             "@nest": "data",
-            "@id": "pot:physical/volume"
+            "@id": "pot:physical/sizeAreaLiving"
+        },
+        "controlCategory": {
+            "@nest": "data",
+            "@id": "pot:administration/controlCategory"
         }
-    },
-    "@type": "RealEstate",
-    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Space/RealEstate"
+    }
 }

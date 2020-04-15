@@ -3,6 +3,10 @@
         "@version": 1.1,
         "@vocab": "https://standards-ontotest.oftrust.net/v1/Vocabulary/Identity/Group/System",
         "@classDefinition": "https://standards-ontotest.oftrust.net/v1/ClassDefinitions/Identity/Group/System",
+        "System": {
+            "@id": "System"
+        },
+        "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Group/System",
         "pot": {
             "@id": "https://standards-ontotest.oftrust.net/v1/Vocabulary/",
             "@prefix": true
@@ -13,20 +17,25 @@
         "metadata": {
             "@id": "pot:metadata"
         },
+        "updatedBy": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/updatedBy"
+        },
+        "updatedAt": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/updatedAt"
+        },
         "createdBy": {
             "@nest": "metadata",
             "@id": "pot:metadata/createdBy"
-        },
-        "id": {
-            "@id": "pot:identifier/id"
         },
         "createdAt": {
             "@nest": "metadata",
             "@id": "pot:metadata/createdAt"
         },
-        "status": {
+        "startDateTimeValidity": {
             "@nest": "data",
-            "@id": "pot:lifeCycle/status"
+            "@id": "pot:time/startDateTimeValidity"
         },
         "additionalInformation": {
             "@nest": "data",
@@ -36,27 +45,20 @@
             "@nest": "data",
             "@id": "pot:categorization/usageMain"
         },
-        "name": {
+        "status": {
             "@nest": "data",
-            "@id": "pot:identifier/name"
+            "@id": "pot:lifeCycle/status"
         },
-        "startDateTimeValidity": {
-            "@nest": "data",
-            "@id": "pot:time/startDateTimeValidity"
+        "id": {
+            "@id": "pot:identifier/id"
         },
         "endDateTimeValidity": {
             "@nest": "data",
             "@id": "pot:time/endDateTimeValidity"
         },
-        "updatedBy": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedBy"
-        },
-        "updatedAt": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedAt"
+        "name": {
+            "@nest": "data",
+            "@id": "pot:identifier/name"
         }
-    },
-    "@type": "System",
-    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Group/System"
+    }
 }

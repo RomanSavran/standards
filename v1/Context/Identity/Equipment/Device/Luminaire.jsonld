@@ -3,6 +3,10 @@
         "@version": 1.1,
         "@vocab": "https://standards-ontotest.oftrust.net/v1/Vocabulary/Identity/Equipment/Device/Luminaire",
         "@classDefinition": "https://standards-ontotest.oftrust.net/v1/ClassDefinitions/Identity/Equipment/Device/Luminaire",
+        "Luminaire": {
+            "@id": "Luminaire"
+        },
+        "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Equipment/Device/Luminaire",
         "pot": {
             "@id": "https://standards-ontotest.oftrust.net/v1/Vocabulary/",
             "@prefix": true
@@ -13,9 +17,21 @@
         "metadata": {
             "@id": "pot:metadata"
         },
-        "ifcElementType": {
+        "volume": {
             "@nest": "data",
-            "@id": "pot:categorization/ifcElementType"
+            "@id": "pot:physical/volume"
+        },
+        "updatedBy": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/updatedBy"
+        },
+        "installationTypeAvailable": {
+            "@nest": "data",
+            "@id": "pot:functional/installationTypeAvailable"
+        },
+        "lightColor": {
+            "@nest": "data",
+            "@id": "pot:physical/lightColor"
         },
         "areaGross": {
             "@nest": "data",
@@ -25,29 +41,12 @@
             "@nest": "data",
             "@id": "pot:categorization/industryDomain"
         },
-        "lightFlux": {
-            "@nest": "data",
-            "@id": "pot:physical/lightFlux"
+        "id": {
+            "@id": "pot:identifier/id"
         },
-        "installationType": {
+        "serialNumber": {
             "@nest": "data",
-            "@id": "pot:functional/installationType"
-        },
-        "installationTypeAvailable": {
-            "@nest": "data",
-            "@id": "pot:functional/installationTypeAvailable"
-        },
-        "colorName": {
-            "@nest": "data",
-            "@id": "pot:physical/colorName"
-        },
-        "idLocal": {
-            "@nest": "data",
-            "@id": "pot:identifier/idLocal"
-        },
-        "updatedAt": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedAt"
+            "@id": "pot:identifier/serialNumber"
         },
         "ifcElementName": {
             "@nest": "data",
@@ -61,133 +60,136 @@
             "@nest": "data",
             "@id": "pot:categorization/categorizationLocal"
         },
-        "lightColorRenderingIndex": {
+        "width": {
             "@nest": "data",
-            "@id": "pot:physical/lightColorRenderingIndex"
+            "@id": "pot:physical/width"
         },
         "processCapability": {
             "@nest": "data",
             "@id": "pot:functional/processCapability"
         },
-        "electricityPower": {
-            "@nest": "data",
-            "@id": "pot:physical/electricityPower"
-        },
-        "height": {
-            "@nest": "data",
-            "@id": "pot:physical/height"
-        },
         "controlMode": {
             "@nest": "data",
             "@id": "pot:functional/controlMode"
         },
-        "ifcGuid": {
-            "@nest": "data",
-            "@id": "pot:identifier/ifcGuid"
-        },
-        "colorCode": {
-            "@nest": "data",
-            "@id": "pot:physical/colorCode"
-        },
-        "width": {
-            "@nest": "data",
-            "@id": "pot:physical/width"
-        },
-        "function": {
-            "@id": "pot:function"
-        },
-        "createdBy": {
+        "updatedAt": {
             "@nest": "metadata",
-            "@id": "pot:metadata/createdBy"
+            "@id": "pot:metadata/updatedAt"
         },
-        "status": {
+        "installationType": {
             "@nest": "data",
-            "@id": "pot:lifeCycle/status"
-        },
-        "serialNumber": {
-            "@nest": "data",
-            "@id": "pot:identifier/serialNumber"
-        },
-        "lightColor": {
-            "@nest": "data",
-            "@id": "pot:physical/lightColor"
-        },
-        "thickness": {
-            "@nest": "data",
-            "@id": "pot:physical/thickness"
-        },
-        "lightDirection": {
-            "@nest": "data",
-            "@id": "pot:functional/lightDirection"
-        },
-        "name": {
-            "@nest": "data",
-            "@id": "pot:identifier/name"
-        },
-        "lightVisor": {
-            "@nest": "data",
-            "@id": "pot:functional/lightVisor"
+            "@id": "pot:functional/installationType"
         },
         "electricityCurrent": {
             "@nest": "data",
             "@id": "pot:physical/electricityCurrent"
         },
+        "length": {
+            "@nest": "data",
+            "@id": "pot:physical/length"
+        },
+        "colorName": {
+            "@nest": "data",
+            "@id": "pot:physical/colorName"
+        },
+        "name": {
+            "@nest": "data",
+            "@id": "pot:identifier/name"
+        },
+        "lightFlux": {
+            "@nest": "data",
+            "@id": "pot:physical/lightFlux"
+        },
+        "lightDirection": {
+            "@nest": "data",
+            "@id": "pot:functional/lightDirection"
+        },
+        "lightVisor": {
+            "@nest": "data",
+            "@id": "pot:functional/lightVisor"
+        },
         "controlMechanism": {
             "@nest": "data",
             "@id": "pot:functional/controlMechanism"
         },
-        "power": {
-            "@nest": "data",
-            "@id": "pot:physical/power"
-        },
-        "weight": {
-            "@nest": "data",
-            "@id": "pot:physical/weight"
-        },
-        "typeName": {
-            "@nest": "data",
-            "@id": "pot:material/typeName"
-        },
-        "id": {
-            "@id": "pot:identifier/id"
-        },
-        "createdAt": {
+        "createdBy": {
             "@nest": "metadata",
-            "@id": "pot:metadata/createdAt"
-        },
-        "areaNet": {
-            "@nest": "data",
-            "@id": "pot:physical/areaNet"
+            "@id": "pot:metadata/createdBy"
         },
         "descriptionGeneral": {
             "@nest": "data",
             "@id": "pot:description/descriptionGeneral"
         },
+        "function": {
+            "@id": "pot:function"
+        },
+        "idLocal": {
+            "@nest": "data",
+            "@id": "pot:identifier/idLocal"
+        },
+        "status": {
+            "@nest": "data",
+            "@id": "pot:lifeCycle/status"
+        },
+        "height": {
+            "@nest": "data",
+            "@id": "pot:physical/height"
+        },
+        "electricityPower": {
+            "@nest": "data",
+            "@id": "pot:physical/electricityPower"
+        },
+        "colorCode": {
+            "@nest": "data",
+            "@id": "pot:physical/colorCode"
+        },
         "protectionDegree": {
             "@nest": "data",
             "@id": "pot:functional/protectionDegree"
         },
-        "length": {
+        "weight": {
             "@nest": "data",
-            "@id": "pot:physical/length"
+            "@id": "pot:physical/weight"
         },
         "lampType": {
             "@nest": "data",
             "@id": "pot:functional/lampType"
         },
-        "updatedBy": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedBy"
-        },
         "connectionMechanism": {
             "@nest": "data",
             "@id": "pot:functional/connectionMechanism"
         },
-        "volume": {
+        "typeName": {
             "@nest": "data",
-            "@id": "pot:physical/volume"
+            "@id": "pot:material/typeName"
+        },
+        "ifcGuid": {
+            "@nest": "data",
+            "@id": "pot:identifier/ifcGuid"
+        },
+        "createdAt": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/createdAt"
+        },
+        "thickness": {
+            "@nest": "data",
+            "@id": "pot:physical/thickness"
+        },
+        "areaNet": {
+            "@nest": "data",
+            "@id": "pot:physical/areaNet"
+        },
+        "lightColorRenderingIndex": {
+            "@nest": "data",
+            "@id": "pot:physical/lightColorRenderingIndex"
+        },
+        "power": {
+            "@nest": "data",
+            "@id": "pot:physical/power"
+        },
+        "ifcElementType": {
+            "@nest": "data",
+            "@id": "pot:categorization/ifcElementType"
         }
-    },
-    "@type": "Luminaire",
-    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Equipment/Device/Luminaire"
+    }
 }

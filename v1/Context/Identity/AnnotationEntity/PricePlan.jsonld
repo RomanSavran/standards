@@ -3,6 +3,10 @@
         "@version": 1.1,
         "@vocab": "https://standards-ontotest.oftrust.net/v1/Vocabulary/Identity/AnnotationEntity/PricePlan",
         "@classDefinition": "https://standards-ontotest.oftrust.net/v1/ClassDefinitions/Identity/AnnotationEntity/PricePlan",
+        "PricePlan": {
+            "@id": "PricePlan"
+        },
+        "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/AnnotationEntity/PricePlan",
         "pot": {
             "@id": "https://standards-ontotest.oftrust.net/v1/Vocabulary/",
             "@prefix": true
@@ -13,16 +17,36 @@
         "metadata": {
             "@id": "pot:metadata"
         },
+        "unitGroup": {
+            "@nest": "data",
+            "@id": "pot:physical/unitGroup"
+        },
+        "unit": {
+            "@nest": "data",
+            "@id": "pot:physical/unit"
+        },
+        "updatedBy": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/updatedBy"
+        },
+        "updatedAt": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/updatedAt"
+        },
         "createdBy": {
             "@nest": "metadata",
             "@id": "pot:metadata/createdBy"
         },
-        "vatPercentage": {
-            "@nest": "data",
-            "@id": "pot:financial/vatPercentage"
+        "createdAt": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/createdAt"
         },
         "id": {
             "@id": "pot:identifier/id"
+        },
+        "vatPercentage": {
+            "@nest": "data",
+            "@id": "pot:financial/vatPercentage"
         },
         "vatIncluded": {
             "@nest": "data",
@@ -32,35 +56,13 @@
             "@nest": "data",
             "@id": "pot:financial/rate"
         },
-        "createdAt": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/createdAt"
-        },
-        "unit": {
-            "@nest": "data",
-            "@id": "pot:physical/unit"
-        },
-        "unitGroup": {
-            "@nest": "data",
-            "@id": "pot:physical/unitGroup"
-        },
-        "currency": {
-            "@nest": "data",
-            "@id": "pot:financial/currency"
-        },
         "name": {
             "@nest": "data",
             "@id": "pot:identifier/name"
         },
-        "updatedBy": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedBy"
-        },
-        "updatedAt": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedAt"
+        "currency": {
+            "@nest": "data",
+            "@id": "pot:financial/currency"
         }
-    },
-    "@type": "PricePlan",
-    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/AnnotationEntity/PricePlan"
+    }
 }

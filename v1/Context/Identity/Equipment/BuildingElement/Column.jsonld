@@ -3,6 +3,10 @@
         "@version": 1.1,
         "@vocab": "https://standards-ontotest.oftrust.net/v1/Vocabulary/Identity/Equipment/BuildingElement/Column",
         "@classDefinition": "https://standards-ontotest.oftrust.net/v1/ClassDefinitions/Identity/Equipment/BuildingElement/Column",
+        "Column": {
+            "@id": "Column"
+        },
+        "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Equipment/BuildingElement/Column",
         "pot": {
             "@id": "https://standards-ontotest.oftrust.net/v1/Vocabulary/",
             "@prefix": true
@@ -13,25 +17,20 @@
         "metadata": {
             "@id": "pot:metadata"
         },
-        "ifcElementType": {
+        "volume": {
             "@nest": "data",
-            "@id": "pot:categorization/ifcElementType"
+            "@id": "pot:physical/volume"
+        },
+        "updatedBy": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/updatedBy"
         },
         "areaGross": {
             "@nest": "data",
             "@id": "pot:physical/areaGross"
         },
-        "colorName": {
-            "@nest": "data",
-            "@id": "pot:physical/colorName"
-        },
-        "idLocal": {
-            "@nest": "data",
-            "@id": "pot:identifier/idLocal"
-        },
-        "updatedAt": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedAt"
+        "id": {
+            "@id": "pot:identifier/id"
         },
         "ifcElementName": {
             "@nest": "data",
@@ -41,74 +40,77 @@
             "@nest": "data",
             "@id": "pot:categorization/categorizationLocal"
         },
-        "height": {
-            "@nest": "data",
-            "@id": "pot:physical/height"
-        },
-        "colorCode": {
-            "@nest": "data",
-            "@id": "pot:physical/colorCode"
-        },
-        "ifcGuid": {
-            "@nest": "data",
-            "@id": "pot:identifier/ifcGuid"
-        },
         "width": {
             "@nest": "data",
             "@id": "pot:physical/width"
         },
-        "idInstance": {
-            "@nest": "data",
-            "@id": "pot:identifier/idInstance"
-        },
-        "createdBy": {
+        "updatedAt": {
             "@nest": "metadata",
-            "@id": "pot:metadata/createdBy"
-        },
-        "status": {
-            "@nest": "data",
-            "@id": "pot:lifeCycle/status"
-        },
-        "thickness": {
-            "@nest": "data",
-            "@id": "pot:physical/thickness"
-        },
-        "name": {
-            "@nest": "data",
-            "@id": "pot:identifier/name"
-        },
-        "weight": {
-            "@nest": "data",
-            "@id": "pot:physical/weight"
-        },
-        "id": {
-            "@id": "pot:identifier/id"
-        },
-        "createdAt": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/createdAt"
-        },
-        "areaNet": {
-            "@nest": "data",
-            "@id": "pot:physical/areaNet"
-        },
-        "descriptionGeneral": {
-            "@nest": "data",
-            "@id": "pot:description/descriptionGeneral"
+            "@id": "pot:metadata/updatedAt"
         },
         "length": {
             "@nest": "data",
             "@id": "pot:physical/length"
         },
-        "updatedBy": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedBy"
-        },
-        "volume": {
+        "colorName": {
             "@nest": "data",
-            "@id": "pot:physical/volume"
+            "@id": "pot:physical/colorName"
+        },
+        "name": {
+            "@nest": "data",
+            "@id": "pot:identifier/name"
+        },
+        "createdBy": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/createdBy"
+        },
+        "descriptionGeneral": {
+            "@nest": "data",
+            "@id": "pot:description/descriptionGeneral"
+        },
+        "idLocal": {
+            "@nest": "data",
+            "@id": "pot:identifier/idLocal"
+        },
+        "height": {
+            "@nest": "data",
+            "@id": "pot:physical/height"
+        },
+        "status": {
+            "@nest": "data",
+            "@id": "pot:lifeCycle/status"
+        },
+        "colorCode": {
+            "@nest": "data",
+            "@id": "pot:physical/colorCode"
+        },
+        "weight": {
+            "@nest": "data",
+            "@id": "pot:physical/weight"
+        },
+        "ifcGuid": {
+            "@nest": "data",
+            "@id": "pot:identifier/ifcGuid"
+        },
+        "createdAt": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/createdAt"
+        },
+        "thickness": {
+            "@nest": "data",
+            "@id": "pot:physical/thickness"
+        },
+        "areaNet": {
+            "@nest": "data",
+            "@id": "pot:physical/areaNet"
+        },
+        "idInstance": {
+            "@nest": "data",
+            "@id": "pot:identifier/idInstance"
+        },
+        "ifcElementType": {
+            "@nest": "data",
+            "@id": "pot:categorization/ifcElementType"
         }
-    },
-    "@type": "Column",
-    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Equipment/BuildingElement/Column"
+    }
 }

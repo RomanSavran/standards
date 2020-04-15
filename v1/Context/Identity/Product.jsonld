@@ -3,6 +3,10 @@
         "@version": 1.1,
         "@vocab": "https://standards-ontotest.oftrust.net/v1/Vocabulary/Identity/Product",
         "@classDefinition": "https://standards-ontotest.oftrust.net/v1/ClassDefinitions/Identity/Product",
+        "Product": {
+            "@id": "Product"
+        },
+        "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Product",
         "pot": {
             "@id": "https://standards-ontotest.oftrust.net/v1/Vocabulary/",
             "@prefix": true
@@ -13,21 +17,24 @@
         "metadata": {
             "@id": "pot:metadata"
         },
-        "groupName": {
+        "imageUrl": {
             "@nest": "data",
-            "@id": "pot:identifier/groupName"
+            "@id": "pot:description/imageUrl"
         },
-        "additionalInformation": {
-            "@nest": "data",
-            "@id": "pot:description/additionalInformation"
+        "updatedBy": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/updatedBy"
         },
-        "pricePurchase": {
-            "@nest": "data",
-            "@id": "pot:financial/pricePurchase"
+        "id": {
+            "@id": "pot:identifier/id"
         },
         "gTIN": {
             "@nest": "data",
             "@id": "pot:identifier/gTIN"
+        },
+        "pricePurchase": {
+            "@nest": "data",
+            "@id": "pot:financial/pricePurchase"
         },
         "updatedAt": {
             "@nest": "metadata",
@@ -41,17 +48,33 @@
             "@nest": "data",
             "@id": "pot:identifier/ean"
         },
-        "groupCode": {
+        "groupName": {
             "@nest": "data",
-            "@id": "pot:identifier/groupCode"
+            "@id": "pot:identifier/groupName"
         },
-        "imageUrl": {
+        "categorizationPoT": {
             "@nest": "data",
-            "@id": "pot:description/imageUrl"
+            "@id": "pot:categorization/categorizationPoT"
+        },
+        "priceCurrent": {
+            "@nest": "data",
+            "@id": "pot:financial/priceCurrent"
+        },
+        "name": {
+            "@nest": "data",
+            "@id": "pot:identifier/name"
+        },
+        "categorizationETIM": {
+            "@nest": "data",
+            "@id": "pot:categorization/categorizationETIM"
         },
         "createdBy": {
             "@nest": "metadata",
             "@id": "pot:metadata/createdBy"
+        },
+        "descriptionGeneral": {
+            "@nest": "data",
+            "@id": "pot:description/descriptionGeneral"
         },
         "url": {
             "@nest": "data",
@@ -61,56 +84,35 @@
             "@nest": "data",
             "@id": "pot:lifeCycle/status"
         },
-        "priceSell": {
-            "@nest": "data",
-            "@id": "pot:financial/priceSell"
-        },
-        "codeProduct": {
-            "@nest": "data",
-            "@id": "pot:identifier/codeProduct"
-        },
-        "categorizationPoT": {
-            "@nest": "data",
-            "@id": "pot:categorization/categorizationPoT"
-        },
         "visibility": {
             "@nest": "data",
             "@id": "pot:other/visibility"
         },
+        "groupCode": {
+            "@nest": "data",
+            "@id": "pot:identifier/groupCode"
+        },
         "validTo": {
             "@id": "pot:time/validTo"
-        },
-        "name": {
-            "@nest": "data",
-            "@id": "pot:identifier/name"
-        },
-        "id": {
-            "@id": "pot:identifier/id"
         },
         "createdAt": {
             "@nest": "metadata",
             "@id": "pot:metadata/createdAt"
         },
-        "descriptionGeneral": {
+        "additionalInformation": {
             "@nest": "data",
-            "@id": "pot:description/descriptionGeneral"
-        },
-        "priceCurrent": {
-            "@nest": "data",
-            "@id": "pot:financial/priceCurrent"
+            "@id": "pot:description/additionalInformation"
         },
         "validFrom": {
             "@id": "pot:time/validFrom"
         },
-        "categorizationETIM": {
+        "codeProduct": {
             "@nest": "data",
-            "@id": "pot:categorization/categorizationETIM"
+            "@id": "pot:identifier/codeProduct"
         },
-        "updatedBy": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedBy"
+        "priceSell": {
+            "@nest": "data",
+            "@id": "pot:financial/priceSell"
         }
-    },
-    "@type": "Product",
-    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Product"
+    }
 }

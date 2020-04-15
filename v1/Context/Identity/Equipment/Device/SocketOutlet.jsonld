@@ -3,6 +3,10 @@
         "@version": 1.1,
         "@vocab": "https://standards-ontotest.oftrust.net/v1/Vocabulary/Identity/Equipment/Device/SocketOutlet",
         "@classDefinition": "https://standards-ontotest.oftrust.net/v1/ClassDefinitions/Identity/Equipment/Device/SocketOutlet",
+        "SocketOutlet": {
+            "@id": "SocketOutlet"
+        },
+        "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Equipment/Device/SocketOutlet",
         "pot": {
             "@id": "https://standards-ontotest.oftrust.net/v1/Vocabulary/",
             "@prefix": true
@@ -13,9 +17,21 @@
         "metadata": {
             "@id": "pot:metadata"
         },
-        "ifcElementType": {
+        "volume": {
             "@nest": "data",
-            "@id": "pot:categorization/ifcElementType"
+            "@id": "pot:physical/volume"
+        },
+        "updatedBy": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/updatedBy"
+        },
+        "installationTypeAvailable": {
+            "@nest": "data",
+            "@id": "pot:functional/installationTypeAvailable"
+        },
+        "amountUnits": {
+            "@nest": "data",
+            "@id": "pot:functional/amountUnits"
         },
         "areaGross": {
             "@nest": "data",
@@ -25,33 +41,12 @@
             "@nest": "data",
             "@id": "pot:categorization/industryDomain"
         },
-        "electricityVoltage": {
-            "@nest": "data",
-            "@id": "pot:physical/electricityVoltage"
+        "id": {
+            "@id": "pot:identifier/id"
         },
-        "installationType": {
+        "serialNumber": {
             "@nest": "data",
-            "@id": "pot:functional/installationType"
-        },
-        "installationTypeAvailable": {
-            "@nest": "data",
-            "@id": "pot:functional/installationTypeAvailable"
-        },
-        "colorName": {
-            "@nest": "data",
-            "@id": "pot:physical/colorName"
-        },
-        "idLocal": {
-            "@nest": "data",
-            "@id": "pot:identifier/idLocal"
-        },
-        "updatedAt": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedAt"
-        },
-        "amountUnits": {
-            "@nest": "data",
-            "@id": "pot:functional/amountUnits"
+            "@id": "pot:identifier/serialNumber"
         },
         "ifcElementName": {
             "@nest": "data",
@@ -61,68 +56,80 @@
             "@nest": "data",
             "@id": "pot:categorization/categorizationLocal"
         },
-        "processCapability": {
-            "@nest": "data",
-            "@id": "pot:functional/processCapability"
-        },
-        "height": {
-            "@nest": "data",
-            "@id": "pot:physical/height"
-        },
-        "ifcGuid": {
-            "@nest": "data",
-            "@id": "pot:identifier/ifcGuid"
-        },
-        "colorCode": {
-            "@nest": "data",
-            "@id": "pot:physical/colorCode"
-        },
         "width": {
             "@nest": "data",
             "@id": "pot:physical/width"
         },
-        "function": {
-            "@id": "pot:function"
+        "processCapability": {
+            "@nest": "data",
+            "@id": "pot:functional/processCapability"
         },
-        "createdBy": {
+        "updatedAt": {
             "@nest": "metadata",
-            "@id": "pot:metadata/createdBy"
+            "@id": "pot:metadata/updatedAt"
         },
-        "amountPoles": {
+        "installationType": {
             "@nest": "data",
-            "@id": "pot:functional/amountPoles"
-        },
-        "status": {
-            "@nest": "data",
-            "@id": "pot:lifeCycle/status"
-        },
-        "serialNumber": {
-            "@nest": "data",
-            "@id": "pot:identifier/serialNumber"
-        },
-        "protectionDegreeAvailable": {
-            "@nest": "data",
-            "@id": "pot:functional/protectionDegreeAvailable"
-        },
-        "thickness": {
-            "@nest": "data",
-            "@id": "pot:physical/thickness"
-        },
-        "name": {
-            "@nest": "data",
-            "@id": "pot:identifier/name"
+            "@id": "pot:functional/installationType"
         },
         "electricityCurrent": {
             "@nest": "data",
             "@id": "pot:physical/electricityCurrent"
         },
-        "electricityCurrentNominal": {
+        "length": {
             "@nest": "data",
-            "@id": "pot:physical/electricityCurrentNominal"
+            "@id": "pot:physical/length"
         },
-        "power": {
+        "amountPoles": {
             "@nest": "data",
-            "@id": "pot:physical/power"
+            "@id": "pot:functional/amountPoles"
+        },
+        "electricityVoltage": {
+            "@nest": "data",
+            "@id": "pot:physical/electricityVoltage"
+        },
+        "colorName": {
+            "@nest": "data",
+            "@id": "pot:physical/colorName"
+        },
+        "protectionDegreeAvailable": {
+            "@nest": "data",
+            "@id": "pot:functional/protectionDegreeAvailable"
+        },
+        "name": {
+            "@nest": "data",
+            "@id": "pot:identifier/name"
+        },
+        "createdBy": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/createdBy"
+        },
+        "descriptionGeneral": {
+            "@nest": "data",
+            "@id": "pot:description/descriptionGeneral"
+        },
+        "function": {
+            "@id": "pot:function"
+        },
+        "idLocal": {
+            "@nest": "data",
+            "@id": "pot:identifier/idLocal"
+        },
+        "status": {
+            "@nest": "data",
+            "@id": "pot:lifeCycle/status"
+        },
+        "height": {
+            "@nest": "data",
+            "@id": "pot:physical/height"
+        },
+        "colorCode": {
+            "@nest": "data",
+            "@id": "pot:physical/colorCode"
+        },
+        "protectionDegree": {
+            "@nest": "data",
+            "@id": "pot:functional/protectionDegree"
         },
         "weight": {
             "@nest": "data",
@@ -132,38 +139,33 @@
             "@nest": "data",
             "@id": "pot:material/typeName"
         },
-        "id": {
-            "@id": "pot:identifier/id"
+        "ifcGuid": {
+            "@nest": "data",
+            "@id": "pot:identifier/ifcGuid"
         },
         "createdAt": {
             "@nest": "metadata",
             "@id": "pot:metadata/createdAt"
         },
+        "thickness": {
+            "@nest": "data",
+            "@id": "pot:physical/thickness"
+        },
         "areaNet": {
             "@nest": "data",
             "@id": "pot:physical/areaNet"
         },
-        "descriptionGeneral": {
+        "power": {
             "@nest": "data",
-            "@id": "pot:description/descriptionGeneral"
+            "@id": "pot:physical/power"
         },
-        "protectionDegree": {
+        "ifcElementType": {
             "@nest": "data",
-            "@id": "pot:functional/protectionDegree"
+            "@id": "pot:categorization/ifcElementType"
         },
-        "length": {
+        "electricityCurrentNominal": {
             "@nest": "data",
-            "@id": "pot:physical/length"
-        },
-        "updatedBy": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedBy"
-        },
-        "volume": {
-            "@nest": "data",
-            "@id": "pot:physical/volume"
+            "@id": "pot:physical/electricityCurrentNominal"
         }
-    },
-    "@type": "SocketOutlet",
-    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Equipment/Device/SocketOutlet"
+    }
 }

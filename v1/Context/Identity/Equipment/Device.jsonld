@@ -3,6 +3,10 @@
         "@version": 1.1,
         "@vocab": "https://standards-ontotest.oftrust.net/v1/Vocabulary/Identity/Equipment/Device",
         "@classDefinition": "https://standards-ontotest.oftrust.net/v1/ClassDefinitions/Identity/Equipment/Device",
+        "Device": {
+            "@id": "Device"
+        },
+        "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Equipment/Device",
         "pot": {
             "@id": "https://standards-ontotest.oftrust.net/v1/Vocabulary/",
             "@prefix": true
@@ -13,9 +17,17 @@
         "metadata": {
             "@id": "pot:metadata"
         },
-        "ifcElementType": {
+        "volume": {
             "@nest": "data",
-            "@id": "pot:categorization/ifcElementType"
+            "@id": "pot:physical/volume"
+        },
+        "updatedBy": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/updatedBy"
+        },
+        "installationTypeAvailable": {
+            "@nest": "data",
+            "@id": "pot:functional/installationTypeAvailable"
         },
         "areaGross": {
             "@nest": "data",
@@ -25,25 +37,12 @@
             "@nest": "data",
             "@id": "pot:categorization/industryDomain"
         },
-        "installationType": {
-            "@nest": "data",
-            "@id": "pot:functional/installationType"
+        "id": {
+            "@id": "pot:identifier/id"
         },
-        "installationTypeAvailable": {
+        "serialNumber": {
             "@nest": "data",
-            "@id": "pot:functional/installationTypeAvailable"
-        },
-        "colorName": {
-            "@nest": "data",
-            "@id": "pot:physical/colorName"
-        },
-        "idLocal": {
-            "@nest": "data",
-            "@id": "pot:identifier/idLocal"
-        },
-        "updatedAt": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedAt"
+            "@id": "pot:identifier/serialNumber"
         },
         "ifcElementName": {
             "@nest": "data",
@@ -53,56 +52,64 @@
             "@nest": "data",
             "@id": "pot:categorization/categorizationLocal"
         },
-        "processCapability": {
-            "@nest": "data",
-            "@id": "pot:functional/processCapability"
-        },
-        "height": {
-            "@nest": "data",
-            "@id": "pot:physical/height"
-        },
-        "ifcGuid": {
-            "@nest": "data",
-            "@id": "pot:identifier/ifcGuid"
-        },
-        "colorCode": {
-            "@nest": "data",
-            "@id": "pot:physical/colorCode"
-        },
         "width": {
             "@nest": "data",
             "@id": "pot:physical/width"
         },
-        "function": {
-            "@id": "pot:function"
+        "processCapability": {
+            "@nest": "data",
+            "@id": "pot:functional/processCapability"
         },
-        "createdBy": {
+        "updatedAt": {
             "@nest": "metadata",
-            "@id": "pot:metadata/createdBy"
+            "@id": "pot:metadata/updatedAt"
         },
-        "status": {
+        "installationType": {
             "@nest": "data",
-            "@id": "pot:lifeCycle/status"
-        },
-        "serialNumber": {
-            "@nest": "data",
-            "@id": "pot:identifier/serialNumber"
-        },
-        "thickness": {
-            "@nest": "data",
-            "@id": "pot:physical/thickness"
-        },
-        "name": {
-            "@nest": "data",
-            "@id": "pot:identifier/name"
+            "@id": "pot:functional/installationType"
         },
         "electricityCurrent": {
             "@nest": "data",
             "@id": "pot:physical/electricityCurrent"
         },
-        "power": {
+        "length": {
             "@nest": "data",
-            "@id": "pot:physical/power"
+            "@id": "pot:physical/length"
+        },
+        "colorName": {
+            "@nest": "data",
+            "@id": "pot:physical/colorName"
+        },
+        "name": {
+            "@nest": "data",
+            "@id": "pot:identifier/name"
+        },
+        "createdBy": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/createdBy"
+        },
+        "descriptionGeneral": {
+            "@nest": "data",
+            "@id": "pot:description/descriptionGeneral"
+        },
+        "function": {
+            "@id": "pot:function"
+        },
+        "idLocal": {
+            "@nest": "data",
+            "@id": "pot:identifier/idLocal"
+        },
+        "status": {
+            "@nest": "data",
+            "@id": "pot:lifeCycle/status"
+        },
+        "height": {
+            "@nest": "data",
+            "@id": "pot:physical/height"
+        },
+        "colorCode": {
+            "@nest": "data",
+            "@id": "pot:physical/colorCode"
         },
         "weight": {
             "@nest": "data",
@@ -112,34 +119,29 @@
             "@nest": "data",
             "@id": "pot:material/typeName"
         },
-        "id": {
-            "@id": "pot:identifier/id"
+        "ifcGuid": {
+            "@nest": "data",
+            "@id": "pot:identifier/ifcGuid"
         },
         "createdAt": {
             "@nest": "metadata",
             "@id": "pot:metadata/createdAt"
         },
+        "thickness": {
+            "@nest": "data",
+            "@id": "pot:physical/thickness"
+        },
         "areaNet": {
             "@nest": "data",
             "@id": "pot:physical/areaNet"
         },
-        "descriptionGeneral": {
+        "power": {
             "@nest": "data",
-            "@id": "pot:description/descriptionGeneral"
+            "@id": "pot:physical/power"
         },
-        "length": {
+        "ifcElementType": {
             "@nest": "data",
-            "@id": "pot:physical/length"
-        },
-        "updatedBy": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedBy"
-        },
-        "volume": {
-            "@nest": "data",
-            "@id": "pot:physical/volume"
+            "@id": "pot:categorization/ifcElementType"
         }
-    },
-    "@type": "Device",
-    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Equipment/Device"
+    }
 }

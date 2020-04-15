@@ -3,6 +3,10 @@
         "@version": 1.1,
         "@vocab": "https://standards-ontotest.oftrust.net/v1/Vocabulary/Identity/Space/Zone",
         "@classDefinition": "https://standards-ontotest.oftrust.net/v1/ClassDefinitions/Identity/Space/Zone",
+        "Zone": {
+            "@id": "Zone"
+        },
+        "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Space/Zone",
         "pot": {
             "@id": "https://standards-ontotest.oftrust.net/v1/Vocabulary/",
             "@prefix": true
@@ -13,78 +17,76 @@
         "metadata": {
             "@id": "pot:metadata"
         },
-        "sizeAreaLivingAudited": {
+        "volume": {
             "@nest": "data",
-            "@id": "pot:physical/sizeAreaLivingAudited"
-        },
-        "idLocal": {
-            "@nest": "data",
-            "@id": "pot:identifier/idLocal"
-        },
-        "updatedAt": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedAt"
-        },
-        "idOfficial": {
-            "@nest": "data",
-            "@id": "pot:identifier/idOfficial"
-        },
-        "usageMain": {
-            "@nest": "data",
-            "@id": "pot:categorization/usageMain"
-        },
-        "categorizationLocal": {
-            "@nest": "data",
-            "@id": "pot:categorization/categorizationLocal"
-        },
-        "height": {
-            "@nest": "data",
-            "@id": "pot:physical/height"
-        },
-        "ifcGuid": {
-            "@nest": "data",
-            "@id": "pot:identifier/ifcGuid"
-        },
-        "createdBy": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/createdBy"
-        },
-        "status": {
-            "@nest": "data",
-            "@id": "pot:lifeCycle/status"
-        },
-        "sizeAreaLiving": {
-            "@nest": "data",
-            "@id": "pot:physical/sizeAreaLiving"
-        },
-        "id": {
-            "@id": "pot:identifier/id"
-        },
-        "createdAt": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/createdAt"
-        },
-        "descriptionGeneral": {
-            "@nest": "data",
-            "@id": "pot:description/descriptionGeneral"
-        },
-        "categorizationOfficial": {
-            "@nest": "data",
-            "@id": "pot:categorization/categorizationOfficial"
-        },
-        "sizeAreaFloor": {
-            "@nest": "data",
-            "@id": "pot:physical/sizeAreaFloor"
+            "@id": "pot:physical/volume"
         },
         "updatedBy": {
             "@nest": "metadata",
             "@id": "pot:metadata/updatedBy"
         },
-        "volume": {
+        "usageMain": {
             "@nest": "data",
-            "@id": "pot:physical/volume"
+            "@id": "pot:categorization/usageMain"
+        },
+        "id": {
+            "@id": "pot:identifier/id"
+        },
+        "categorizationLocal": {
+            "@nest": "data",
+            "@id": "pot:categorization/categorizationLocal"
+        },
+        "updatedAt": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/updatedAt"
+        },
+        "sizeAreaLivingAudited": {
+            "@nest": "data",
+            "@id": "pot:physical/sizeAreaLivingAudited"
+        },
+        "createdBy": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/createdBy"
+        },
+        "descriptionGeneral": {
+            "@nest": "data",
+            "@id": "pot:description/descriptionGeneral"
+        },
+        "idLocal": {
+            "@nest": "data",
+            "@id": "pot:identifier/idLocal"
+        },
+        "height": {
+            "@nest": "data",
+            "@id": "pot:physical/height"
+        },
+        "idOfficial": {
+            "@nest": "data",
+            "@id": "pot:identifier/idOfficial"
+        },
+        "status": {
+            "@nest": "data",
+            "@id": "pot:lifeCycle/status"
+        },
+        "categorizationOfficial": {
+            "@nest": "data",
+            "@id": "pot:categorization/categorizationOfficial"
+        },
+        "ifcGuid": {
+            "@nest": "data",
+            "@id": "pot:identifier/ifcGuid"
+        },
+        "createdAt": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/createdAt"
+        },
+        "sizeAreaFloor": {
+            "@nest": "data",
+            "@id": "pot:physical/sizeAreaFloor"
+        },
+        "sizeAreaLiving": {
+            "@nest": "data",
+            "@id": "pot:physical/sizeAreaLiving"
         }
-    },
-    "@type": "Zone",
-    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Space/Zone"
+    }
 }

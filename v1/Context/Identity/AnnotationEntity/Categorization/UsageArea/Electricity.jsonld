@@ -3,6 +3,10 @@
         "@version": 1.1,
         "@vocab": "https://standards-ontotest.oftrust.net/v1/Vocabulary/Identity/AnnotationEntity/Categorization/UsageArea/Electricity",
         "@classDefinition": "https://standards-ontotest.oftrust.net/v1/ClassDefinitions/Identity/AnnotationEntity/Categorization/UsageArea/Electricity",
+        "Electricity": {
+            "@id": "Electricity"
+        },
+        "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/AnnotationEntity/Categorization/UsageArea/Electricity",
         "pot": {
             "@id": "https://standards-ontotest.oftrust.net/v1/Vocabulary/",
             "@prefix": true
@@ -13,17 +17,6 @@
         "metadata": {
             "@id": "pot:metadata"
         },
-        "createdBy": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/createdBy"
-        },
-        "id": {
-            "@id": "pot:identifier/id"
-        },
-        "createdAt": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/createdAt"
-        },
         "updatedBy": {
             "@nest": "metadata",
             "@id": "pot:metadata/updatedBy"
@@ -31,8 +24,17 @@
         "updatedAt": {
             "@nest": "metadata",
             "@id": "pot:metadata/updatedAt"
+        },
+        "createdBy": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/createdBy"
+        },
+        "createdAt": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/createdAt"
+        },
+        "id": {
+            "@id": "pot:identifier/id"
         }
-    },
-    "@type": "Electricity",
-    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/AnnotationEntity/Categorization/UsageArea/Electricity"
+    }
 }

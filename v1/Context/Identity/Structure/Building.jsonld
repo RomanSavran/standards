@@ -3,6 +3,10 @@
         "@version": 1.1,
         "@vocab": "https://standards-ontotest.oftrust.net/v1/Vocabulary/Identity/Structure/Building",
         "@classDefinition": "https://standards-ontotest.oftrust.net/v1/ClassDefinitions/Identity/Structure/Building",
+        "Building": {
+            "@id": "Building"
+        },
+        "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Structure/Building",
         "pot": {
             "@id": "https://standards-ontotest.oftrust.net/v1/Vocabulary/",
             "@prefix": true
@@ -13,49 +17,17 @@
         "metadata": {
             "@id": "pot:metadata"
         },
-        "inaugurationMomentYear": {
-            "@nest": "data",
-            "@id": "pot:lifeCycle/inaugurationMomentYear"
-        },
-        "updatedAt": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedAt"
-        },
-        "areaSquareMeterFloorNet": {
-            "@nest": "data",
-            "@id": "pot:physical/areaSquareMeterFloorNet"
-        },
-        "cultureHistorySignificance": {
-            "@nest": "data",
-            "@id": "pot:categorization/cultureHistorySignificance"
-        },
-        "height": {
-            "@nest": "data",
-            "@id": "pot:physical/height"
-        },
-        "ifcGuid": {
-            "@nest": "data",
-            "@id": "pot:identifier/ifcGuid"
-        },
-        "createdBy": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/createdBy"
-        },
-        "status": {
-            "@nest": "data",
-            "@id": "pot:lifeCycle/status"
-        },
         "volume": {
             "@nest": "data",
             "@id": "pot:physical/volume"
         },
-        "name": {
-            "@nest": "data",
-            "@id": "pot:identifier/name"
-        },
         "completionMomentYear": {
             "@nest": "data",
             "@id": "pot:lifeCycle/completionMomentYear"
+        },
+        "updatedBy": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/updatedBy"
         },
         "idOfficialTemporary": {
             "@nest": "data",
@@ -64,31 +36,61 @@
         "id": {
             "@id": "pot:identifier/id"
         },
-        "createdAt": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/createdAt"
-        },
-        "descriptionGeneral": {
+        "cultureHistorySignificance": {
             "@nest": "data",
-            "@id": "pot:description/descriptionGeneral"
+            "@id": "pot:categorization/cultureHistorySignificance"
         },
-        "inspectionMomentYear": {
+        "areaSquareMeterLivingNet": {
             "@nest": "data",
-            "@id": "pot:lifeCycle/inspectionMomentYear"
+            "@id": "pot:physical/areaSquareMeterLivingNet"
         },
-        "updatedBy": {
+        "updatedAt": {
             "@nest": "metadata",
-            "@id": "pot:metadata/updatedBy"
+            "@id": "pot:metadata/updatedAt"
         },
         "idOfficialPermanent": {
             "@nest": "data",
             "@id": "pot:identifier/idOfficialPermanent"
         },
-        "areaSquareMeterLivingNet": {
+        "areaSquareMeterFloorNet": {
             "@nest": "data",
-            "@id": "pot:physical/areaSquareMeterLivingNet"
+            "@id": "pot:physical/areaSquareMeterFloorNet"
+        },
+        "name": {
+            "@nest": "data",
+            "@id": "pot:identifier/name"
+        },
+        "createdBy": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/createdBy"
+        },
+        "descriptionGeneral": {
+            "@nest": "data",
+            "@id": "pot:description/descriptionGeneral"
+        },
+        "height": {
+            "@nest": "data",
+            "@id": "pot:physical/height"
+        },
+        "status": {
+            "@nest": "data",
+            "@id": "pot:lifeCycle/status"
+        },
+        "inspectionMomentYear": {
+            "@nest": "data",
+            "@id": "pot:lifeCycle/inspectionMomentYear"
+        },
+        "ifcGuid": {
+            "@nest": "data",
+            "@id": "pot:identifier/ifcGuid"
+        },
+        "createdAt": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/createdAt"
+        },
+        "inaugurationMomentYear": {
+            "@nest": "data",
+            "@id": "pot:lifeCycle/inaugurationMomentYear"
         }
-    },
-    "@type": "Building",
-    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Structure/Building"
+    }
 }

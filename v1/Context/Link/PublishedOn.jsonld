@@ -3,6 +3,10 @@
         "@version": 1.1,
         "@vocab": "https://standards-ontotest.oftrust.net/v1/Vocabulary/Link/PublishedOn",
         "@classDefinition": "https://standards-ontotest.oftrust.net/v1/ClassDefinitions/Link/PublishedOn",
+        "PublishedOn": {
+            "@id": "PublishedOn"
+        },
+        "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Link/PublishedOn",
         "pot": {
             "@id": "https://standards-ontotest.oftrust.net/v1/Vocabulary/",
             "@prefix": true
@@ -12,6 +16,17 @@
         },
         "metadata": {
             "@id": "pot:metadata"
+        },
+        "to": {
+            "@id": "pot:to"
+        },
+        "updatedBy": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/updatedBy"
+        },
+        "updatedAt": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/updatedAt"
         },
         "createdBy": {
             "@nest": "metadata",
@@ -25,25 +40,12 @@
             "@nest": "data",
             "@id": "pot:lifeCycle/status"
         },
-        "to": {
-            "@id": "pot:to"
-        },
         "startDateTime": {
             "@nest": "data",
             "@id": "pot:time/startDateTime"
         },
         "from": {
             "@id": "pot:from"
-        },
-        "updatedBy": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedBy"
-        },
-        "updatedAt": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedAt"
         }
-    },
-    "@type": "PublishedOn",
-    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Link/PublishedOn"
+    }
 }

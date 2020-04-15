@@ -3,6 +3,10 @@
         "@version": 1.1,
         "@vocab": "https://standards-ontotest.oftrust.net/v1/Vocabulary/Identity/Product/DataProduct",
         "@classDefinition": "https://standards-ontotest.oftrust.net/v1/ClassDefinitions/Identity/Product/DataProduct",
+        "DataProduct": {
+            "@id": "DataProduct"
+        },
+        "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Product/DataProduct",
         "pot": {
             "@id": "https://standards-ontotest.oftrust.net/v1/Vocabulary/",
             "@prefix": true
@@ -13,25 +17,27 @@
         "metadata": {
             "@id": "pot:metadata"
         },
-        "other": {
-            "@nest": "data",
-            "@id": "pot:other"
+        "organizationPublicKeys": {
+            "@id": "pot:other/organizationPublicKeys"
         },
-        "groupName": {
+        "imageUrl": {
             "@nest": "data",
-            "@id": "pot:identifier/groupName"
+            "@id": "pot:description/imageUrl"
         },
-        "additionalInformation": {
-            "@nest": "data",
-            "@id": "pot:description/additionalInformation"
+        "updatedBy": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/updatedBy"
         },
-        "pricePurchase": {
-            "@nest": "data",
-            "@id": "pot:financial/pricePurchase"
+        "id": {
+            "@id": "pot:identifier/id"
         },
         "gTIN": {
             "@nest": "data",
             "@id": "pot:identifier/gTIN"
+        },
+        "pricePurchase": {
+            "@nest": "data",
+            "@id": "pot:financial/pricePurchase"
         },
         "updatedAt": {
             "@nest": "metadata",
@@ -45,20 +51,40 @@
             "@nest": "data",
             "@id": "pot:identifier/ean"
         },
-        "groupCode": {
+        "other": {
             "@nest": "data",
-            "@id": "pot:identifier/groupCode"
+            "@id": "pot:other"
+        },
+        "groupName": {
+            "@nest": "data",
+            "@id": "pot:identifier/groupName"
+        },
+        "categorizationPoT": {
+            "@nest": "data",
+            "@id": "pot:categorization/categorizationPoT"
         },
         "parameterContext": {
             "@id": "pot:other/parameterContext"
         },
-        "imageUrl": {
+        "priceCurrent": {
             "@nest": "data",
-            "@id": "pot:description/imageUrl"
+            "@id": "pot:financial/priceCurrent"
+        },
+        "name": {
+            "@nest": "data",
+            "@id": "pot:identifier/name"
+        },
+        "categorizationETIM": {
+            "@nest": "data",
+            "@id": "pot:categorization/categorizationETIM"
         },
         "createdBy": {
             "@nest": "metadata",
             "@id": "pot:metadata/createdBy"
+        },
+        "descriptionGeneral": {
+            "@nest": "data",
+            "@id": "pot:description/descriptionGeneral"
         },
         "url": {
             "@nest": "data",
@@ -68,62 +94,38 @@
             "@nest": "data",
             "@id": "pot:lifeCycle/status"
         },
-        "priceSell": {
-            "@nest": "data",
-            "@id": "pot:financial/priceSell"
-        },
-        "codeProduct": {
-            "@nest": "data",
-            "@id": "pot:identifier/codeProduct"
-        },
-        "categorizationPoT": {
-            "@nest": "data",
-            "@id": "pot:categorization/categorizationPoT"
-        },
         "visibility": {
             "@nest": "data",
             "@id": "pot:other/visibility"
         },
+        "groupCode": {
+            "@nest": "data",
+            "@id": "pot:identifier/groupCode"
+        },
         "validTo": {
             "@id": "pot:time/validTo"
-        },
-        "name": {
-            "@nest": "data",
-            "@id": "pot:identifier/name"
-        },
-        "id": {
-            "@id": "pot:identifier/id"
         },
         "createdAt": {
             "@nest": "metadata",
             "@id": "pot:metadata/createdAt"
         },
-        "descriptionGeneral": {
+        "additionalInformation": {
             "@nest": "data",
-            "@id": "pot:description/descriptionGeneral"
+            "@id": "pot:description/additionalInformation"
         },
         "translatorUrl": {
             "@id": "pot:other/translatorUrl"
         },
-        "priceCurrent": {
+        "codeProduct": {
             "@nest": "data",
-            "@id": "pot:financial/priceCurrent"
+            "@id": "pot:identifier/codeProduct"
         },
         "validFrom": {
             "@id": "pot:time/validFrom"
         },
-        "categorizationETIM": {
+        "priceSell": {
             "@nest": "data",
-            "@id": "pot:categorization/categorizationETIM"
-        },
-        "organizationPublicKeys": {
-            "@id": "pot:other/organizationPublicKeys"
-        },
-        "updatedBy": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedBy"
+            "@id": "pot:financial/priceSell"
         }
-    },
-    "@type": "DataProduct",
-    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Product/DataProduct"
+    }
 }

@@ -3,6 +3,10 @@
         "@version": 1.1,
         "@vocab": "https://standards-ontotest.oftrust.net/v1/Vocabulary/Identity/AnnotationEntity/Condition",
         "@classDefinition": "https://standards-ontotest.oftrust.net/v1/ClassDefinitions/Identity/AnnotationEntity/Condition",
+        "Condition": {
+            "@id": "Condition"
+        },
+        "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/AnnotationEntity/Condition",
         "pot": {
             "@id": "https://standards-ontotest.oftrust.net/v1/Vocabulary/",
             "@prefix": true
@@ -13,20 +17,28 @@
         "metadata": {
             "@id": "pot:metadata"
         },
+        "updatedBy": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/updatedBy"
+        },
+        "updatedAt": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/updatedAt"
+        },
         "createdBy": {
             "@nest": "metadata",
             "@id": "pot:metadata/createdBy"
         },
-        "id": {
-            "@id": "pot:identifier/id"
+        "descriptionGeneral": {
+            "@nest": "data",
+            "@id": "pot:description/descriptionGeneral"
         },
         "createdAt": {
             "@nest": "metadata",
             "@id": "pot:metadata/createdAt"
         },
-        "descriptionGeneral": {
-            "@nest": "data",
-            "@id": "pot:description/descriptionGeneral"
+        "id": {
+            "@id": "pot:identifier/id"
         },
         "categorizationPoT": {
             "@nest": "data",
@@ -39,16 +51,6 @@
         "name": {
             "@nest": "data",
             "@id": "pot:identifier/name"
-        },
-        "updatedBy": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedBy"
-        },
-        "updatedAt": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedAt"
         }
-    },
-    "@type": "Condition",
-    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/AnnotationEntity/Condition"
+    }
 }

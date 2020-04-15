@@ -3,6 +3,10 @@
         "@version": 1.1,
         "@vocab": "https://standards-ontotest.oftrust.net/v1/Vocabulary/Identity/LegalParty/Organization",
         "@classDefinition": "https://standards-ontotest.oftrust.net/v1/ClassDefinitions/Identity/LegalParty/Organization",
+        "Organization": {
+            "@id": "Organization"
+        },
+        "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/LegalParty/Organization",
         "pot": {
             "@id": "https://standards-ontotest.oftrust.net/v1/Vocabulary/",
             "@prefix": true
@@ -13,32 +17,44 @@
         "metadata": {
             "@id": "pot:metadata"
         },
+        "updatedBy": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/updatedBy"
+        },
+        "updatedAt": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/updatedAt"
+        },
         "createdBy": {
             "@nest": "metadata",
             "@id": "pot:metadata/createdBy"
-        },
-        "id": {
-            "@id": "pot:identifier/id"
-        },
-        "createdAt": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/createdAt"
-        },
-        "status": {
-            "@nest": "data",
-            "@id": "pot:lifeCycle/status"
-        },
-        "governmentPermanent": {
-            "@nest": "data",
-            "@id": "pot:identifier/governmentPermanent"
         },
         "descriptionGeneral": {
             "@nest": "data",
             "@id": "pot:description/descriptionGeneral"
         },
+        "ifcGuid": {
+            "@nest": "data",
+            "@id": "pot:identifier/ifcGuid"
+        },
+        "createdAt": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/createdAt"
+        },
         "taxVatCode": {
             "@nest": "data",
             "@id": "pot:identifier/taxVatCode"
+        },
+        "status": {
+            "@nest": "data",
+            "@id": "pot:lifeCycle/status"
+        },
+        "id": {
+            "@id": "pot:identifier/id"
+        },
+        "governmentPermanent": {
+            "@nest": "data",
+            "@id": "pot:identifier/governmentPermanent"
         },
         "categorizationOfficial": {
             "@nest": "data",
@@ -47,20 +63,6 @@
         "name": {
             "@nest": "data",
             "@id": "pot:identifier/name"
-        },
-        "ifcGuid": {
-            "@nest": "data",
-            "@id": "pot:identifier/ifcGuid"
-        },
-        "updatedBy": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedBy"
-        },
-        "updatedAt": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedAt"
         }
-    },
-    "@type": "Organization",
-    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/LegalParty/Organization"
+    }
 }

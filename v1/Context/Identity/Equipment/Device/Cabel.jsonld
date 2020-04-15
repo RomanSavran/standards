@@ -3,6 +3,10 @@
         "@version": 1.1,
         "@vocab": "https://standards-ontotest.oftrust.net/v1/Vocabulary/Identity/Equipment/Device/Cabel",
         "@classDefinition": "https://standards-ontotest.oftrust.net/v1/ClassDefinitions/Identity/Equipment/Device/Cabel",
+        "Cabel": {
+            "@id": "Cabel"
+        },
+        "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Equipment/Device/Cabel",
         "pot": {
             "@id": "https://standards-ontotest.oftrust.net/v1/Vocabulary/",
             "@prefix": true
@@ -13,9 +17,21 @@
         "metadata": {
             "@id": "pot:metadata"
         },
-        "ifcElementType": {
+        "volume": {
             "@nest": "data",
-            "@id": "pot:categorization/ifcElementType"
+            "@id": "pot:physical/volume"
+        },
+        "protectionCommon": {
+            "@nest": "data",
+            "@id": "pot:functional/protectionCommon"
+        },
+        "updatedBy": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/updatedBy"
+        },
+        "installationTypeAvailable": {
+            "@nest": "data",
+            "@id": "pot:functional/installationTypeAvailable"
         },
         "areaGross": {
             "@nest": "data",
@@ -25,173 +41,159 @@
             "@nest": "data",
             "@id": "pot:categorization/industryDomain"
         },
-        "protectionTypeStrandingElement": {
-            "@nest": "data",
-            "@id": "pot:functional/protectionTypeStrandingElement"
-        },
-        "fireFlamingParticlesDevelopment": {
-            "@nest": "data",
-            "@id": "pot:quality/fireFlamingParticlesDevelopment"
-        },
-        "protectionCommon": {
-            "@nest": "data",
-            "@id": "pot:functional/protectionCommon"
-        },
-        "installationType": {
-            "@nest": "data",
-            "@id": "pot:functional/installationType"
-        },
-        "installationTypeAvailable": {
-            "@nest": "data",
-            "@id": "pot:functional/installationTypeAvailable"
-        },
-        "colorName": {
-            "@nest": "data",
-            "@id": "pot:physical/colorName"
-        },
-        "fireSmokeDevelopment": {
-            "@nest": "data",
-            "@id": "pot:quality/fireSmokeDevelopment"
-        },
-        "idLocal": {
-            "@nest": "data",
-            "@id": "pot:identifier/idLocal"
-        },
-        "updatedAt": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedAt"
-        },
-        "ifcElementName": {
-            "@nest": "data",
-            "@id": "pot:categorization/ifcElementName"
-        },
-        "acidityLevel": {
-            "@nest": "data",
-            "@id": "pot:physical/acidityLevel"
-        },
-        "fireResistanceInsulation": {
-            "@nest": "data",
-            "@id": "pot:quality/fireResistanceInsulation"
-        },
-        "categorizationLocal": {
-            "@nest": "data",
-            "@id": "pot:categorization/categorizationLocal"
-        },
-        "processCapability": {
-            "@nest": "data",
-            "@id": "pot:functional/processCapability"
-        },
-        "height": {
-            "@nest": "data",
-            "@id": "pot:physical/height"
-        },
-        "ifcGuid": {
-            "@nest": "data",
-            "@id": "pot:identifier/ifcGuid"
-        },
-        "colorCode": {
-            "@nest": "data",
-            "@id": "pot:physical/colorCode"
-        },
-        "width": {
-            "@nest": "data",
-            "@id": "pot:physical/width"
-        },
-        "function": {
-            "@id": "pot:function"
-        },
-        "createdBy": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/createdBy"
-        },
-        "status": {
-            "@nest": "data",
-            "@id": "pot:lifeCycle/status"
-        },
-        "typeNameConductor": {
-            "@nest": "data",
-            "@id": "pot:material/typeNameConductor"
-        },
-        "amountCores": {
-            "@nest": "data",
-            "@id": "pot:functional/amountCores"
-        },
-        "serialNumber": {
-            "@nest": "data",
-            "@id": "pot:identifier/serialNumber"
-        },
-        "thickness": {
-            "@nest": "data",
-            "@id": "pot:physical/thickness"
-        },
-        "name": {
-            "@nest": "data",
-            "@id": "pot:identifier/name"
-        },
-        "electricityCurrent": {
-            "@nest": "data",
-            "@id": "pot:physical/electricityCurrent"
-        },
-        "fireClassification": {
-            "@nest": "data",
-            "@id": "pot:quality/fireClassification"
-        },
-        "power": {
-            "@nest": "data",
-            "@id": "pot:physical/power"
-        },
-        "weight": {
-            "@nest": "data",
-            "@id": "pot:physical/weight"
-        },
-        "typeName": {
-            "@nest": "data",
-            "@id": "pot:material/typeName"
-        },
         "id": {
             "@id": "pot:identifier/id"
-        },
-        "createdAt": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/createdAt"
-        },
-        "amountFibres": {
-            "@nest": "data",
-            "@id": "pot:functional/amountFibres"
-        },
-        "areaNet": {
-            "@nest": "data",
-            "@id": "pot:physical/areaNet"
-        },
-        "descriptionGeneral": {
-            "@nest": "data",
-            "@id": "pot:description/descriptionGeneral"
-        },
-        "fireReaction": {
-            "@nest": "data",
-            "@id": "pot:quality/fireReaction"
         },
         "electricityVoltageNominal": {
             "@nest": "data",
             "@id": "pot:physical/electricityVoltageNominal"
         },
-        "length": {
-            "@nest": "data",
-            "@id": "pot:physical/length"
-        },
         "diameterOuter": {
             "@nest": "data",
             "@id": "pot:physical/diameterOuter"
         },
-        "updatedBy": {
-            "@nest": "metadata",
-            "@id": "pot:metadata/updatedBy"
-        },
-        "volume": {
+        "serialNumber": {
             "@nest": "data",
-            "@id": "pot:physical/volume"
+            "@id": "pot:identifier/serialNumber"
+        },
+        "ifcElementName": {
+            "@nest": "data",
+            "@id": "pot:categorization/ifcElementName"
+        },
+        "categorizationLocal": {
+            "@nest": "data",
+            "@id": "pot:categorization/categorizationLocal"
+        },
+        "width": {
+            "@nest": "data",
+            "@id": "pot:physical/width"
+        },
+        "processCapability": {
+            "@nest": "data",
+            "@id": "pot:functional/processCapability"
+        },
+        "updatedAt": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/updatedAt"
+        },
+        "installationType": {
+            "@nest": "data",
+            "@id": "pot:functional/installationType"
+        },
+        "electricityCurrent": {
+            "@nest": "data",
+            "@id": "pot:physical/electricityCurrent"
+        },
+        "length": {
+            "@nest": "data",
+            "@id": "pot:physical/length"
+        },
+        "fireClassification": {
+            "@nest": "data",
+            "@id": "pot:quality/fireClassification"
+        },
+        "typeNameConductor": {
+            "@nest": "data",
+            "@id": "pot:material/typeNameConductor"
+        },
+        "acidityLevel": {
+            "@nest": "data",
+            "@id": "pot:physical/acidityLevel"
+        },
+        "colorName": {
+            "@nest": "data",
+            "@id": "pot:physical/colorName"
+        },
+        "name": {
+            "@nest": "data",
+            "@id": "pot:identifier/name"
+        },
+        "fireResistanceInsulation": {
+            "@nest": "data",
+            "@id": "pot:quality/fireResistanceInsulation"
+        },
+        "fireReaction": {
+            "@nest": "data",
+            "@id": "pot:quality/fireReaction"
+        },
+        "createdBy": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/createdBy"
+        },
+        "fireSmokeDevelopment": {
+            "@nest": "data",
+            "@id": "pot:quality/fireSmokeDevelopment"
+        },
+        "descriptionGeneral": {
+            "@nest": "data",
+            "@id": "pot:description/descriptionGeneral"
+        },
+        "function": {
+            "@id": "pot:function"
+        },
+        "idLocal": {
+            "@nest": "data",
+            "@id": "pot:identifier/idLocal"
+        },
+        "amountFibres": {
+            "@nest": "data",
+            "@id": "pot:functional/amountFibres"
+        },
+        "status": {
+            "@nest": "data",
+            "@id": "pot:lifeCycle/status"
+        },
+        "height": {
+            "@nest": "data",
+            "@id": "pot:physical/height"
+        },
+        "colorCode": {
+            "@nest": "data",
+            "@id": "pot:physical/colorCode"
+        },
+        "weight": {
+            "@nest": "data",
+            "@id": "pot:physical/weight"
+        },
+        "fireFlamingParticlesDevelopment": {
+            "@nest": "data",
+            "@id": "pot:quality/fireFlamingParticlesDevelopment"
+        },
+        "typeName": {
+            "@nest": "data",
+            "@id": "pot:material/typeName"
+        },
+        "ifcGuid": {
+            "@nest": "data",
+            "@id": "pot:identifier/ifcGuid"
+        },
+        "createdAt": {
+            "@nest": "metadata",
+            "@id": "pot:metadata/createdAt"
+        },
+        "thickness": {
+            "@nest": "data",
+            "@id": "pot:physical/thickness"
+        },
+        "areaNet": {
+            "@nest": "data",
+            "@id": "pot:physical/areaNet"
+        },
+        "amountCores": {
+            "@nest": "data",
+            "@id": "pot:functional/amountCores"
+        },
+        "power": {
+            "@nest": "data",
+            "@id": "pot:physical/power"
+        },
+        "ifcElementType": {
+            "@nest": "data",
+            "@id": "pot:categorization/ifcElementType"
+        },
+        "protectionTypeStrandingElement": {
+            "@nest": "data",
+            "@id": "pot:functional/protectionTypeStrandingElement"
         }
-    },
-    "@type": "Cabel",
-    "@schema": "https://standards-ontotest.oftrust.net/v1/Schema/Identity/Equipment/Device/Cabel"
+    }
 }
