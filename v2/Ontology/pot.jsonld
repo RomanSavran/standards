@@ -13,13 +13,14 @@
 }, {
   "@id" : "_:genid100",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Condition"
+    "@language" : "fi-fi",
+    "@value" : "Laatuominaisuuden nimi"
   }, {
     "@language" : "en-us",
-    "@value" : "Condition name"
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Ehdon nimi"
+    "@value" : "Quality name"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Quality"
   } ]
 }, {
   "@id" : "_:genid101",
@@ -31,43 +32,43 @@
     "@value" : "Paikallinen nimi"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement"
   } ]
 }, {
   "@id" : "_:genid102",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fi-fi",
-    "@value" : "Laatuominaisuuden nimi"
+    "@value" : "Huoneen nimi"
   }, {
     "@language" : "en-us",
-    "@value" : "Quality name"
+    "@value" : "Room name"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Quality"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Room"
   } ]
 }, {
   "@id" : "_:genid103",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
-    "@value" : "Local name"
+    "@value" : "Product name"
   }, {
     "@language" : "fi-fi",
-    "@value" : "Paikallinen nimi"
+    "@value" : "Tuotenimi"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Product"
   } ]
 }, {
   "@id" : "_:genid104",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fi-fi",
-    "@value" : "Kiinteistön nimi"
-  }, {
     "@language" : "en-us",
-    "@value" : "Name"
+    "@value" : "Apartment name"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Huoneistotunnus"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/RealEstate"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Apartment"
   } ]
 }, {
   "@id" : "_:genid105",
@@ -141,6 +142,24 @@
 }, {
   "@id" : "_:genid111",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Life-cycle status of the product"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Product"
+  } ]
+}, {
+  "@id" : "_:genid112",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Process state"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Process"
+  } ]
+}, {
+  "@id" : "_:genid113",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
     "@value" : "Life cycle status of the building"
   } ],
@@ -148,7 +167,7 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
   } ]
 }, {
-  "@id" : "_:genid112",
+  "@id" : "_:genid114",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
     "@value" : "Case state"
@@ -157,7 +176,7 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Case"
   } ]
 }, {
-  "@id" : "_:genid113",
+  "@id" : "_:genid115",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
     "@value" : "project state"
@@ -166,7 +185,7 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Project"
   } ]
 }, {
-  "@id" : "_:genid114",
+  "@id" : "_:genid116",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
     "@value" : "Life cycle status"
@@ -191,24 +210,6 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/RealEstate"
   }, {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Room"
-  } ]
-}, {
-  "@id" : "_:genid115",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "fi-fi",
-    "@value" : "Life-cycle status of the product"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Product"
-  } ]
-}, {
-  "@id" : "_:genid116",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Process state"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Process"
   } ]
 }, {
   "@id" : "_:genid117",
@@ -225,6 +226,18 @@
 }, {
   "@id" : "_:genid118",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Elinkaari - Status"
+  }, {
+    "@language" : "en-us",
+    "@value" : "Life cycle status"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
+  } ]
+}, {
+  "@id" : "_:genid119",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
     "@value" : "Process status"
   }, {
@@ -235,7 +248,13 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Process"
   } ]
 }, {
-  "@id" : "_:genid119",
+  "@id" : "_:genid12",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Case priority"
+  } ]
+}, {
+  "@id" : "_:genid120",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
     "@value" : "Project status"
@@ -247,13 +266,7 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Project"
   } ]
 }, {
-  "@id" : "_:genid12",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Case priority"
-  } ]
-}, {
-  "@id" : "_:genid120",
+  "@id" : "_:genid121",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fi-fi",
     "@value" : "Elinkaari - Status"
@@ -283,7 +296,7 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Room"
   } ]
 }, {
-  "@id" : "_:genid121",
+  "@id" : "_:genid122",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
     "@value" : "Case status"
@@ -293,18 +306,6 @@
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Case"
-  } ]
-}, {
-  "@id" : "_:genid122",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fi-fi",
-    "@value" : "Elinkaari - Status"
-  }, {
-    "@language" : "en-us",
-    "@value" : "Life cycle status"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
   } ]
 }, {
   "@id" : "_:genid123",
@@ -430,31 +431,13 @@
   "@id" : "_:genid135",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Height of the element"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement"
-  } ]
-}, {
-  "@id" : "_:genid136",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Height of the object"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Room"
-  } ]
-}, {
-  "@id" : "_:genid137",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
     "@value" : "Height of the device"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device"
   } ]
 }, {
-  "@id" : "_:genid138",
+  "@id" : "_:genid136",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
     "@value" : "Height of the space"
@@ -463,13 +446,31 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space"
   } ]
 }, {
-  "@id" : "_:genid139",
+  "@id" : "_:genid137",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
     "@value" : "Height of the building"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
+  } ]
+}, {
+  "@id" : "_:genid138",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Height of the element"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement"
+  } ]
+}, {
+  "@id" : "_:genid139",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Height of the object"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Room"
   } ]
 }, {
   "@id" : "_:genid14",
@@ -507,28 +508,28 @@
   "@id" : "_:genid142",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
+    "@value" : "Thickness of the device"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device"
+  } ]
+}, {
+  "@id" : "_:genid143",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
     "@value" : "Thickness of the object"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement/Storey"
   } ]
 }, {
-  "@id" : "_:genid143",
+  "@id" : "_:genid144",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
     "@value" : "Thickness of the element"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement"
-  } ]
-}, {
-  "@id" : "_:genid144",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Thickness of the device"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device"
   } ]
 }, {
   "@id" : "_:genid145",
@@ -635,37 +636,37 @@
   "@id" : "_:genid154",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Weight of the element"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement"
-  } ]
-}, {
-  "@id" : "_:genid155",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
     "@value" : "Weight of the device"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device"
   } ]
 }, {
-  "@id" : "_:genid156",
+  "@id" : "_:genid155",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Width of the element"
+    "@value" : "Weight of the element"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement"
   } ]
 }, {
-  "@id" : "_:genid157",
+  "@id" : "_:genid156",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
     "@value" : "Width of the device"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device"
+  } ]
+}, {
+  "@id" : "_:genid157",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Width of the element"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement"
   } ]
 }, {
   "@id" : "_:genid158",
@@ -689,15 +690,13 @@
   "@id" : "_:genid16",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
-    "@value" : "Space type - official."
+    "@value" : "Industry category."
   }, {
     "@language" : "fi-fi",
-    "@value" : "Tilatyyppi - viranomainen."
+    "@value" : "Toimialaluokka."
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space"
-  }, {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Room"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/LegalParty/Organization"
   } ]
 }, {
   "@id" : "_:genid160",
@@ -793,34 +792,27 @@
   "@id" : "_:genid169",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Start time of the case"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Case"
-  } ]
-}, {
-  "@id" : "_:genid17",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Industry category."
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Toimialaluokka."
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/LegalParty/Organization"
-  } ]
-}, {
-  "@id" : "_:genid170",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
     "@value" : "Start time of the project"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Project"
   } ]
 }, {
-  "@id" : "_:genid171",
+  "@id" : "_:genid17",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Space type - official."
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Tilatyyppi - viranomainen."
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space"
+  }, {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Room"
+  } ]
+}, {
+  "@id" : "_:genid170",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
     "@value" : "Start time of the process"
@@ -829,13 +821,22 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Process"
   } ]
 }, {
-  "@id" : "_:genid172",
+  "@id" : "_:genid171",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
     "@value" : "Start time"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Link"
+  } ]
+}, {
+  "@id" : "_:genid172",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Start time of the case"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Case"
   } ]
 }, {
   "@id" : "_:genid173",
@@ -851,25 +852,31 @@
   "@type" : [ "https://standards.oftrust.net/v2/Vocabulary/Identity/Case" ]
 }, {
   "@id" : "_:genid177",
-  "https://standards.oftrust.net/v2/Vocabulary/label" : [ {
+  "https://standards.oftrust.net/v2/Vocabulary/comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Life cycle status"
+  }, {
+    "@language" : "en-us",
+    "@value" : "Life cycle status of the building"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
+  } ]
+}, {
+  "@id" : "_:genid178",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
   }, {
     "@language" : "fi-fi",
     "@value" : "Elinkaari - Status"
-  } ]
-}, {
-  "@id" : "_:genid178",
-  "https://standards.oftrust.net/v2/Vocabulary/label" : [ {
-    "@id" : "_:genid179"
+  }, {
+    "@language" : "en-us",
+    "@value" : "Life cycle status of the building"
   } ]
 }, {
   "@id" : "_:genid179",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fi-fi",
-    "@value" : "Elinkaari - Status"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Process/Case"
   } ]
 }, {
   "@id" : "_:genid18",
@@ -885,94 +892,101 @@
   } ]
 }, {
   "@id" : "_:genid180",
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/LegalParty"
+  "https://standards.oftrust.net/v2/Vocabulary/label" : [ {
+    "@id" : "_:genid181"
   } ]
 }, {
   "@id" : "_:genid181",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Industry category"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/LegalParty"
-  } ]
-}, {
-  "@id" : "_:genid182",
   "https://standards.oftrust.net/v2/Vocabulary/comment" : [ {
     "@language" : "en-us",
-    "@value" : "Duration of the process"
+    "@value" : "Start time of the process"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Process"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/label" : [ {
+  } ]
+}, {
+  "@id" : "_:genid182",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Duration time"
+    "@value" : "Description of the room"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Room"
   } ]
 }, {
   "@id" : "_:genid183",
   "https://standards.oftrust.net/v2/Vocabulary/comment" : [ {
     "@language" : "en-us",
-    "@value" : "Weight of the device"
+    "@value" : "Life cycle status of the building"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/label" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Elinkaari - Status"
   } ]
 }, {
   "@id" : "_:genid184",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Class or degree of protection (IP)"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device/Luminaire"
+  "https://standards.oftrust.net/v2/Vocabulary/label" : [ {
+    "@id" : "_:genid185"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Kesto"
   } ]
 }, {
   "@id" : "_:genid185",
+  "https://standards.oftrust.net/v2/Vocabulary/comment" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Process/Case"
+  }, {
+    "@language" : "en-us",
+    "@value" : "Duration"
+  }, {
+    "@language" : "en-us",
+    "@value" : "Duration of the case"
+  } ]
+}, {
+  "@id" : "_:genid186",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Degree of protection (IP)"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device/SocketOutlet"
+  }, {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device/Switch"
+  } ]
+}, {
+  "@id" : "_:genid187",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Toimialaluokka"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/LegalParty"
+  } ]
+}, {
+  "@id" : "_:genid188",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Degree of protection (IP)"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Kotelointiluokka (IP)"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device/SocketOutlet"
+  }, {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device/Switch"
+  } ]
+}, {
+  "@id" : "_:genid189",
   "https://standards.oftrust.net/v2/Vocabulary/comment" : [ {
     "@language" : "en-us",
     "@value" : "Description of the storey"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building/Storey"
-  } ]
-}, {
-  "@id" : "_:genid186",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Life cycle status of the building"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
-  } ]
-}, {
-  "@id" : "_:genid187",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
-  }, {
-    "@language" : "en-us",
-    "@value" : "Life cycle status"
-  } ]
-}, {
-  "@id" : "_:genid188",
-  "https://standards.oftrust.net/v2/Vocabulary/comment" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device"
-  }, {
-    "@language" : "en-us",
-    "@value" : "Thickness of the device"
-  } ]
-}, {
-  "@id" : "_:genid189",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Condition name"
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Ehdon nimi"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Condition"
   } ]
 }, {
   "@id" : "_:genid19",
@@ -988,25 +1002,15 @@
   } ]
 }, {
   "@id" : "_:genid190",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/LegalParty"
+  "https://standards.oftrust.net/v2/Vocabulary/comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Weight of the element"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/BuildingElement"
   } ]
 }, {
   "@id" : "_:genid191",
-  "https://standards.oftrust.net/v2/Vocabulary/label" : [ {
-    "@id" : "_:genid192"
-  } ]
-}, {
-  "@id" : "_:genid192",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fi-fi",
-    "@value" : "Elinkaari - Status"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/label" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
-  } ]
-}, {
-  "@id" : "_:genid193",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
     "@value" : "Space type - official"
@@ -1015,7 +1019,7 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space"
   } ]
 }, {
-  "@id" : "_:genid194",
+  "@id" : "_:genid192",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
     "@value" : "Degree of protection"
@@ -1027,7 +1031,46 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device/Luminaire"
   } ]
 }, {
+  "@id" : "_:genid193",
+  "https://standards.oftrust.net/v2/Vocabulary/comment" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device"
+  }, {
+    "@language" : "en-us",
+    "@value" : "Thickness of the device"
+  } ]
+}, {
+  "@id" : "_:genid194",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Condition name"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Ehdon nimi"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Condition"
+  } ]
+}, {
   "@id" : "_:genid195",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/LegalParty"
+  } ]
+}, {
+  "@id" : "_:genid196",
+  "https://standards.oftrust.net/v2/Vocabulary/label" : [ {
+    "@id" : "_:genid197"
+  } ]
+}, {
+  "@id" : "_:genid197",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Elinkaari - Status"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/label" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
+  } ]
+}, {
+  "@id" : "_:genid198",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building/Storey"
   }, {
@@ -1035,48 +1078,17 @@
     "@value" : "Kerrosala"
   } ]
 }, {
-  "@id" : "_:genid196",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Degree of protection (IP)"
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Kotelointiluokka (IP)"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device/SocketOutlet"
-  }, {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device/Switch"
-  } ]
-}, {
-  "@id" : "_:genid197",
-  "https://standards.oftrust.net/v2/Vocabulary/comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Life cycle status"
-  }, {
-    "@language" : "en-us",
-    "@value" : "Life cycle status of the building"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
-  } ]
-}, {
-  "@id" : "_:genid198",
-  "https://standards.oftrust.net/v2/Vocabulary/comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Weight of the element"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/BuildingElement"
-  } ]
-}, {
   "@id" : "_:genid199",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "https://standards.oftrust.net/v2/Vocabulary/comment" : [ {
     "@language" : "en-us",
-    "@value" : "Description of the room"
+    "@value" : "Duration of the process"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Room"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Process"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/label" : [ {
+    "@language" : "en-us",
+    "@value" : "Duration time"
   } ]
 }, {
   "@id" : "_:genid2",
@@ -1098,175 +1110,171 @@
   } ]
 }, {
   "@id" : "_:genid200",
-  "https://standards.oftrust.net/v2/Vocabulary/comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Life cycle status of the building"
+    "@value" : "Class or degree of protection (IP)"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/label" : [ {
-    "@language" : "fi-fi",
-    "@value" : "Elinkaari - Status"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device/Luminaire"
   } ]
 }, {
   "@id" : "_:genid201",
-  "https://standards.oftrust.net/v2/Vocabulary/label" : [ {
-    "@id" : "_:genid202"
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Kesto"
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/LegalParty"
   } ]
 }, {
   "@id" : "_:genid202",
-  "https://standards.oftrust.net/v2/Vocabulary/comment" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Process/Case"
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
   }, {
     "@language" : "en-us",
-    "@value" : "Duration"
-  }, {
-    "@language" : "en-us",
-    "@value" : "Duration of the case"
+    "@value" : "Life cycle status"
   } ]
 }, {
   "@id" : "_:genid203",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Process/Case"
+  "https://standards.oftrust.net/v2/Vocabulary/comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Weight of the device"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device"
   } ]
 }, {
   "@id" : "_:genid204",
-  "https://standards.oftrust.net/v2/Vocabulary/label" : [ {
-    "@id" : "_:genid205"
-  } ]
-}, {
-  "@id" : "_:genid205",
-  "https://standards.oftrust.net/v2/Vocabulary/comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Start time of the process"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Process"
-  } ]
-}, {
-  "@id" : "_:genid206",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Degree of protection (IP)"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device/SocketOutlet"
-  }, {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device/Switch"
-  } ]
-}, {
-  "@id" : "_:genid207",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fi-fi",
-    "@value" : "Toimialaluokka"
+    "@language" : "en-us",
+    "@value" : "Industry category"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/LegalParty"
   } ]
 }, {
-  "@id" : "_:genid208",
+  "@id" : "_:genid205",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Life cycle status of the building"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
+  } ]
+}, {
+  "@id" : "_:genid206",
+  "https://standards.oftrust.net/v2/Vocabulary/label" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
   }, {
     "@language" : "fi-fi",
     "@value" : "Elinkaari - Status"
-  }, {
-    "@language" : "en-us",
-    "@value" : "Life cycle status of the building"
+  } ]
+}, {
+  "@id" : "_:genid207",
+  "https://standards.oftrust.net/v2/Vocabulary/label" : [ {
+    "@id" : "_:genid208"
+  } ]
+}, {
+  "@id" : "_:genid208",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Elinkaari - Status"
   } ]
 }, {
   "@id" : "_:genid209",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Quality is an attribute that describes how something operates.  Example attributes are availability, accuracy, concistency, efficiency, security, etc."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fi-fi",
-    "@value" : "Valuutta"
+    "@value" : "Laatu"
+  }, {
+    "@language" : "en-us",
+    "@value" : "Quality"
   } ]
 }, {
   "@id" : "_:genid21",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Description of the space"
+    "@value" : "Description of the storey"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement/Storey"
   } ]
 }, {
   "@id" : "_:genid210",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fi-fi",
-    "@value" : "Yksikköhinta"
+    "@language" : "en-us",
+    "@value" : "VAT included in rate"
   } ]
 }, {
   "@id" : "_:genid211",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
-    "@value" : "Information if VAT is included in the rate (price)"
+    "@value" : "Rate"
   } ]
 }, {
   "@id" : "_:genid212",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fi-fi",
-    "@value" : "Arvonlisävero prosentti"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Metadata container"
   } ]
 }, {
   "@id" : "_:genid213",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "VAT percentage"
+    "@language" : "fi-fi",
+    "@value" : "Identieetin päivittäjä"
   } ]
 }, {
   "@id" : "_:genid214",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "A data operator platform running on top of LifeEngine"
+    "@value" : "Categorisation class name in PoT standard"
   } ]
 }, {
   "@id" : "_:genid215",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "fi-fi",
-    "@value" : "Lifeenginen päälle rakennettu data operaattorialusta"
+    "@language" : "en-us",
+    "@value" : "Time when the data is updated"
   } ]
 }, {
   "@id" : "_:genid216",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fi-fi",
-    "@value" : "Arvonlisävero sisältyy hintaan"
+    "@language" : "en-us",
+    "@value" : "Updater"
   } ]
 }, {
   "@id" : "_:genid217",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
-    "@value" : "Updater of an identity"
+    "@value" : "Update time"
   } ]
 }, {
   "@id" : "_:genid218",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Creation time"
+    "@value" : "Life cycle status of the building"
   } ]
 }, {
   "@id" : "_:genid219",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fi-fi",
-    "@value" : "Päivitysaika"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Time when the data is created"
   } ]
 }, {
   "@id" : "_:genid22",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Description of the case"
+    "@value" : "Description of the building"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Case"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
   } ]
 }, {
   "@id" : "_:genid220",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
-    "@value" : "Categorisation class name in PoT standard"
+    "@value" : "Creator"
   } ]
 }, {
   "@id" : "_:genid221",
@@ -1282,12 +1290,6 @@
   } ]
 }, {
   "@id" : "_:genid223",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Metadata container"
-  } ]
-}, {
-  "@id" : "_:genid224",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
     "@value" : "Unit group"
@@ -1296,143 +1298,142 @@
     "@value" : "Yksikköryhmä"
   } ]
 }, {
-  "@id" : "_:genid225",
+  "@id" : "_:genid224",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
     "@value" : "Metadata"
   } ]
 }, {
-  "@id" : "_:genid226",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Currency"
-  } ]
-}, {
-  "@id" : "_:genid227",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Creator of and identity"
-  } ]
-}, {
-  "@id" : "_:genid228",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Creator"
-  } ]
-}, {
-  "@id" : "_:genid229",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Updater"
-  } ]
-}, {
-  "@id" : "_:genid23",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Description of the real estate"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/RealEstate"
-  } ]
-}, {
-  "@id" : "_:genid230",
+  "@id" : "_:genid225",
   "https://standards.oftrust.net/v2/Vocabulary/comment" : [ {
     "@language" : "en-us",
     "@value" : "End time of the case"
   } ]
 }, {
-  "@id" : "_:genid231",
+  "@id" : "_:genid226",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fi-fi",
     "@value" : "Identiteetin luoja"
   } ]
 }, {
-  "@id" : "_:genid232",
+  "@id" : "_:genid227",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Currency"
+  } ]
+}, {
+  "@id" : "_:genid228",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Creator of and identity"
+  } ]
+}, {
+  "@id" : "_:genid229",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Creation time"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Description of the system"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Group/System"
+  } ]
+}, {
+  "@id" : "_:genid230",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fi-fi",
-    "@value" : "Identieetin päivittäjä"
+    "@value" : "Päivitysaika"
+  } ]
+}, {
+  "@id" : "_:genid231",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Information if VAT is included in the rate (price)"
+  } ]
+}, {
+  "@id" : "_:genid232",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "A data operator platform running on top of LifeEngine"
   } ]
 }, {
   "@id" : "_:genid233",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Quality is an attribute that describes how something operates.  Example attributes are availability, accuracy, concistency, efficiency, security, etc."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fi-fi",
-    "@value" : "Laatu"
-  }, {
-    "@language" : "en-us",
-    "@value" : "Quality"
+    "@value" : "Lifeenginen päälle rakennettu data operaattorialusta"
   } ]
 }, {
   "@id" : "_:genid234",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "VAT included in rate"
+    "@language" : "fi-fi",
+    "@value" : "Arvonlisävero sisältyy hintaan"
   } ]
 }, {
   "@id" : "_:genid235",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Update time"
-  } ]
-}, {
-  "@id" : "_:genid236",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Life cycle status of the building"
-  } ]
-}, {
-  "@id" : "_:genid237",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Time when the data is created"
-  } ]
-}, {
-  "@id" : "_:genid238",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Rate"
-  } ]
-}, {
-  "@id" : "_:genid239",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Time when the data is updated"
-  } ]
-}, {
-  "@id" : "_:genid24",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Description of the project"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Project"
-  } ]
-}, {
-  "@id" : "_:genid240",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
     "@value" : "Categorisation class name in PoT standard"
   } ]
 }, {
-  "@id" : "_:genid241",
+  "@id" : "_:genid236",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
-    "@value" : "Function"
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Toiminnallisuus"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Process"
+    "@value" : "VAT percentage"
   } ]
 }, {
-  "@id" : "_:genid242",
+  "@id" : "_:genid237",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Updater of an identity"
+  } ]
+}, {
+  "@id" : "_:genid238",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Yksikköhinta"
+  } ]
+}, {
+  "@id" : "_:genid239",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Arvonlisävero prosentti"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Description of the building element"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement"
+  } ]
+}, {
+  "@id" : "_:genid240",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Valuutta"
+  } ]
+}, {
+  "@id" : "_:genid241",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
     "@value" : "Process which device is capable executing."
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device"
+  } ]
+}, {
+  "@id" : "_:genid242",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Process function"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Prosessi Toiminnallisuus"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device"
@@ -1450,25 +1451,34 @@
   "@id" : "_:genid244",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
-    "@value" : "Process function"
+    "@value" : "Function"
   }, {
     "@language" : "fi-fi",
-    "@value" : "Prosessi Toiminnallisuus"
+    "@value" : "Toiminnallisuus"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Process"
   } ]
 }, {
   "@id" : "_:genid25",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Description of the organisation"
+    "@value" : "Description of the real estate"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/LegalParty/Organization"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/RealEstate"
   } ]
 }, {
   "@id" : "_:genid26",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Description of the case"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Case"
+  } ]
+}, {
+  "@id" : "_:genid27",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
     "@value" : "Description of the device"
@@ -1477,31 +1487,22 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device"
   } ]
 }, {
-  "@id" : "_:genid27",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Description of the storey"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement/Storey"
-  } ]
-}, {
   "@id" : "_:genid28",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Description of the building"
+    "@value" : "Description of the space"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space"
   } ]
 }, {
   "@id" : "_:genid29",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Description of the room"
+    "@value" : "Description of the product"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Room"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Product"
   } ]
 }, {
   "@id" : "_:genid3",
@@ -1513,40 +1514,64 @@
   "@id" : "_:genid30",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
+    "@value" : "Description of the room"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Room"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
     "@value" : "Description of the process"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Process"
   } ]
 }, {
-  "@id" : "_:genid31",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Description of the product"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Product"
-  } ]
-}, {
   "@id" : "_:genid32",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Description of the system"
+    "@value" : "Description of the project"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Group/System"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Project"
   } ]
 }, {
   "@id" : "_:genid33",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Description of the building element"
+    "@value" : "Description of the organisation"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/LegalParty/Organization"
   } ]
 }, {
   "@id" : "_:genid34",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Kerroksen kuvaus"
+  }, {
+    "@language" : "en-us",
+    "@value" : "Storey description"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement/Storey"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Product description"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Tuotekuvaus"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Product"
+  } ]
+}, {
+  "@id" : "_:genid36",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fi-fi",
     "@value" : "Organisaation kuvaus"
@@ -1558,44 +1583,16 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/LegalParty/Organization"
   } ]
 }, {
-  "@id" : "_:genid35",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fi-fi",
-    "@value" : "Järjestelmän kuvaus"
-  }, {
-    "@language" : "en-us",
-    "@value" : "System description"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Group/System"
-  } ]
-}, {
-  "@id" : "_:genid36",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Building element description"
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Rakennuselementin kuvaus"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement"
-  } ]
-}, {
   "@id" : "_:genid37",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Description"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
-    "@value" : "Description"
+    "@value" : "Case description"
   }, {
     "@language" : "fi-fi",
-    "@value" : "Kuvaus"
+    "@value" : "Palvelupyynnön kuvaus"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Quality"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Case"
   } ]
 }, {
   "@id" : "_:genid38",
@@ -1613,13 +1610,13 @@
   "@id" : "_:genid39",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
-    "@value" : "Space description"
+    "@value" : "Project description"
   }, {
     "@language" : "fi-fi",
-    "@value" : "Tilan kuvaus"
+    "@value" : "Projektin kuvaus"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Project"
   } ]
 }, {
   "@id" : "_:genid4",
@@ -1631,6 +1628,18 @@
   "@id" : "_:genid40",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
+    "@value" : "Space description"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Tilan kuvaus"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
     "@value" : "Device description"
   }, {
     "@language" : "fi-fi",
@@ -1640,55 +1649,7 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device"
   } ]
 }, {
-  "@id" : "_:genid41",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Case description"
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Palvelupyynnön kuvaus"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Case"
-  } ]
-}, {
   "@id" : "_:genid42",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Project description"
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Projektin kuvaus"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Project"
-  } ]
-}, {
-  "@id" : "_:genid43",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fi-fi",
-    "@value" : "Kerroksen kuvaus"
-  }, {
-    "@language" : "en-us",
-    "@value" : "Storey description"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement/Storey"
-  } ]
-}, {
-  "@id" : "_:genid44",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Product description"
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Tuotekuvaus"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Product"
-  } ]
-}, {
-  "@id" : "_:genid45",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
     "@value" : "Building description"
@@ -1698,6 +1659,46 @@
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Huoneen kuvaus"
+  }, {
+    "@language" : "en-us",
+    "@value" : "Room description"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Room"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Järjestelmän kuvaus"
+  }, {
+    "@language" : "en-us",
+    "@value" : "System description"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Group/System"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Description"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Kuvaus"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Quality"
   } ]
 }, {
   "@id" : "_:genid46",
@@ -1714,14 +1715,14 @@
 }, {
   "@id" : "_:genid47",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fi-fi",
-    "@value" : "Huoneen kuvaus"
-  }, {
     "@language" : "en-us",
-    "@value" : "Room description"
+    "@value" : "Building element description"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Rakennuselementin kuvaus"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Room"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement"
   } ]
 }, {
   "@id" : "_:genid48",
@@ -1748,13 +1749,15 @@
   "@id" : "_:genid5",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
-    "@value" : "Case category"
+    "@value" : "Space type - local"
   }, {
     "@language" : "fi-fi",
-    "@value" : "Palvelupyynnön luokka"
+    "@value" : "Tilatyyppi - paikallinen"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Case"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space"
+  }, {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Room"
   } ]
 }, {
   "@id" : "_:genid50",
@@ -1844,34 +1847,13 @@
   "@id" : "_:genid58",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Identifier given locally for the building element"
+    "@value" : "Local identifier (system identifier)"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Case"
   } ]
 }, {
   "@id" : "_:genid59",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Locally given identifier for the process instance"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Process"
-  } ]
-}, {
-  "@id" : "_:genid6",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Condition local class"
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Ehdon paikallinen luokka"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Condition"
-  } ]
-}, {
-  "@id" : "_:genid60",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
     "@value" : "Locally given identifier for the storey"
@@ -1880,7 +1862,19 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement/Storey"
   } ]
 }, {
-  "@id" : "_:genid61",
+  "@id" : "_:genid6",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Case category"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Palvelupyynnön luokka"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Case"
+  } ]
+}, {
+  "@id" : "_:genid60",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
     "@value" : "Local identifier for the project"
@@ -1889,7 +1883,7 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Project"
   } ]
 }, {
-  "@id" : "_:genid62",
+  "@id" : "_:genid61",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
     "@value" : "Locally given identifier for the space"
@@ -1898,6 +1892,15 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space"
   }, {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Room"
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Locally given identifier for the process instance"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Process"
   } ]
 }, {
   "@id" : "_:genid63",
@@ -1912,25 +1915,13 @@
   "@id" : "_:genid64",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Local identifier (system identifier)"
+    "@value" : "Identifier given locally for the building element"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Case"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement"
   } ]
 }, {
   "@id" : "_:genid65",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Local identifier"
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Paikallinen tunniste"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement/Storey"
-  } ]
-}, {
-  "@id" : "_:genid66",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
     "@value" : "Process Id"
@@ -1942,7 +1933,31 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Process"
   } ]
 }, {
+  "@id" : "_:genid66",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Case Id"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Palvelupyynnön tunniste"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Case"
+  } ]
+}, {
   "@id" : "_:genid67",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Local code"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Paikallinen koodi"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device"
+  } ]
+}, {
+  "@id" : "_:genid68",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
     "@value" : "Local code"
@@ -1954,7 +1969,7 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement"
   } ]
 }, {
-  "@id" : "_:genid68",
+  "@id" : "_:genid69",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
     "@value" : "Project Id"
@@ -1966,7 +1981,31 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Project"
   } ]
 }, {
-  "@id" : "_:genid69",
+  "@id" : "_:genid7",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Condition local class"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Ehdon paikallinen luokka"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Condition"
+  } ]
+}, {
+  "@id" : "_:genid70",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Local identifier"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Paikallinen tunniste"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement/Storey"
+  } ]
+}, {
+  "@id" : "_:genid71",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
     "@value" : "Local identifier"
@@ -1980,72 +2019,7 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Room"
   } ]
 }, {
-  "@id" : "_:genid7",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Space type - local"
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Tilatyyppi - paikallinen"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space"
-  }, {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Room"
-  } ]
-}, {
-  "@id" : "_:genid70",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Local code"
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Paikallinen koodi"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device"
-  } ]
-}, {
-  "@id" : "_:genid71",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Case Id"
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Palvelupyynnön tunniste"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Case"
-  } ]
-}, {
   "@id" : "_:genid72",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Officially given identifier for the space in Finland"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space"
-  } ]
-}, {
-  "@id" : "_:genid73",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Official identifier of the person in Finland"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/LegalParty/Person"
-  } ]
-}, {
-  "@id" : "_:genid74",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Real estate identifier for the land in Finland"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/RealEstate"
-  } ]
-}, {
-  "@id" : "_:genid75",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
     "@value" : "Officially given identifier for the space"
@@ -2054,31 +2028,34 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Room"
   } ]
 }, {
+  "@id" : "_:genid73",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Officially given identifier for the space in Finland"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space"
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Official identifier of the person in Finland"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/LegalParty/Person"
+  } ]
+}, {
+  "@id" : "_:genid75",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Real estate identifier for the land in Finland"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/RealEstate"
+  } ]
+}, {
   "@id" : "_:genid76",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "License plate"
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Rekisterikilpi"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Vehicle"
-  } ]
-}, {
-  "@id" : "_:genid77",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Official Id"
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Viranomaisen tunniste"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Room"
-  } ]
-}, {
-  "@id" : "_:genid78",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fi-fi",
     "@value" : "Henkilötunnus"
@@ -2090,7 +2067,7 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/LegalParty/Person"
   } ]
 }, {
-  "@id" : "_:genid79",
+  "@id" : "_:genid77",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
     "@value" : "Official Id"
@@ -2100,6 +2077,30 @@
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space"
+  } ]
+}, {
+  "@id" : "_:genid78",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Kiinteistötunnus"
+  }, {
+    "@language" : "en-us",
+    "@value" : "Real estate Id"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/RealEstate"
+  } ]
+}, {
+  "@id" : "_:genid79",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "License plate"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Rekisterikilpi"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Vehicle"
   } ]
 }, {
   "@id" : "_:genid8",
@@ -2116,23 +2117,23 @@
 }, {
   "@id" : "_:genid80",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fi-fi",
-    "@value" : "Kiinteistötunnus"
-  }, {
     "@language" : "en-us",
-    "@value" : "Real estate Id"
+    "@value" : "Official Id"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Viranomaisen tunniste"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/RealEstate"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Room"
   } ]
 }, {
   "@id" : "_:genid81",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Unique product name given by manufacturer"
+    "@value" : "Room name"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Product"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Room"
   } ]
 }, {
   "@id" : "_:genid82",
@@ -2147,10 +2148,10 @@
   "@id" : "_:genid83",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Room name"
+    "@value" : "Name of the price plan"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Room"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/PricePlan"
   } ]
 }, {
   "@id" : "_:genid84",
@@ -2174,37 +2175,37 @@
   "@id" : "_:genid86",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Name of the real estate"
+    "@value" : "Name of the building"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/RealEstate"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
   } ]
 }, {
   "@id" : "_:genid87",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Apartment name"
+    "@value" : "Name given locally for the building element"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Apartment"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement"
   } ]
 }, {
   "@id" : "_:genid88",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Name of the price plan"
+    "@value" : "Name givento the system"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/PricePlan"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Group/System"
   } ]
 }, {
   "@id" : "_:genid89",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Name of the building"
+    "@value" : "Unique product name given by manufacturer"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Product"
   } ]
 }, {
   "@id" : "_:genid9",
@@ -2224,28 +2225,28 @@
   "@id" : "_:genid90",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Name given locally for the building element"
+    "@value" : "Name of organisation"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Element/BuildingElement"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/LegalParty/Organization"
   } ]
 }, {
   "@id" : "_:genid91",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Name givento the system"
+    "@value" : "Apartment name"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Group/System"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Apartment"
   } ]
 }, {
   "@id" : "_:genid92",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en-us",
-    "@value" : "Name of organisation"
+    "@value" : "Name of the real estate"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/LegalParty/Organization"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/RealEstate"
   } ]
 }, {
   "@id" : "_:genid93",
@@ -2263,6 +2264,18 @@
   "@id" : "_:genid94",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fi-fi",
+    "@value" : "Kiinteistön nimi"
+  }, {
+    "@language" : "en-us",
+    "@value" : "Name"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/RealEstate"
+  } ]
+}, {
+  "@id" : "_:genid95",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi-fi",
     "@value" : "Organisaation nimi"
   }, {
     "@language" : "en-us",
@@ -2272,7 +2285,7 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/LegalParty/Organization"
   } ]
 }, {
-  "@id" : "_:genid95",
+  "@id" : "_:genid96",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
     "@value" : "Building name"
@@ -2284,7 +2297,7 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Structure/Building"
   } ]
 }, {
-  "@id" : "_:genid96",
+  "@id" : "_:genid97",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fi-fi",
     "@value" : "Järjestelmän nimi"
@@ -2296,40 +2309,27 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Group/System"
   } ]
 }, {
-  "@id" : "_:genid97",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fi-fi",
-    "@value" : "Huoneen nimi"
-  }, {
-    "@language" : "en-us",
-    "@value" : "Room name"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Room"
-  } ]
-}, {
   "@id" : "_:genid98",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Condition"
+  }, {
     "@language" : "en-us",
-    "@value" : "Product name"
+    "@value" : "Condition name"
   }, {
     "@language" : "fi-fi",
-    "@value" : "Tuotenimi"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Product"
+    "@value" : "Ehdon nimi"
   } ]
 }, {
   "@id" : "_:genid99",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
-    "@value" : "Apartment name"
+    "@value" : "Local name"
   }, {
     "@language" : "fi-fi",
-    "@value" : "Huoneistotunnus"
+    "@value" : "Paikallinen nimi"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Space/Apartment"
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Equipment/Device"
   } ]
 }, {
   "@id" : "http://creativecommons.org/ns#attributionName",
@@ -2857,6 +2857,26 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation"
   } ]
 }, {
+  "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Location/StreetAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Katuosoite"
+  }, {
+    "@language" : "en-us",
+    "@value" : "Street address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Katuosoite"
+  }, {
+    "@language" : "en-us",
+    "@value" : "Street address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Location"
+  } ]
+}, {
   "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Location/TransportationRoute",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3167,6 +3187,25 @@
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/parametersClass" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/DataProductParameters/DocumentDataProductParameters/DocumentSigningDataProductParameters/SignSpaceDataProductParameters"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/version" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "2.0"
+  } ]
+}, {
+  "@id" : "https://standards.oftrust.net/v2/Vocabulary/DataProductContext/EventDataProductContext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/DataProductContext"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/manualPath" : [ {
+    "@value" : "Event"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/outputClass" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/DataProductOutput/EventDataProductOutput"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/parametersClass" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/DataProductParameters/EventDataProductParameters"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/version" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
@@ -3510,6 +3549,15 @@
     "@value" : "SignSpaceDataProductOutput.json"
   } ]
 }, {
+  "@id" : "https://standards.oftrust.net/v2/Vocabulary/DataProductOutput/EventDataProductOutput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/DataProductOutput"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/manualPath" : [ {
+    "@value" : "Event"
+  } ]
+}, {
   "@id" : "https://standards.oftrust.net/v2/Vocabulary/DataProductOutput/ForecastDataProductOutput",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -3697,6 +3745,15 @@
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/manualSchema" : [ {
     "@value" : "SignSpaceDataProductParameters.json"
+  } ]
+}, {
+  "@id" : "https://standards.oftrust.net/v2/Vocabulary/DataProductParameters/EventDataProductParameters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/DataProductParameters"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/manualPath" : [ {
+    "@value" : "Event"
   } ]
 }, {
   "@id" : "https://standards.oftrust.net/v2/Vocabulary/DataProductParameters/ForecastDataProductParameters",
@@ -5675,6 +5732,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Location"
+  }, {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Location/StreetAddress"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-us",
@@ -5716,6 +5775,32 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/address"
   } ]
 }, {
+  "@id" : "https://standards.oftrust.net/v2/Vocabulary/address/county",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "County"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Kunta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Location/StreetAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "County"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Kunta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/address"
+  } ]
+}, {
   "@id" : "https://standards.oftrust.net/v2/Vocabulary/address/phoneNumber",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -5732,6 +5817,8 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Contact/ContactStreetAddress"
+  }, {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Location/StreetAddress"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -5744,6 +5831,34 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Contact/ContactStreetAddress"
+  }, {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Location/StreetAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/address"
+  } ]
+}, {
+  "@id" : "https://standards.oftrust.net/v2/Vocabulary/address/state",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Osavaltio"
+  }, {
+    "@language" : "en-us",
+    "@value" : "State"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Location/StreetAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Osavaltio"
+  }, {
+    "@language" : "en-us",
+    "@value" : "State"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -5756,6 +5871,8 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Contact/ContactStreetAddress"
+  }, {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Location/StreetAddress"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -5768,6 +5885,8 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Contact/ContactStreetAddress"
+  }, {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Location/StreetAddress"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -5780,6 +5899,8 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Contact/ContactStreetAddress"
+  }, {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Location/StreetAddress"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -5988,6 +6109,32 @@
     "@value" : "false"
   } ]
 }, {
+  "@id" : "https://standards.oftrust.net/v2/Vocabulary/categorization/categorizationImportance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Categorization based on importance"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Kategorointi joka perustuu tärkeysluokitukseen"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Importance category"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Tärkeysluokitus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/categorization"
+  } ]
+}, {
   "@id" : "https://standards.oftrust.net/v2/Vocabulary/categorization/categorizationLocal",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -5999,6 +6146,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Condition"
+  }, {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Location"
   }, {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Quality"
   }, {
@@ -6246,6 +6395,32 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/categorization"
   } ]
 }, {
+  "@id" : "https://standards.oftrust.net/v2/Vocabulary/categorization/categorizationRecurrence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Categorization based on pattern how event occurs (reoccurs)"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Recurrence category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Recurrence category"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Toistumisluokitus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/categorization"
+  } ]
+}, {
   "@id" : "https://standards.oftrust.net/v2/Vocabulary/categorization/categorizationSahkonumerot",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -6316,6 +6491,32 @@
   }, {
     "@language" : "fi-fi",
     "@value" : "Sähkönumerot yleisnimi (SWE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/categorization"
+  } ]
+}, {
+  "@id" : "https://standards.oftrust.net/v2/Vocabulary/categorization/categorizationSensitivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Category based on sensitivity"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Kategorointi joka perustuu sensitiivisyyteen."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Sensitiivisyysluoktius"
+  }, {
+    "@language" : "en-us",
+    "@value" : "Sensitivity category"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -6474,12 +6675,12 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/categorization"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/comment" : [ {
-    "@id" : "_:genid242"
+    "@id" : "_:genid241"
   }, {
     "@id" : "_:genid243"
   } ],
   "https://standards.oftrust.net/v2/Vocabulary/label" : [ {
-    "@id" : "_:genid241"
+    "@id" : "_:genid242"
   }, {
     "@id" : "_:genid244"
   } ],
@@ -7138,6 +7339,32 @@
   "https://standards.oftrust.net/v2/Vocabulary/required" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "false"
+  } ]
+}, {
+  "@id" : "https://standards.oftrust.net/v2/Vocabulary/description/header",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Header for thing, subject or event"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Otsikko asialle, aiheelle tai tapahtumalle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Header"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Otsikko"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/description"
   } ]
 }, {
   "@id" : "https://standards.oftrust.net/v2/Vocabulary/description/image",
@@ -8928,6 +9155,8 @@
     "@value" : "Paikallinen tunniste"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Location"
+  }, {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Status"
   }, {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Location/TransportationRoute"
@@ -9364,6 +9593,8 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Condition"
   }, {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Location"
+  }, {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/PricePlan"
   }, {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Service"
@@ -9724,6 +9955,8 @@
   }, {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Document"
   }, {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Event"
+  }, {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Process"
   }, {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Product"
@@ -9937,117 +10170,6 @@
     "@value" : "false"
   } ]
 }, {
-  "@id" : "https://standards.oftrust.net/v2/Vocabulary/lifeCycle/location",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "fi-fi",
-    "@value" : "Ominaisuuskategoria sijaintia kuvaavalle tiedolle."
-  }, {
-    "@language" : "en-us",
-    "@value" : "Property category for location related information."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Location"
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Sijainti"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/lifeCycle"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/nest" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/data"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/readonly" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "false"
-  } ],
-  "https://standards.oftrust.net/v2/Vocabulary/required" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "false"
-  } ]
-}, {
-  "@id" : "https://standards.oftrust.net/v2/Vocabulary/lifeCycle/location/latitude",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "fi-fi",
-    "@value" : "Leveysaste ilmaisee pisteen etäisyyden päiväntasaajalta. Leveysasteella tarkoitetaan pisteen kautta kulkevan ellipsoidipinnan normaalin ja päiväntasaajan määrittelemän tason välistä kulmaa (WGS 84)."
-  }, {
-    "@language" : "en-us",
-    "@value" : "The angular distance north or south from the equator of a point on the earth's surface, measured on the meridian of the point (WGS 84)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Location"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Latitude"
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Leveysaste"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/lifeCycle/location"
-  } ]
-}, {
-  "@id" : "https://standards.oftrust.net/v2/Vocabulary/lifeCycle/location/locationName",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Location name"
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Sijainnin nimi"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Event"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Location name"
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Sijainnin nimi"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
-  }, {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/lifeCycle/location"
-  } ]
-}, {
-  "@id" : "https://standards.oftrust.net/v2/Vocabulary/lifeCycle/location/longitude",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en-us",
-    "@value" : "Angular distance east or west on the earth's surface, measured by the angle contained between the meridian of a particular place and some prime meridian, as that of Greenwich, England, and expressed either in degrees or by some corresponding difference in time (WGS 84)."
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Pituusaste on sijaintipaikan ja nollameridiaanin eli Greenwichin meridiaanin välinen kulmaero (WGS 84)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Location"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-us",
-    "@value" : "Longitude"
-  }, {
-    "@language" : "fi-fi",
-    "@value" : "Pituusaste"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://standards.oftrust.net/v2/Vocabulary/lifeCycle/location"
-  } ]
-}, {
   "@id" : "https://standards.oftrust.net/v2/Vocabulary/lifeCycle/status",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -10063,6 +10185,8 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Case"
   }, {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Contract"
+  }, {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Event"
   }, {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Process"
   }, {
@@ -10195,10 +10319,134 @@
     "@id" : "_:genid124"
   } ]
 }, {
-  "@id" : "https://standards.oftrust.net/v2/Vocabulary/location/locationName",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@id" : "https://standards.oftrust.net/v2/Vocabulary/location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Property category for location related information."
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Ominaisuuskategoria sijaintia kuvaavalle tiedolle."
+  }, {
+    "@language" : "en-us",
+    "@value" : "Location"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Sijainti"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Sijainti"
+  }, {
+    "@language" : "en-us",
+    "@value" : "Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  }, {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/nest" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/data"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/readonly" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "https://standards.oftrust.net/v2/Vocabulary/required" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ]
+}, {
+  "@id" : "https://standards.oftrust.net/v2/Vocabulary/location/eventUrl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/location"
+  } ]
+}, {
+  "@id" : "https://standards.oftrust.net/v2/Vocabulary/location/latitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Leveysaste ilmaisee pisteen etäisyyden päiväntasaajalta. Leveysasteella tarkoitetaan pisteen kautta kulkevan ellipsoidipinnan normaalin ja päiväntasaajan määrittelemän tason välistä kulmaa (WGS 84)."
+  }, {
+    "@language" : "en-us",
+    "@value" : "The angular distance north or south from the equator of a point on the earth's surface, measured on the meridian of the point (WGS 84)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Leveysaste"
+  }, {
+    "@language" : "en-us",
+    "@value" : "Latitude"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/location"
+  } ]
+}, {
+  "@id" : "https://standards.oftrust.net/v2/Vocabulary/location/locationName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Location name"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Sijainnin nimi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Event"
+  }, {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Process"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Sijainnin nimi"
+  }, {
+    "@language" : "en-us",
+    "@value" : "Location name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/location"
+  } ]
+}, {
+  "@id" : "https://standards.oftrust.net/v2/Vocabulary/location/longitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi-fi",
+    "@value" : "Pituusaste on sijaintipaikan ja nollameridiaanin eli Greenwichin meridiaanin välinen kulmaero (WGS 84)."
+  }, {
+    "@language" : "en-us",
+    "@value" : "Angular distance east or west on the earth's surface, measured by the angle contained between the meridian of a particular place and some prime meridian, as that of Greenwich, England, and expressed either in degrees or by some corresponding difference in time (WGS 84)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Annotation/Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Longitude"
+  }, {
+    "@language" : "fi-fi",
+    "@value" : "Pituusaste"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/location"
   } ]
 }, {
   "@id" : "https://standards.oftrust.net/v2/Vocabulary/manualExample",
@@ -12669,6 +12917,8 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Contract"
   }, {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Event"
+  }, {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Process"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -13235,6 +13485,8 @@
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Contract"
   }, {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Document"
+  }, {
+    "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Event"
   }, {
     "@id" : "https://standards.oftrust.net/v2/Vocabulary/Identity/Process"
   }, {
